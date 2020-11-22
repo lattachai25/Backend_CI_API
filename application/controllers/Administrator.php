@@ -90,7 +90,53 @@ function items()
 		}
 
 
+		function homeslide(){
+			$crud = new grocery_CRUD();
+			$crud->set_theme("bootstrap");
+			$crud->set_table("homeslide")
+			->order_by('id','id')
+			->display_as('img_slide','img_slide')
+			->display_as('contact','contact')
+			->display_as('date',' Day');
+	
+			// $crud->field_type('status','dropdown',array('1' => 'Active', '0' => 'Inactive'));
+			$crud->set_field_upload('img_slied','assets/uploads/img-slide');
+			
+			$output = $crud->render();
+			$this->_example_output($output);
+		}
 
+		function homeplaylist(){
+			$crud = new grocery_CRUD();
+			$crud->set_theme("bootstrap");
+			$crud->set_table("homeplaylist")
+			->order_by('id','id')
+			->display_as('link_vdo', 'link_vdo')
+			->display_as('img_bg',' img_bg')
+			->display_as('text',' text')
+			->display_as('date',' Day');
+	
+			// $crud->field_type('status','dropdown',array('1' => 'Active', '0' => 'Inactive'));
+			$crud->set_field_upload('img_bg','assets/uploads/img-bg');
+			
+			$output = $crud->render();
+			$this->_example_output($output);
+		}
+
+		function homebike(){
+			$crud = new grocery_CRUD();
+			$crud->set_theme("bootstrap");
+			$crud->set_table("homebike")
+			->order_by('id','id')		
+			->display_as('img_logo','img_logo')
+			->display_as('date',' Day');
+	
+			// $crud->field_type('status','dropdown',array('1' => 'Active', '0' => 'Inactive'));
+			$crud->set_field_upload('img_logo','assets/uploads/img-logo');
+			
+			$output = $crud->render();
+			$this->_example_output($output);
+		}
 
 }
 

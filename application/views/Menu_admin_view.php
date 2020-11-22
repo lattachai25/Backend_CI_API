@@ -75,7 +75,18 @@ a:hover {
 
                 </li>
                 <li>
-                    <a href="<?php echo base_url('administrator');?>"><i class="fa fa-home fa-fw"></i> HOME</a>
+                    <a href="<?php echo base_url('administrator');?>"><i class="fa fa-home fa-fw"></i> HOME<span class="fa arrow"></span></a>
+					<ul class="nav nav-second-level">
+                        <li>
+                            <a href="<?php echo base_url('administrator/homeslide');?>"> <i class="fa fa-circle-o fa-fw"></i>Home Slide</a>
+                        </li>
+                        <li>
+                            <a href="<?php echo base_url('administrator/homeplaylist');?>">  <i class="fa fa-circle-o fa-fw"></i>HomeP Playlist</a>
+                        </li>
+						<li>
+                            <a href="<?php echo base_url('administrator/homebike');?>">  <i class="fa fa-circle-o fa-fw"></i>Home Bike</a>
+                        </li>
+                    </ul>    
                 </li>
 
                 <li>
