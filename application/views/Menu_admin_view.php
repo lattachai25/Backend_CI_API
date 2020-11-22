@@ -88,13 +88,29 @@ a:hover {
                         </li>
                     </ul>    
                 </li>
-
-                <li>
-                    <a href="<?php echo base_url('administrator/about');?>"><i class="fa fa-fire fa-fw"></i> About Us</a>
+				<li>
+                    <a href="<?php echo base_url('administrator');?>"><i class="fa fa-home fa-fw"></i> Service<span class="fa arrow"></span></a>
+					<ul class="nav nav-second-level">
+						<li>
+							<a href="<?php echo base_url('administrator/service1');?>"><i class="fa fa-fire fa-fw"></i> Service1</a>
+						</li>
+						<li>
+							<a href="<?php echo base_url('administrator/service2');?>"><i class=" glyphicon glyphicon-transfer "></i> Service2</a>
+						</li>    
+						<li>
+							<a href="<?php echo base_url('administrator/service3');?>"><i class=" glyphicon glyphicon-transfer "></i> Service3</a>
+						</li>  
+						<li>
+							<a href="<?php echo base_url('administrator/service4');?>"><i class=" glyphicon glyphicon-transfer "></i> Service4</a>
+						</li>  
+						<li>
+							<a href="<?php echo base_url('administrator/service5');?>"><i class=" glyphicon glyphicon-transfer "></i> Service5</a>
+						</li>  
+						<li>
+							<a href="<?php echo base_url('administrator/service6');?>"><i class=" glyphicon glyphicon-transfer "></i> Service6</a>
+						</li>  
+					</ul>    
                 </li>
-                <li>
-                    <a href="<?php echo base_url('administrator/product');?>"><i class=" glyphicon glyphicon-transfer "></i> Product</a>
-                </li>    
                 <li>
                     <a href="#"><i class="glyphicon glyphicon-folder-open"></i> Product<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
