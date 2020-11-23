@@ -149,6 +149,37 @@ function items()
 			$this->_example_output($output);
 		}
 
+		function social(){
+			$crud = new grocery_CRUD();
+			$crud->set_theme("bootstrap");
+			$crud->set_table("social")
+			->order_by('id','id')
+			->display_as('link','link')		
+			->display_as('img','img')
+			->display_as('date',' Day');
+	
+			// $crud->field_type('status','dropdown',array('1' => 'Active', '0' => 'Inactive'));
+			$crud->set_field_upload('img-social','assets/uploads/img-social');
+			
+			$output = $crud->render();
+			$this->_example_output($output);
+		}
+
+		function promotion_slide(){
+			$crud = new grocery_CRUD();
+			$crud->set_theme("bootstrap");
+			$crud->set_table("promotion_slide")
+			->order_by('id','id')
+			->display_as('img_slide','img_slide')
+			->display_as('content','content')		
+			->display_as('date',' Day');
+	
+			// $crud->field_type('status','dropdown',array('1' => 'Active', '0' => 'Inactive'));
+			$crud->set_field_upload('img-promotion-slide','assets/uploads/img-promotion-slide');
+			
+			$output = $crud->render();
+			$this->_example_output($output);
+		}
 
 }
 

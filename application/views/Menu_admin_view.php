@@ -112,7 +112,12 @@ a:hover {
 						</li>        
 
                 <li>
-                    <a href="<?php echo base_url('administrator/promotion');?>"><i class="fa fa-money"></i> Promotion</a>
+					<a href="<?php echo base_url('administrator/promotion');?>"><i class="fa fa-money"></i> Promotion<span class="fa arrow"></span></a>
+					<ul class="nav nav-second-level">
+								<li>
+									<a href="<?php echo base_url('administrator/promotion_slide');?>"> <i class="fa fa-picture-o"></i> Slide </a>
+								</li>			
+							</ul>    
                 </li>
 
 				<li>
