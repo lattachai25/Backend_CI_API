@@ -65,17 +65,17 @@ function items()
 				$crud->set_theme("bootstrap");
 				$crud->set_table('about')
 	
-				->order_by('id','text','img_name')
-				->set_subject('About Content')
-				->display_as('text','Content')
-				->display_as('img_name','Images ')
+				->order_by('id','id')
+				->display_as('img','img')
+				->display_as('content','content ')
+				->display_as('content_main','Content_main')
+				->display_as('text','text')
 				->display_as('date','Day ');
-
 	
-				    $crud->field_type('status','dropdown',array('1' => 'Active', '0' => 'Inactive'));
-					$crud->set_field_upload('img_name','assets/uploads/about');
-					$output = $crud->render();
-					$this->_example_output($output);
+				// $crud->field_type('status','dropdown',array('1' => 'Active', '0' => 'Inactive'));
+				$crud->set_field_upload('img_about','assets/uploads/img_about');
+				$output = $crud->render();
+				$this->_example_output($output);
 			}
 
 
@@ -95,7 +95,7 @@ function items()
 			->display_as('date',' Day');
 	
 			// $crud->field_type('status','dropdown',array('1' => 'Active', '0' => 'Inactive'));
-			$crud->set_field_upload('img_slide','assets/uploads/img-slide');
+			$crud->set_field_upload('img_slide','assets/uploads/img_slide');
 			
 			$output = $crud->render();
 			$this->_example_output($output);
@@ -112,7 +112,7 @@ function items()
 			->display_as('date',' Day');
 	
 			// $crud->field_type('status','dropdown',array('1' => 'Active', '0' => 'Inactive'));
-			$crud->set_field_upload('img_bg','assets/uploads/img-bg');
+			$crud->set_field_upload('img_bg','assets/uploads/img_bg');
 			
 			$output = $crud->render();
 			$this->_example_output($output);
@@ -127,7 +127,7 @@ function items()
 			->display_as('date',' Day');
 	
 			// $crud->field_type('status','dropdown',array('1' => 'Active', '0' => 'Inactive'));
-			$crud->set_field_upload('img_logo','assets/uploads/img-logo');
+			$crud->set_field_upload('img_logo','assets/uploads/img_logo');
 			
 			$output = $crud->render();
 			$this->_example_output($output);
@@ -143,7 +143,7 @@ function items()
 			->display_as('date',' Day');
 	
 			// $crud->field_type('status','dropdown',array('1' => 'Active', '0' => 'Inactive'));
-			$crud->set_field_upload('img_service','assets/uploads/img-service');
+			$crud->set_field_upload('img_service','assets/uploads/img_service');
 			
 			$output = $crud->render();
 			$this->_example_output($output);
@@ -159,7 +159,7 @@ function items()
 			->display_as('date',' Day');
 	
 			// $crud->field_type('status','dropdown',array('1' => 'Active', '0' => 'Inactive'));
-			$crud->set_field_upload('img-social','assets/uploads/img-social');
+			$crud->set_field_upload('img_social','assets/uploads/img_social');
 			
 			$output = $crud->render();
 			$this->_example_output($output);
@@ -175,7 +175,7 @@ function items()
 			->display_as('date',' Day');
 	
 			// $crud->field_type('status','dropdown',array('1' => 'Active', '0' => 'Inactive'));
-			$crud->set_field_upload('img-promotion-slide','assets/uploads/img-promotion-slide');
+			$crud->set_field_upload('img_promotion_slide','assets/uploads/img_promotion_slide');
 			
 			$output = $crud->render();
 			$this->_example_output($output);
@@ -192,7 +192,7 @@ function items()
 			->display_as('date',' Day');
 	
 			// $crud->field_type('status','dropdown',array('1' => 'Active', '0' => 'Inactive'));
-			$crud->set_field_upload('img-popup','assets/uploads/img-popup');
+			$crud->set_field_upload('img_popup','assets/uploads/img_popup');
 			
 			$output = $crud->render();
 			$this->_example_output($output);
@@ -207,6 +207,88 @@ function items()
 	
 			// $crud->field_type('status','dropdown',array('1' => 'Active', '0' => 'Inactive'));
 			// $crud->set_field_upload('img-popup','assets/uploads/img-popup');
+			
+			$output = $crud->render();
+			$this->_example_output($output);
+		}
+
+		function contactus(){
+			$crud = new grocery_CRUD();
+			$crud->set_theme("bootstrap");
+			$crud->set_table("contactus")
+			->order_by('id','id')
+			->display_as('map_url',' map_url')
+			->display_as('content_link',' content_link')
+			->display_as('date',' Day');
+	
+			// $crud->field_type('status','dropdown',array('1' => 'Active', '0' => 'Inactive'));
+			// $crud->set_field_upload('img-popup','assets/uploads/img-popup');
+			
+			$output = $crud->render();
+			$this->_example_output($output);
+		}
+
+		function gallery(){
+			$crud = new grocery_CRUD();
+			$crud->set_theme("bootstrap");
+			$crud->set_table("gallery")
+			->order_by('id','id')
+			->display_as('img_product',' img_product')
+			->display_as('date_modified',' date_modified')
+			->display_as('content',' content')
+			->display_as('ddetail',' detail')
+			->display_as('date',' Day');
+	
+			// $crud->field_type('status','dropdown',array('1' => 'Active', '0' => 'Inactive'));
+			$crud->set_field_upload('img_gallery','assets/uploads/img_gallery');
+			
+			$output = $crud->render();
+			$this->_example_output($output);
+		}
+
+		function gallery_category(){
+			$crud = new grocery_CRUD();
+			$crud->set_theme("bootstrap");
+			$crud->set_table("gallery_category")
+			->order_by('id','id')
+			->display_as('date',' Day');
+	
+			// $crud->field_type('status','dropdown',array('1' => 'Active', '0' => 'Inactive'));
+			// $crud->set_field_upload('img-gallery','assets/uploads/img-gallery');
+			
+			$output = $crud->render();
+			$this->_example_output($output);
+		}
+
+		function gallery_img_head(){
+			$crud = new grocery_CRUD();
+			$crud->set_theme("bootstrap");
+			$crud->set_table("gallery_img_head")
+			->order_by('id','id')
+			->display_as('img',' img')
+			->display_as('link',' link')
+			->display_as('content',' content')
+			->display_as('date',' Day');
+	
+			// $crud->field_type('status','dropdown',array('1' => 'Active', '0' => 'Inactive'));
+			$crud->set_field_upload('gallery_head','assets/uploads/gallery_head');
+			
+			$output = $crud->render();
+			$this->_example_output($output);
+		}
+
+		function gallery_img_logo(){
+			$crud = new grocery_CRUD();
+			$crud->set_theme("bootstrap");
+			$crud->set_table("gallery_img_logo")
+			->order_by('id','id')
+			->display_as('img',' img')
+			->display_as('link',' link')
+			->display_as('content',' content')
+			->display_as('date',' Day');
+	
+			// $crud->field_type('status','dropdown',array('1' => 'Active', '0' => 'Inactive'));
+			$crud->set_field_upload('gallery_logo','assets/uploads/gallery_logo');
 			
 			$output = $crud->render();
 			$this->_example_output($output);
