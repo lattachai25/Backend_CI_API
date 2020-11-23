@@ -78,13 +78,13 @@ a:hover {
                     <a href="<?php echo base_url('administrator');?>"><i class="fa fa-home fa-fw"></i> HOME<span class="fa arrow"></span></a>
 					<ul class="nav nav-second-level">
                         <li>
-                            <a href="<?php echo base_url('administrator/homeslide');?>"> <i class="fa fa-certificate"></i> Home Slide</a>
+                            <a href="<?php echo base_url('administrator/homeslide');?>"> <i class="fa fa-plus-circle"></i> Home Slide</a>
                         </li>
                         <li>
-                            <a href="<?php echo base_url('administrator/homeplaylist');?>">  <i class="fa fa-certificate"></i> Home Playlist</a>
+                            <a href="<?php echo base_url('administrator/homeplaylist');?>">  <i class="fa fa-plus-circle"></i> Home Playlist</a>
                         </li>
 						<li>
-                            <a href="<?php echo base_url('administrator/homebike');?>">  <i class="fa fa-certificate"></i> Home Bike</a>
+                            <a href="<?php echo base_url('administrator/homebike');?>">  <i class="fa fa-plus-circle"></i> Home Bike</a>
                         </li>
                     </ul>    
                 </li>
