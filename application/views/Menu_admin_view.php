@@ -74,7 +74,7 @@ a:hover {
                 </li>
 
                 <li>
-                    <a href="<?php echo base_url('administrator');?>"><i class="fa fa-home fa-fw"></i> HOME<span class="fa arrow"></span></a>
+                <a href="<?php echo base_url('administrator');?>"><i class="fa fa-home fa-fw"></i> Home<span class="fa arrow"></span></a>
 					<ul class="nav nav-second-level">
                         <li>
                             <a href="<?php echo base_url('administrator/homeslide');?>"> <i class="fa fa-fighter-jet fa-fw"></i>Home Slide</a>
@@ -87,16 +87,19 @@ a:hover {
                         </li>
                     </ul>    
                 </li>
-                
+
                 <li>
-                    <a href="#"><i class="glyphicon glyphicon-folder-open"></i> Product<span class="fa arrow"></span></a>
-                    <ul class="nav nav-second-level">
+                <a href="<?php echo base_url('administrator');?>"><i class="fa fa-home fa-fw"></i> Promotion<span class="fa arrow"></span></a>
+					<ul class="nav nav-second-level">
                         <li>
+<<<<<<< Updated upstream
                             <a href="<?php echo base_url('administrator/product1');?>"> <i class="fa fa-picture-o fa-fw"></i>Product 1</a>
+=======
+                            <a href="<?php echo base_url('administrator/promotion_slide');?>"> <i class="fa fa-circle-o fa-fw"></i>Slide</a>
+>>>>>>> Stashed changes
                         </li>
-					</ul>    
-				</li>
 						<li>
+<<<<<<< Updated upstream
 							<a href="<?php echo base_url('administrator/service');?>"><i class="fa fa-cog fa-fw"></i> Service 1<span class="fa arrow"></span></a>
 							<ul class="nav nav-second-level">
 								<li>
@@ -113,18 +116,70 @@ a:hover {
 
                 <li>
                     <a href="<?php echo base_url('administrator/promotion');?>"><i class="fa fa-fire fa-fw"></i>Promotion</a>
+=======
+                            <a href="<?php echo base_url('administrator/promotion_product');?>"><i class="fa fa-circle-o fa-fw"></i> Product<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="<?php echo base_url('');?>"><i ></i> Product 1<span ></span></a>						
+                                </li>
+					        </ul>    
+				        </li>
+                    </ul>    
+>>>>>>> Stashed changes
                 </li>
+	             
+                <li>
+                <a href="<?php echo base_url('administrator');?>"><i class="fa fa-home fa-fw"></i> Product<span class="fa arrow"></span></a>
+					<ul class="nav nav-second-level">
+                        <li>
+                            <a href="<?php echo base_url('administrator/homeslide');?>"> <i class="fa fa-circle-o fa-fw"></i>Product 1</a>
+                        </li>
+                        <li>
+                            <a href="<?php echo base_url('administrator/homeplaylist');?>">  <i class="fa fa-circle-o fa-fw"></i>Category<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="<?php echo base_url('');?>"><i class="fa fa-fire fa-fw"></i> Category 1<span ></span></a>						
+                                </li>
+					        </ul>   
+                        </li>
 
+<<<<<<< Updated upstream
 				<li>
 					<a href="<?php echo base_url('administrator/service');?>"><i class="fa fa-cog fa-fw"></i> Service</a>
+=======
+                    </ul>    
+                </li>
+                
+                <li>
+                    <li>
+						<a href="<?php echo base_url('administrator/service');?>"><i class="fa fa-fire fa-fw"></i> Service<span ></span></a>						
+					</li>
+>>>>>>> Stashed changes
 				</li>
-	             
+						
+                
                 <li>
                     <a href="<?php echo base_url('administrator/news');?>"><i class="fa fa-fire fa-fw"></i>News</a>
                 </li>
 
                 <li>
-                    <a href="<?php echo base_url('administrator/gallery');?>"><i class="fa fa-fire fa-fw"></i>Gallery</a>
+                <a href="<?php echo base_url('administrator');?>"><i class="fa fa-home fa-fw"></i> Gallery<span class="fa arrow"></span></a>
+					<ul class="nav nav-second-level">
+                        <li>
+                            <a href="<?php echo base_url('administrator/homeslide');?>"> <i class="fa fa-circle-o fa-fw"></i>Image Head</a>
+                        </li>
+                        <li>
+                            <a href="<?php echo base_url('administrator/homeplaylist');?>">  <i class="fa fa-circle-o fa-fw"></i>Image Logo</a>
+                        </li>
+						<li>
+                            <a href="<?php echo base_url('');?>"><i class="fa fa-fire fa-fw"></i> Category<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="<?php echo base_url('');?>"><i class="fa fa-fire fa-fw"></i> Category 1<span ></span></a>						
+                                </li>
+					        </ul>    
+				        </li>
+                    </ul>    
                 </li>
 
                 <li>
@@ -142,6 +197,7 @@ a:hover {
                 <li>
                     <a href="<?php echo base_url('administrator/social');?>"><i class="fa fa-fire fa-fw"></i>Social</a>
                 </li>
+
 			</ul>    	   
 		</div>
 	</div>
