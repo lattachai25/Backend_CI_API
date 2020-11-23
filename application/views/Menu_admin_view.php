@@ -69,7 +69,7 @@ a:hover {
                 <li class="sidebar-search" style='text-align:center;'>
                     <img class='circle' src='<?php echo base_url();?>/assets/images/logo.png'>
                         <div style="color:#090909; " >
-                            USERNAME :  <font color='#ff7500'> <?php echo $this->session->userdata['logged_in']['username'];?> </font>
+                            USERNAMES :  <font color='#ff7500'> <?php echo $this->session->userdata['logged_in']['username'];?> </font>
                         </div>
                 </li>
 
@@ -77,42 +77,42 @@ a:hover {
                     <a href="<?php echo base_url('administrator');?>"><i class="fa fa-home fa-fw"></i> HOME<span class="fa arrow"></span></a>
 					<ul class="nav nav-second-level">
                         <li>
-                            <a href="<?php echo base_url('administrator/homeslide');?>"> <i class="fa fa-fighter-jet fa-fw"></i>Home Slide</a>
+                            <a href="<?php echo base_url('administrator/homeslide');?>"> <i class="fa fa-certificate"></i> Home Slide</a>
                         </li>
                         <li>
-                            <a href="<?php echo base_url('administrator/homeplaylist');?>">  <i class="fa fa-taxi fa-fw"></i>Home Playlist</a>
+                            <a href="<?php echo base_url('administrator/homeplaylist');?>">  <i class="fa fa-certificate"></i> Home Playlist</a>
                         </li>
 						<li>
-                            <a href="<?php echo base_url('administrator/homebike');?>">  <i class="fa fa-bus fa-fw"></i>Home Bike</a>
+                            <a href="<?php echo base_url('administrator/homebike');?>">  <i class="fa fa-certificate"></i> Home Bike</a>
                         </li>
                     </ul>    
                 </li>
                 
                 <li>
-                    <a href="#"><i class="glyphicon glyphicon-folder-open"></i> Product<span class="fa arrow"></span></a>
+                    <a href="#"><i class="glyphicon fa fa-plus-square"> </i> Product<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
-                            <a href="<?php echo base_url('administrator/product1');?>"> <i class="fa fa-picture-o fa-fw"></i>Product 1</a>
+                            <a href="<?php echo base_url('administrator/product1');?>"> <i class="fa fa-certificate"></i> Product 1</a>
                         </li>
 					</ul>    
 				</li>
 						<li>
-							<a href="<?php echo base_url('administrator/service');?>"><i class="fa fa-cog fa-fw"></i> Service 1<span class="fa arrow"></span></a>
+							<a href="<?php echo base_url('administrator/service');?>"><i class="fa fa-cog fa-fw"></i> Service<span class="fa arrow"></span></a>
 							<ul class="nav nav-second-level">
 								<li>
-									<a href="<?php echo base_url('administrator/service');?>"> <i class="fa fa-wrench fa-fw"></i>Home 1</a>
+									<a href="<?php echo base_url('administrator/service');?>"> <i class="fa fa-certificate"></i> Home 1</a>
 								</li>	
 								<li>
-									<a href="<?php echo base_url('administrator/service');?>"> <i class="fa fa-wrench fa-fw"></i>Home 2</a>
+									<a href="<?php echo base_url('administrator/service');?>"> <i class="fa fa-certificate"></i> Home 2</a>
 								</li>	
 								<li>
-									<a href="<?php echo base_url('administrator/service');?>"> <i class="fa fa-wrench fa-fw"></i>Home 3</a>
+									<a href="<?php echo base_url('administrator/service');?>"> <i class="fa fa-certificate"></i> Home 3</a>
 								</li>				
 							</ul>    
 						</li>        
 
                 <li>
-                    <a href="<?php echo base_url('administrator/promotion');?>"><i class="fa fa-fire fa-fw"></i>Promotion</a>
+                    <a href="<?php echo base_url('administrator/promotion');?>"><i class="fa fa-money"></i> Promotion</a>
                 </li>
 
 				<li>
@@ -120,27 +120,27 @@ a:hover {
 				</li>
 	             
                 <li>
-                    <a href="<?php echo base_url('administrator/news');?>"><i class="fa fa-fire fa-fw"></i>News</a>
+                    <a href="<?php echo base_url('administrator/news');?>"><i class="fa fa-pencil fa-fw"></i>News</a>
                 </li>
 
                 <li>
-                    <a href="<?php echo base_url('administrator/gallery');?>"><i class="fa fa-fire fa-fw"></i>Gallery</a>
+                    <a href="<?php echo base_url('administrator/gallery');?>"><i class="fa fa-camera-retro"> </i> Gallery</a>
                 </li>
 
                 <li>
-                    <a href="<?php echo base_url('administrator/about');?>"><i class="glyphicon glyphicon-map-marker"></i> About</a>
+                    <a href="<?php echo base_url('administrator/about');?>"><i class="fa fa-arrows fa-fw"></i> About</a>
                 </li>
 
                 <li>
-                    <a href="<?php echo base_url('administrator/contactus');?>"><i class="fa fa-fire fa-fw"></i>Contact Us</a>
+                    <a href="<?php echo base_url('administrator/contactus');?>"><i class="glyphicon glyphicon-map-marker"></i>Contact Us</a>
                 </li> 
 
                 <li>
-                    <a href="<?php echo base_url('administrator/popup');?>"><i class="fa fa-fire fa-fw"></i>Pop-Up Button</a>
+                    <a href="<?php echo base_url('administrator/popup');?>"><i class="fa fa-camera-retro fa-fw"></i>Pop-Up Button</a>
                 </li>
 
                 <li>
-                    <a href="<?php echo base_url('administrator/social');?>"><i class="fa fa-fire fa-fw"></i>Social</a>
+                    <a href="<?php echo base_url('administrator/social');?>"><i class="fa fa-camera-retro fa-fw"></i>Social</a>
                 </li>
 			</ul>    	   
 		</div>
