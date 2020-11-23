@@ -73,14 +73,10 @@ function items()
 
 	
 				    $crud->field_type('status','dropdown',array('1' => 'Active', '0' => 'Inactive'));
-					$crud->set_field_upload('img_name','assets/uploads/About');
+					$crud->set_field_upload('img_name','assets/uploads/about');
 					$output = $crud->render();
 					$this->_example_output($output);
 			}
-
-
-
-
 
 
 
@@ -96,11 +92,11 @@ function items()
 			$crud->set_table("homeslide")
 			->order_by('id','id')
 			->display_as('img_slide','img_slide')
-			->display_as('contact','contact')
+			->display_as('content','Content')
 			->display_as('date',' Day');
 	
 			// $crud->field_type('status','dropdown',array('1' => 'Active', '0' => 'Inactive'));
-			$crud->set_field_upload('img_slied','assets/uploads/img-slide');
+			$crud->set_field_upload('img_slide','assets/uploads/img-slide');
 			
 			$output = $crud->render();
 			$this->_example_output($output);
