@@ -138,101 +138,22 @@ function items()
 			$this->_example_output($output);
 		}
 
-		function service1(){
+		function service(){
 			$crud = new grocery_CRUD();
 			$crud->set_theme("bootstrap");
-			$crud->set_table("service1")
+			$crud->set_table("service")
 			->order_by('id','id')		
 			->display_as('img','img')
 			->display_as('text','text')
 			->display_as('date',' Day');
 	
 			// $crud->field_type('status','dropdown',array('1' => 'Active', '0' => 'Inactive'));
-			$crud->set_field_upload('img_service1','assets/uploads/img-service1');
+			$crud->set_field_upload('img_service','assets/uploads/img-service');
 			
 			$output = $crud->render();
 			$this->_example_output($output);
 		}
 
-		function service2(){
-			$crud = new grocery_CRUD();
-			$crud->set_theme("bootstrap");
-			$crud->set_table("service2")
-			->order_by('id','id')		
-			->display_as('img','img')
-			->display_as('text','text')
-			->display_as('date',' Day');
-	
-			// $crud->field_type('status','dropdown',array('1' => 'Active', '0' => 'Inactive'));
-			$crud->set_field_upload('img_service2','assets/uploads/img-service2');
-			
-			$output = $crud->render();
-			$this->_example_output($output);
-		}
-
-		function service3(){
-			$crud = new grocery_CRUD();
-			$crud->set_theme("bootstrap");
-			$crud->set_table("service3")
-			->order_by('id','id')		
-			->display_as('img','img')
-			->display_as('text','text')
-			->display_as('date',' Day');
-	
-			// $crud->field_type('status','dropdown',array('1' => 'Active', '0' => 'Inactive'));
-			$crud->set_field_upload('img_service3','assets/uploads/img-service3');
-			
-			$output = $crud->render();
-			$this->_example_output($output);
-		}
-
-		function service4(){
-			$crud = new grocery_CRUD();
-			$crud->set_theme("bootstrap");
-			$crud->set_table("service4")
-			->order_by('id','id')		
-			->display_as('img','img')
-			->display_as('text','text')
-			->display_as('date',' Day');
-	
-			// $crud->field_type('status','dropdown',array('1' => 'Active', '0' => 'Inactive'));
-			$crud->set_field_upload('img_service4','assets/uploads/img-service4');
-			
-			$output = $crud->render();
-			$this->_example_output($output);
-		}
-
-		function service5(){
-			$crud = new grocery_CRUD();
-			$crud->set_theme("bootstrap");
-			$crud->set_table("service5")
-			->order_by('id','id')		
-			->display_as('img','img')
-			->display_as('text','text')
-			->display_as('date',' Day');
-	
-			// $crud->field_type('status','dropdown',array('1' => 'Active', '0' => 'Inactive'));
-			$crud->set_field_upload('img_service5','assets/uploads/img-service5');
-			
-			$output = $crud->render();
-			$this->_example_output($output);
-		}
-
-		function service6(){
-			$crud = new grocery_CRUD();
-			$crud->set_theme("bootstrap");
-			$crud->set_table("service6")
-			->order_by('id','id')		
-			->display_as('img','img')
-			->display_as('text','text')
-			->display_as('date',' Day');
-	
-			// $crud->field_type('status','dropdown',array('1' => 'Active', '0' => 'Inactive'));
-			$crud->set_field_upload('img_service6','assets/uploads/img-service6');
-			
-			$output = $crud->render();
-			$this->_example_output($output);
-		}
 
 }
 
