@@ -88,14 +88,15 @@ a:hover {
                         </li>
                     </ul>    
                 </li>
-				<li>
-                    <a href="<?php echo base_url('administrator');?>"><i class="fa fa-home fa-fw"></i> Service<span class="fa arrow"></span></a>
-					<ul class="nav nav-second-level">
+			
 						<li>
 							<a href="<?php echo base_url('administrator/service');?>"><i class="fa fa-fire fa-fw"></i> Service</a>
 						</li>
 					</ul>    
-                </li>
+					</ul> 
+                </li>		 
+            
+
                 <li>
                     <a href="#"><i class="glyphicon glyphicon-folder-open"></i> Product<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
@@ -115,5 +116,7 @@ a:hover {
                 </li>
                 <li>
                     <a href="<?php echo base_url('administrator/test');?>"><i class="fa fa-fire fa-fw"></i>test</a>
-                </li> 
+				</li> 
+			</div>
+		</div>
 </nav>
