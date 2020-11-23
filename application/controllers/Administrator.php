@@ -79,7 +79,6 @@ function items()
 			}
 
 
-
 		public function _example_output($output = null)
 		{
 			$this->load->view('example.php',$output);
