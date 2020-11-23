@@ -101,13 +101,7 @@ a:hover {
 							<ul class="nav nav-second-level">
 								<li>
 									<a href="<?php echo base_url('administrator/service');?>"> <i class="fa fa-certificate"></i> Home 1</a>
-								</li>	
-								<li>
-									<a href="<?php echo base_url('administrator/service');?>"> <i class="fa fa-certificate"></i> Home 2</a>
-								</li>	
-								<li>
-									<a href="<?php echo base_url('administrator/service');?>"> <i class="fa fa-certificate"></i> Home 3</a>
-								</li>				
+								</li>			
 							</ul>    
 						</li>        
 
@@ -116,9 +110,6 @@ a:hover {
 					<ul class="nav nav-second-level">
 								<li>
 									<a href="<?php echo base_url('administrator/promotion_slide');?>"> <i class="fa fa-picture-o"></i> Slide </a>
-								</li>	
-								<li>
-									<a href="<?php echo base_url('administrator');?>"> <i class="fa fa-picture-o"></i> Slide </a>
 								</li>		
 							</ul>    
                 </li>

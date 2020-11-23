@@ -181,7 +181,38 @@ function items()
 			$this->_example_output($output);
 		}
 
+		function popup(){
+			$crud = new grocery_CRUD();
+			$crud->set_theme("bootstrap");
+			$crud->set_table("popup")
+			->order_by('id','id')
+			->display_as('img','img')
+			->display_as('link','link')	
+			->display_as('detail','detail')	
+			->display_as('date',' Day');
+	
+			// $crud->field_type('status','dropdown',array('1' => 'Active', '0' => 'Inactive'));
+			$crud->set_field_upload('img-popup','assets/uploads/img-popup');
+			
+			$output = $crud->render();
+			$this->_example_output($output);
+		}
+
+		function news(){
+			$crud = new grocery_CRUD();
+			$crud->set_theme("bootstrap");
+			$crud->set_table("news")
+			->order_by('id','id')
+			->display_as('date',' Day');
+	
+			// $crud->field_type('status','dropdown',array('1' => 'Active', '0' => 'Inactive'));
+			// $crud->set_field_upload('img-popup','assets/uploads/img-popup');
+			
+			$output = $crud->render();
+			$this->_example_output($output);
+		}
 }
+
 
 
 
