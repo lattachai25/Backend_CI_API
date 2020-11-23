@@ -1,6 +1,6 @@
 <div class="row">
 
-  <!-- <div class="col-lg-6 col-md-6">
+  <div class="col-lg-6 col-md-6">
       <div class="panel panel-yellow">
           <div class="panel-heading">
       <h1>CMS </h1><p style='display:inline'>(Content Management System)</p>
@@ -13,10 +13,10 @@
               </div>
       
       </div>
-  </div> -->
+  </div>
 
 
-                <!-- <div class="col-lg-6 col-md-6">
+                <div class="col-lg-6 col-md-6">
                     <div class="panel panel-primary">
                         <div class="panel-heading">
                             <div class="row">
@@ -48,4 +48,4 @@
 
                     </div>
                 </div>
-            </div> -->
+            </div>
