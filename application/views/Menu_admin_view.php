@@ -156,10 +156,10 @@ a:hover {
                             <a href="<?php echo base_url('administrator/gallery_category');?>"> <i class="fa fa-picture-o fa-fw"></i>&nbsp; Gallery-Category</a>
 						</li>
 						<li>
-                            <a href="<?php echo base_url('administrator/gallery_img_head');?>"> <i class="fa fa-picture-o fa-fw"></i>&nbsp; Gallery-Category</a>
+                            <a href="<?php echo base_url('administrator/gallery_img_head');?>"> <i class="fa fa-picture-o fa-fw"></i>&nbsp; Gallery-Head</a>
 						</li>
 						<li>
-                            <a href="<?php echo base_url('administrator/gallery_img_logo');?>"> <i class="fa fa-picture-o fa-fw"></i>&nbsp; Gallery-Category</a>
+                            <a href="<?php echo base_url('administrator/gallery_img_logo');?>"> <i class="fa fa-picture-o fa-fw"></i>&nbsp; Gallery-Logo</a>
                         </li>
                         <li>
                         <a href="#"><i class="glyphicon fa fa-plus-square"> </i>&nbsp; Category<span class="fa arrow"></span></a>
