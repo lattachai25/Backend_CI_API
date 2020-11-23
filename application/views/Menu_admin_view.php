@@ -95,59 +95,8 @@ a:hover {
 					</ul>    
 					</ul> 
                 </li>		 
-            
 
-                <li>
-
-			    <li>
-                    <a href="#"><i class="glyphicon glyphicon-folder-open"></i> Product<span class="fa arrow"></span></a>
-                    <ul class="nav nav-second-level">
-                        <li>
-                            <a href="<?php echo base_url('administrator/product1');?>"> <i class="fa fa-circle-o fa-fw"></i>Product 1</a>
-                        </li>
-                        <li>
-                            <a href="<?php echo base_url('administrator/product2');?>">  <i class="fa fa-circle-o fa-fw"></i>Product 2</a>
-                        </li>
-                    </ul>    
-                </li>
-
-                <li>
-                    <a href="<?php echo base_url('administrator/promotion');?>"><i class="fa fa-fire fa-fw"></i>Promotion</a>
-                </li>
-
-				<li>
-					<a href="<?php echo base_url('administrator/service');?>"><i class="fa fa-fire fa-fw"></i> Service</a>
-				</li>
-	             
-                <li>
-                    <a href="<?php echo base_url('administrator/news');?>"><i class="fa fa-fire fa-fw"></i>News</a>
-                </li>
-
-                <li>
-                    <a href="<?php echo base_url('administrator/gallery');?>"><i class="fa fa-fire fa-fw"></i>Gallery</a>
-                </li>
-
-                <li>
-                    <a href="<?php echo base_url('administrator/about');?>"><i class="glyphicon glyphicon-map-marker"></i> About</a>
-                </li>
-
-                <li>
-                    <a href="<?php echo base_url('administrator/test');?>"><i class="fa fa-fire fa-fw"></i>test</a>
-				</li> 
+			   
 			</div>
 		</div>
-                    <a href="<?php echo base_url('administrator/contactus');?>"><i class="fa fa-fire fa-fw"></i>Contact Us</a>
-                </li> 
-
-                <li>
-                    <a href="<?php echo base_url('administrator/popup');?>"><i class="fa fa-fire fa-fw"></i>Pop-Up Button</a>
-                </li>
-
-                <li>
-                    <a href="<?php echo base_url('administrator/social');?>"><i class="fa fa-fire fa-fw"></i>Social</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-
 </nav>
