@@ -95,8 +95,6 @@ a:hover {
                         <li>
                             <a href="<?php echo base_url('administrator/product1');?>"> <i class="fa fa-certificate"></i> Product 1</a>
                         </li>
-<<<<<<< Updated upstream
-=======
                         <li>
                         <a href="#"><i class="glyphicon fa fa-plus-square"> </i>&nbsp; Category<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
@@ -108,7 +106,6 @@ a:hover {
                                 </li> 
                             </ul>   
                         </li>   
->>>>>>> Stashed changes
 					</ul>    
 				</li>
 						<li>
@@ -121,16 +118,6 @@ a:hover {
 						</li>        
 
                 <li>
-<<<<<<< Updated upstream
-					<a href="<?php echo base_url('administrator/promotion');?>"><i class="fa fa-money"></i> Promotion<span class="fa arrow"></span></a>
-					<ul class="nav nav-second-level">
-								<li>
-									<a href="<?php echo base_url('administrator/promotion_slide');?>"> <i class="fa fa-picture-o"></i> Slide </a>
-								</li>		
-							</ul>    
-                </li>
-
-=======
                 <a href="<?php echo base_url('administrator/promotion');?>"><i class="fa fa-money"></i>&nbsp; &nbsp;Promotion<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
@@ -151,7 +138,6 @@ a:hover {
                 </li> 
                 
                 
->>>>>>> Stashed changes
 				<li>
 					<a href="<?php echo base_url('administrator/service');?>"><i class="fa fa-cog fa-fw"></i> Service</a>
 				</li>
@@ -161,10 +147,6 @@ a:hover {
                 </li>
 
                 <li>
-<<<<<<< Updated upstream
-                    <a href="<?php echo base_url('administrator/gallery');?>"><i class="fa fa-camera-retro"> </i> Gallery</a>
-                </li>
-=======
                     <a href="#"><i class="glyphicon fa fa-fire fa-fw"> </i>&nbsp; Gallery<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
@@ -186,7 +168,6 @@ a:hover {
                         </li>   
 					</ul>    
                 </li> 
->>>>>>> Stashed changes
 
                 <li>
                     <a href="<?php echo base_url('administrator/about');?>"><i class="fa fa-arrows fa-fw"></i> About</a>
