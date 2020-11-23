@@ -77,13 +77,13 @@ a:hover {
                     <a href="<?php echo base_url('administrator');?>"><i class="fa fa-home fa-fw"></i> HOME<span class="fa arrow"></span></a>
 					<ul class="nav nav-second-level">
                         <li>
-                            <a href="<?php echo base_url('administrator/homeslide');?>"> <i class="fa fa-circle-o fa-fw"></i>Home Slide</a>
+                            <a href="<?php echo base_url('administrator/homeslide');?>"> <i class="fa fa-fighter-jet fa-fw"></i>Home Slide</a>
                         </li>
                         <li>
-                            <a href="<?php echo base_url('administrator/homeplaylist');?>">  <i class="fa fa-circle-o fa-fw"></i>Home Playlist</a>
+                            <a href="<?php echo base_url('administrator/homeplaylist');?>">  <i class="fa fa-taxi fa-fw"></i>Home Playlist</a>
                         </li>
 						<li>
-                            <a href="<?php echo base_url('administrator/homebike');?>">  <i class="fa fa-circle-o fa-fw"></i>Home Bike</a>
+                            <a href="<?php echo base_url('administrator/homebike');?>">  <i class="fa fa-bus fa-fw"></i>Home Bike</a>
                         </li>
                     </ul>    
                 </li>
@@ -92,7 +92,7 @@ a:hover {
                     <a href="#"><i class="glyphicon glyphicon-folder-open"></i> Product<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
-                            <a href="<?php echo base_url('administrator/product1');?>"> <i class="fa fa-circle-o fa-fw"></i>Product 1</a>
+                            <a href="<?php echo base_url('administrator/product1');?>"> <i class="fa fa-picture-o fa-fw"></i>Product 1</a>
                         </li>
 					</ul>    
 				</li>
@@ -100,13 +100,13 @@ a:hover {
 							<a href="<?php echo base_url('administrator/service');?>"><i class="fa fa-cog fa-fw"></i> Service 1<span class="fa arrow"></span></a>
 							<ul class="nav nav-second-level">
 								<li>
-									<a href="<?php echo base_url('administrator/service');?>"> <i class="fa fa-circle-o fa-fw"></i>Home 1</a>
+									<a href="<?php echo base_url('administrator/service');?>"> <i class="fa fa-wrench fa-fw"></i>Home 1</a>
 								</li>	
 								<li>
-									<a href="<?php echo base_url('administrator/service');?>"> <i class="fa fa-circle-o fa-fw"></i>Home 2</a>
+									<a href="<?php echo base_url('administrator/service');?>"> <i class="fa fa-wrench fa-fw"></i>Home 2</a>
 								</li>	
 								<li>
-									<a href="<?php echo base_url('administrator/service');?>"> <i class="fa fa-circle-o fa-fw"></i>Home 3</a>
+									<a href="<?php echo base_url('administrator/service');?>"> <i class="fa fa-wrench fa-fw"></i>Home 3</a>
 								</li>				
 							</ul>    
 						</li>        
