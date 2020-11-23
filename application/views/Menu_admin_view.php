@@ -14,13 +14,14 @@
 .navbar-default {
     color:#ff6634; 
     background-color:#e2e0e1;
+  
 }
 
 #page-wrapper {
     padding: 0 15px;
     min-height: 568px;
-    background-color: #d2d2d2;
-}
+    background-color: #d2d2d2;}
+
 a {
     color: #090909  !important;
     text-decoration: none;
@@ -33,7 +34,7 @@ a:hover {
 }
 
 </style>
-<nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+<nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0; ">
     <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
@@ -69,7 +70,7 @@ a:hover {
                 <li class="sidebar-search" style='text-align:center;'>
                     <img class='circle' src='<?php echo base_url();?>/assets/images/logo.png'>
                         <div style="color:#090909; " >
-                            USERNAMES :  <font color='#ff7500'> <?php echo $this->session->userdata['logged_in']['username'];?> </font>
+                            USERNAMES :  <font color='#ff6634'> <?php echo $this->session->userdata['logged_in']['username'];?> </font>
                         </div>
                 </li>
 
@@ -94,6 +95,20 @@ a:hover {
                         <li>
                             <a href="<?php echo base_url('administrator/product1');?>"> <i class="fa fa-certificate"></i> Product 1</a>
                         </li>
+<<<<<<< Updated upstream
+=======
+                        <li>
+                        <a href="#"><i class="glyphicon fa fa-plus-square"> </i>&nbsp; Category<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="<?php echo base_url('administrator/product1');?>">&nbsp; &nbsp;<i class="fa fa-wrench fa-fw"></i>&nbsp; Category 1</a>
+                                </li>  
+                                <li>
+                                    <a href="<?php echo base_url('administrator/product1');?>">&nbsp; &nbsp;<i class="fa fa-wrench fa-fw"></i>&nbsp; Category 1</a>
+                                </li> 
+                            </ul>   
+                        </li>   
+>>>>>>> Stashed changes
 					</ul>    
 				</li>
 						<li>
@@ -106,6 +121,7 @@ a:hover {
 						</li>        
 
                 <li>
+<<<<<<< Updated upstream
 					<a href="<?php echo base_url('administrator/promotion');?>"><i class="fa fa-money"></i> Promotion<span class="fa arrow"></span></a>
 					<ul class="nav nav-second-level">
 								<li>
@@ -114,6 +130,28 @@ a:hover {
 							</ul>    
                 </li>
 
+=======
+                <a href="<?php echo base_url('administrator/promotion');?>"><i class="fa fa-money"></i>&nbsp; &nbsp;Promotion<span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="<?php echo base_url('administrator/product1');?>"> <i class="fa fa-certificate"></i>&nbsp; Slide</a>
+                        </li>
+                        <li>
+                        <a href="#"><i class="glyphicon fa fa-plus-square"> </i>&nbsp; Product<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="<?php echo base_url('administrator/product1');?>">&nbsp; &nbsp;<i class="fa fa-wrench fa-fw"></i>&nbsp; Product 1</a>
+                                </li>  
+                                <li>
+                                    <a href="<?php echo base_url('administrator/product1');?>">&nbsp; &nbsp;<i class="fa fa-wrench fa-fw"></i>&nbsp; Product 2</a>
+                                </li>  
+                            </ul>   
+                        </li>   
+					</ul>    
+                </li> 
+                
+                
+>>>>>>> Stashed changes
 				<li>
 					<a href="<?php echo base_url('administrator/service');?>"><i class="fa fa-cog fa-fw"></i> Service</a>
 				</li>
@@ -123,8 +161,32 @@ a:hover {
                 </li>
 
                 <li>
+<<<<<<< Updated upstream
                     <a href="<?php echo base_url('administrator/gallery');?>"><i class="fa fa-camera-retro"> </i> Gallery</a>
                 </li>
+=======
+                    <a href="#"><i class="glyphicon fa fa-fire fa-fw"> </i>&nbsp; Gallery<span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="<?php echo base_url('administrator/product1');?>"> <i class="fa fa-picture-o fa-fw"></i>&nbsp; Image Head</a>
+                        </li>
+                        <li>
+                            <a href="<?php echo base_url('administrator/product1');?>"> <i class="fa fa-picture-o fa-fw"></i>&nbsp; Image Logo</a>
+                        </li>
+                        <li>
+                        <a href="#"><i class="glyphicon fa fa-plus-square"> </i>&nbsp; Category<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="<?php echo base_url('administrator/product1');?>">&nbsp; &nbsp;<i class="fa fa-wrench fa-fw"></i>&nbsp; Category 1</a>
+                                </li>  
+                                <li>
+                                    <a href="<?php echo base_url('administrator/product1');?>">&nbsp; &nbsp;<i class="fa fa-wrench fa-fw"></i>&nbsp; Category 2</a>
+                                </li>  
+                            </ul>   
+                        </li>   
+					</ul>    
+                </li> 
+>>>>>>> Stashed changes
 
                 <li>
                     <a href="<?php echo base_url('administrator/about');?>"><i class="fa fa-arrows fa-fw"></i> About</a>
