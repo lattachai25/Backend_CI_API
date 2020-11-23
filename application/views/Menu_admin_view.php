@@ -97,7 +97,7 @@ a:hover {
 					</ul>    
 				</li>
 						<li>
-							<a href="<?php echo base_url('administrator/service');?>"><i class="fa fa-fire fa-fw"></i> Service<span class="fa arrow"></span></a>
+							<a href="<?php echo base_url('administrator/service');?>"><i class="fa fa-cog fa-fw"></i> Service 1<span class="fa arrow"></span></a>
 							<ul class="nav nav-second-level">
 								<li>
 									<a href="<?php echo base_url('administrator/service');?>"> <i class="fa fa-circle-o fa-fw"></i>Home 1</a>
@@ -116,7 +116,7 @@ a:hover {
                 </li>
 
 				<li>
-					<a href="<?php echo base_url('administrator/service');?>"><i class="fa fa-fire fa-fw"></i> Service</a>
+					<a href="<?php echo base_url('administrator/service');?>"><i class="fa fa-cog fa-fw"></i> Service</a>
 				</li>
 	             
                 <li>
