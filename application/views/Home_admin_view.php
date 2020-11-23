@@ -1,19 +1,17 @@
-<div class="row">
+<div class="row" >
 
-  <div class="col-lg-6 col-md-6">
-      <div class="panel panel-yellow">
-          <div class="panel-heading">
-      <h1>CMS </h1><p style='display:inline'>(Content Management System)</p>
-          </div>
-
-              <div class="panel-footer">
-<p>
-  ระบบการจัดการเนื้อหาเว็บ
-</p>
-              </div>
-      
-      </div>
-  </div>
+    <div class="col-lg-6 col-md-6" >
+        <div class="panel panel-yellow">
+            <div class="panel-heading">
+        <h1>CMS </h1><p style='display:inline'>(Content Management System)</p>
+            </div>
+                <div class="panel-footer">
+                <p>
+                ระบบการจัดการเนื้อหาเว็บ
+                </p>
+                </div>
+        </div>
+    </div>
 
 
                 <div class="col-lg-6 col-md-6">
