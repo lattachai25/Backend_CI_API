@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>SmartSure</title>
+    <title>Admin MPK</title>
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="shortcut icon" href="LOGOsmartsure.png"/>
     <link rel="bookmark" href="LOGOsmartsure.png"/>
