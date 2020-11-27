@@ -1,6 +1,5 @@
 <style>
 .bg-footer{
-    width:100%;
     font-family:'helvetica';
     font-size:25px;
     background-color:#000;
@@ -74,7 +73,7 @@
 
 
 </style>
-
+<div class="col-12">
 <div class="row bg-footer">
 <div class="col-1"></div>
 <div class="col-10">
@@ -152,3 +151,4 @@
     </div>
 
     </div>
+</div>

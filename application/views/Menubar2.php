@@ -47,11 +47,9 @@ $(document).ready(function(){
   	var scroll = $(window).scrollTop();
 	  if (scroll > 300) {
         $("#mainNav").css("background" , "#f7f7f7");  
-        $("nav a").css("color","#000");
 	  }
 
 	  else{
-        $("nav a").css("color","#FFF");
         $("#mainNav").css("background" , "transparent");	
 	  }
   })
