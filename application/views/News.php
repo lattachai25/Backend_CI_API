@@ -233,7 +233,7 @@ span{
 <!-- box -->     
                         <div class="col-4">
                         <br>
-                        <a href="{{ route('News_show.index') }}">
+                        <a href="<?php echo base_url('News_show'); ?>">            
                             <div class="container">
                                 <center>
                                 <img src="{{asset('img/news/news1.jpg')}}" alt="Avatar" class="image" style="width:100%">
@@ -257,8 +257,8 @@ span{
 <!-- box -->     
 <div class="col-4">
                         <br>
-                        <a href="{{ route('News_show.index') }}">
-                            <div class="container">
+                        <a href="<?php echo base_url('News_show'); ?>">            
+                              <div class="container">
                                 <center>
                                 <img src="{{asset('img/news/news2.jpg')}}" alt="Avatar" class="image" style="width:100%">
                                 </center>
@@ -281,7 +281,7 @@ span{
 <!-- box -->     
 <div class="col-4">
                         <br>
-                        <a href="{{ route('News_show.index') }}">
+                        <a href="<?php echo base_url('News_show'); ?>">            
                             <div class="container">
                                 <center>
                                 <img src="{{asset('img/news/news3.jpg')}}" alt="Avatar" class="image" style="width:100%">
@@ -305,7 +305,7 @@ span{
 <!-- box -->     
 <div class="col-4">
                         <br>
-                        <a href="{{ route('News_show.index') }}">
+                        <a href="<?php echo base_url('News_show'); ?>">                            
                             <div class="container">
                                 <center>
                                 <img src="{{asset('img/news/news4.jpg')}}" alt="Avatar" class="image" style="width:100%">
@@ -329,7 +329,7 @@ span{
 <!-- box -->     
 <div class="col-4">
                         <br>
-                        <a href="{{ route('News_show.index') }}">
+                        <a href="<?php echo base_url('News_show'); ?>">            
                             <div class="container">
                                 <center>
                                 <img src="{{asset('img/news/news5.jpg')}}" alt="Avatar" class="image" style="width:100%">
@@ -353,7 +353,7 @@ span{
 <!-- box -->     
 <div class="col-4">
                         <br>
-                        <a href="{{ route('News_show.index') }}">
+                        <a href="<?php echo base_url('News_show'); ?>">            
                             <div class="container">
                                 <center>
                                 <img src="{{asset('img/news/news5.jpg')}}" alt="Avatar" class="image" style="width:100%">
@@ -377,7 +377,7 @@ span{
 <!-- box -->     
 <div class="col-4">
                         <br>
-                        <a href="{{ route('News_show.index') }}">
+                        <a href="<?php echo base_url('News_show'); ?>">            
                             <div class="container">
                                 <center>
                                 <img src="{{asset('img/news/news7.jpg')}}" alt="Avatar" class="image" style="width:100%">
@@ -401,7 +401,7 @@ span{
 <!-- box -->     
 <div class="col-4">
                         <br>
-                        <a href="{{ route('News_show.index') }}">
+                        <a href="<?php echo base_url('News_show'); ?>">            
                             <div class="container">
                                 <center>
                                 <img src="{{asset('img/news/news8.jpg')}}" alt="Avatar" class="image" style="width:100%">
@@ -425,7 +425,7 @@ span{
 <!-- box -->     
 <div class="col-4">
                         <br>
-                        <a href="{{ route('News_show.index') }}">
+                        <a href="<?php echo base_url('News_show'); ?>">            
                             <div class="container">
                                 <center>
                                 <img src="{{asset('img/news/news9.jpg')}}" alt="Avatar" class="image" style="width:100%">

@@ -130,7 +130,7 @@ span{ color:#ff6634; }
                     <div class="row">
                     <div class="col-md-6">
                     
-                    <img src="{{asset('img/about/img-man.png')}}" style="float:right;" width="70%" alt=""/>
+                    <img src="<?php echo base_url();?>img/about/img-man.png" style="float:right;" width="70%" alt=""/>
                     
                     </div>
                     <div class="col-md-6">
