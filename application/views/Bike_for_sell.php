@@ -136,9 +136,6 @@ span{
 
 
 
-
-
-
 </style>
 
 
@@ -147,7 +144,9 @@ span{
 
 <div class="top" style="min-height:900px; background-color:#000;">
 <br><br>
-<img src="{{asset('img/product/02_3-18-07-2020_bike-for-sell_02.png')}}" width="100%" alt=""/>
+
+<img src="<?php echo base_url();?>img/product/02_3-18-07-2020_bike-for-sell_02.png" width="100%" alt=""/>
+
 <br>
 <br>
 <br>
@@ -156,16 +155,19 @@ span{
   <div class="col-1"></div>
   <div class="col-11">
       <div id="owl-demo" class="owl-carousel owl-theme">
-      <div class="item"><img src="{{asset('img/product/bike/01-1.png')}}" width="100%" /></div>
-      <div class="item"><img src="{{asset('img/product/bike/Bike_02.png')}}" width="100%" /></div>
-      <div class="item"><img src="{{asset('img/product/bike/Bike_03.png')}}" width="100%" /></div>
-      <div class="item"><img src="{{asset('img/product/bike/Bike_04.png')}}" width="100%" /></div>
+      <img src="<?php echo base_url();?>img/product/bike/01-1.png.png" width="100%" alt=""/>
+      <img src="<?php echo base_url();?>img/product/bike/Bike_02.png.png" width="100%" alt=""/>
+      <img src="<?php echo base_url();?>img/product/bike/Bike_03.png" width="100%" alt=""/>
+      <img src="<?php echo base_url();?>img/product/bike/Bike_04.png" width="100%" alt=""/>
+  
       </div>
   </div>
   <div class="col-2"></div>
   <div class="col-6" style="font-size:20px; font-weight:bold; color:#fff;">
   &nbsp; &nbsp;   01/<span>05</span><br>
-  <img src="{{asset('img/product/bike/barslide_top.png')}}" alt=""/>
+
+  <img src="<?php echo base_url();?>img/product/bike/barslide_top.png" alt=""/>
+
   </div>
 </div>
 
@@ -173,7 +175,9 @@ span{
 <!-- row  -->
 <div class="row">
   <div class="boxcontent2" style="position:relative;">
-  <img src="{{asset('img/product/bike/bg_boke.png')}}" width="100%" alt=""/>
+
+  <img src="<?php echo base_url();?>img/product/bike/bg_boke.png" width="100%" alt=""/ >
+
   </div>
 
     <!-- boxcontent -->
@@ -189,8 +193,7 @@ span{
         <!-- row scall -->
               <div class="row">
                   <div class="col-6">
-                 
-                  <img src="{{asset('img/product/bike/1.png')}}" width="100%" style="margin-left:20px;" alt=""/>
+                  <img src="<?php echo base_url();?>img/product/bike/1.png" width="100%" style="margin-left:20px;" alt=""/ >
                   </div>
                   <div class="col-1"></div>
                   <div class="col-5">
@@ -233,7 +236,8 @@ span{
                     <div class="col-12">
               <div class="row">
                   <div class="col-6">
-                  <div class="box_cart"> + ADD TO CART <img src="{{asset('img/product/bike/cart.png')}}" width="25px" alt=""> </div>
+                  <div class="box_cart"> + ADD TO CART
+                  <img src="<?php echo base_url();?>img/product/bike/cart.png" width="25px" alt=""/ > </div>
                   <br><br>
                   </div> 
               </div>
@@ -250,14 +254,12 @@ span{
           <div class="col-3"></div>
           <div class="col-9">
 
-
-
             <div class="boximage">
               <div class="container">
-              <a data-fancybox="gallery" href="{{asset('img/product/bike/4.png')}}">
-              <img src="{{asset('img/product/bike/2.png')}}" class="image">
+              <a data-fancybox="gallery" href ="<?php echo base_url('img/product/bike/2.png'); ?>"> 
+              <img src="<?php echo base_url();?>img/product/bike/2.png" class="image alt=""/ >
                 <div class="overlay">
-                  <div class="text">FUll IMAGE</div>
+                  <div class="text">FULL IMAGE</div>
                 </div>
                 </a>  
               </div>
@@ -265,10 +267,11 @@ span{
 
             <div class="boximage">
               <div class="container">
-              <a data-fancybox="gallery" href="{{asset('img/product/bike/4.png')}}">
-              <img src="{{asset('img/product/bike/3.png')}}" class="image">
+              <a data-fancybox="gallery" href ="<?php echo base_url('img/product/bike/3.png'); ?>"> 
+              <img src="<?php echo base_url();?>img/product/bike/3.png" class="image alt=""/ >
+             
                 <div class="overlay">
-                  <div class="text">FUll IMAGE</div>
+                  <div class="text">FULL IMAGE</div>
                 </div>
                 </a>  
               </div>
@@ -276,10 +279,10 @@ span{
 
             <div class="boximage">
               <div class="container">
-              <a data-fancybox="gallery" href="{{asset('img/product/bike/4.png')}}">
-              <img src="{{asset('img/product/bike/4.png')}}" class="image">
+              <a data-fancybox="gallery" href ="<?php echo base_url('img/product/bike/4.png'); ?>"> 
+              <img src="<?php echo base_url();?>img/product/bike/4.png" class="image alt=""/ >
                 <div class="overlay">
-                  <div class="text">FUll IMAGE</div>
+                  <div class="text">FULL IMAGE</div>
                 </div>
                 </a>  
               </div>
@@ -287,15 +290,15 @@ span{
 
             <div class="boximage">
               <div class="container">
-              <a data-fancybox="gallery" href="{{asset('img/product/bike/4.png')}}">
-              <img src="{{asset('img/product/bike/5.png')}}" class="image">
+              <a data-fancybox="gallery" href ="<?php echo base_url('img/product/bike/5.png'); ?>"> 
+              <img src="<?php echo base_url();?>img/product/bike/5.png" class="image alt=""/ >
                 <div class="overlay">
                   <div class="text">FUll IMAGE</div>
                 </div>
                 </a>  
               </div>
             </div>
-            <img src="{{asset('img/product/bike/barslide.png')}}">
+            <img src="<?php echo base_url();?>img/product/bike/barslide.png"  >
 
           </div>
         </div>
@@ -309,8 +312,8 @@ span{
   </div>
 <!-- row  -->
 </div>
+<img src="<?php echo base_url();?>img/product/bike/02_3-18-07-2020_bike-for-sell_06.png"  width="100%" alt=""/>
 
-<img src="{{asset('img/product/02_3-18-07-2020_bike-for-sell_06.png')}}" width="100%" alt=""/>
 <script>
 $(document).ready(function() {
  var owl = $("#owl-demo");

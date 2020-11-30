@@ -317,9 +317,7 @@ function statusDis($value)
 			
 			$output = $crud->render();
 			$this->_example_output($output);
-		}
-
-		
+		}		
 }
 
 
