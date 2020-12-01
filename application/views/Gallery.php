@@ -10,7 +10,6 @@
 }
 /* background-image: url("{{asset('img/gallery/box_03.png')}}"); */
 
-
 div {margin: 0 auto}
 
 .item img  {
@@ -39,6 +38,7 @@ div {margin: 0 auto}
   border-radius: 1px;
   text-align: center;
 }
+
 .customNavigation{
   text-align: center;
 }
@@ -56,7 +56,7 @@ div {margin: 0 auto}
         padding-right:0px !important;
         padding-left: 0px !important;
         background-color: #252525;
-    }
+}
     
 .image_logo_show{
         filter: grayscale(100%);
@@ -64,17 +64,18 @@ div {margin: 0 auto}
         height:180px;
         width:180px;
         z-index: -1;
-    }
+}
 
-
-    .image_logo_show:hover{
+.image_logo_show:hover{
         filter: grayscale(0%);
-        background-image: url("{{asset('img/gallery/box_03.png')}}");
+        background-image: url('/assets/img/gallery/box_03.jpg');
         background-repeat:no-repeat;
-    }
+}
+
 .owl-item{
     width: 185px !important;
 }
+
 .itembox{
     color:#fff;
     font-weight:bold;
@@ -82,6 +83,7 @@ div {margin: 0 auto}
     padding-left:50px;
     height:50px;
 }
+
 .itembox:hover{
     background-color:#ff6634;
 }
@@ -89,9 +91,6 @@ div {margin: 0 auto}
 .avction{
     background-color:#ff6634;
 }
-
-
-
 
 .container {
   position: relative;
@@ -146,7 +145,7 @@ div {margin: 0 auto}
     color:#FFF;
     font-size: 15px;
     font-weight: 700;
-    background-image:url("{{asset('img/promotion/orange.png')}}");
+    background-image: url('/assets/img/promotion/orange.png');
     background-repeat: no-repeat, repeat;
 }
 .show_top2{
@@ -157,7 +156,7 @@ div {margin: 0 auto}
     color:#FFF;
     font-size: 15px;
     font-weight: 700;
-    background-image:url("{{asset('img/promotion/red.png')}}");
+    background-image: url('/assets/img/promotion/red.png');
     background-repeat: no-repeat, repeat;
 }
 
@@ -169,10 +168,9 @@ div {margin: 0 auto}
     color:#FFF;
     font-size: 15px;
     font-weight: 700;
-    background-image:url("{{asset('img/promotion/blue.png')}}");
+    background-image: url('/assets/img/promotion/blue.png');
     background-repeat: no-repeat, repeat;
 }
-
 
 
 .text_title{
@@ -191,14 +189,16 @@ div {margin: 0 auto}
 span{
     color: #ff5e0d;
 }
+
+
 </style>
 
 <div class="bg" style="margin-top:0px;"></div>
-      
+    
     <!-- img_top -->
     <div class="top_img"> 
-        <img src="{{asset('img/gallery/bar_top.png')}}" width="50%" style="position:absolute;" alt=""/>
-        <img src="{{asset('img/gallery/head.jpg')}}" width="100%" alt=""/>  
+        <img src="<?php echo base_url();?>img/gallery/bar_top.png"width="50%" style="position:absolute;" alt=""/ >
+        <img src="<?php echo base_url();?>img/gallery/head.png"width="50%" alt=""/ >
     </div>    
     <!-- img_top -->  
     <div class="slide_bar">
@@ -207,34 +207,30 @@ span{
         <div style="width:90%; margin-left:120px;>
                 <div style="width:80%; margin-left:200px; display: inline-block;">
                         <div class="row"> <!--  row   -->
-
                             <div style="width:20px; display: inline-block;">
                                 <div class="customNavigation">
                                 <a class="btn prev" style="margin-top:50px; margin-right: -30px;">
-                                <img src="{{asset('img/gallery/back_orange_slide.png')}}" width="40px" />
+                                <img src="<?php echo base_url();?>img/gallery/back_orange_slide.png" width="40px" alt=""/ >
                                 </a>
                                 </div>
                             </div>
                             <div class="box_logo1" style="width:1110px; display:inline-block;">
                                 <div id="owl-demo" class="owl-carousel owl-theme">
-                                <div class="item"><img class="image_logo_show" src="{{asset('img/gallery/icon_color/bmw.png ')}}" /></div>
-                                <div class="item"><img class="image_logo_show" src="{{asset('img/gallery/icon_color/ducati.png ')}}" /></div>
-                                <div class="item"><img class="image_logo_show" src="{{asset('img/gallery/icon_color/honda.png ')}}" /></div>
-                                <div class="item"><img class="image_logo_show" src="{{asset('img/gallery/icon_color/kawasaki.png ')}}" /></div>
-                                <div class="item"><img class="image_logo_show" src="{{asset('img/gallery/icon_color/norton.png ')}}" /></div>
-                                <div class="item"><img class="image_logo_show" src="{{asset('img/gallery/icon_color/suzuki.png ')}}" /></div>
-                                </div>
+                                <div class="item"><img class="image_logo_show"  src="<?php echo base_url();?>img/gallery/icon_color/bmw.png" alt=""/></div>
+                                <div class="item"><img class="image_logo_show"  src="<?php echo base_url();?>img/gallery/icon_color/ducati.png" alt=""/></div>
+                                <div class="item"><img class="image_logo_show"  src="<?php echo base_url();?>img/gallery/icon_color/honda.png" alt=""/></div>
+                                <div class="item"><img class="image_logo_show " src="<?php echo base_url();?>img/gallery/icon_color/norton.png" alt=""/></div>
+                                <div class="item"><img class="image_logo_show"  src="<?php echo base_url();?>img/gallery/icon_color/suzuki.png" alt=""/></div> 
+                            </div>
                             </div>
                             <div style="width:20px; display: inline-block;> 
                                 <div class="customNavigation">
                                 <a class="btn next" style="margin-top:50px;float: left; margin-left: -70px;">
-                                <img src="{{asset('img/gallery/next_orange_slide.png')}}"  width="40px" />
+                                    <img src="<?php echo base_url();?>img/gallery/next_orange_slide.png" width="40px" alt=""/ >
                                 </a>
                             </div>
                             </div>
-
                         </div>  <!--  Row End  -->
-
                 </div>
         </div>        
         </div>
@@ -271,33 +267,31 @@ span{
                 <a href="http://">
                         <br>
                     <div class="container">
-                    <img src="{{asset('img/gallery/'.$i.'.png')}}" class="image" />
-                    <div class="overlay"><div class="text">FUll IMAGE</div></div>
+                        <img src="<?php echo base_url();?>img/gallery/'.$i.'.png" width="40px" class="image" alt=""/ >
+                        <div class="overlay"><div class="text">FULL IMAGE</div></div>
                     </div>
                 </a> 
             </div>
             @endfor
             </div>
             </div>
-
-
         </div>
-
       <div class="row" style="min-height:80px; margin-top:50px;">
         <div class="col-12">
             <div class="row">
                 <div class="col-3"></div>
                     <div class="col-3">
-                    <img src="{{asset('img/gallery/back_orange.png')}}"  width="10px" />
+                    <img src="<?php echo base_url();?>img/gallery//back_orange.png" width="10px" >
+                 
                      &nbsp; &nbsp; 1 &nbsp; &nbsp; 2 &nbsp; &nbsp; 3 &nbsp; &nbsp; 4 &nbsp; &nbsp; 5 &nbsp; &nbsp; <span> 6 </span>&nbsp; &nbsp; 
-                    <img src="{{asset('img/gallery/next_orange.png')}}"  width="10px" />
+                     <img src="<?php echo base_url();?>img/gallery//next_orange.png" width="10px" >
+                   
                      </div>
                 <div class="col-4"></div>     
             </div>        
         </div>
-        <img src="{{asset('img/gallery/bat_footer.png')}}"  width="100%" />
+        <img src="<?php echo base_url();?>img/gallery//bat_footer.png" width="100%" >
         </div>
-
     </div>
     <!-- menu item show  -->
 </div>

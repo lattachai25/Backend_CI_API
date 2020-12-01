@@ -74,8 +74,6 @@ a:hover
 												<?php echo $output; ?>
 										    </div>
 
-
-
 									<!-- /.col-lg-12 -->
 							</div>
 							<!-- /.row -->
@@ -93,7 +91,7 @@ a:hover
 
 		<!-- Custom Theme JavaScript -->
 		<script src="<?=base_url();?>dist/js/sb-admin-2.js"></script>
-		  <script src="<?=base_url();?>assets/css/jquery.utilcarousel.min.js"></script>
+		<script src="<?=base_url();?>assets/css/jquery.utilcarousel.min.js"></script>
 	<script>
 	$(function() {
 	$('#features-carousel').utilCarousel({

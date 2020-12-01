@@ -7,6 +7,9 @@
     <link rel="shortcut icon" href="LOGOsmartsure.png"/>
     <link rel="bookmark" href="LOGOsmartsure.png"/>
     <!-- site css -->
+
+    
+   
     <link rel="stylesheet" href="<?php echo base_url();?>assets/dist/css/site.min.css">
     <link rel="stylesheet" href="<?php echo base_url();?>assets/css/admin/dataTable.css">
     <link rel="stylesheet" href="<?php echo base_url();?>assets/css/admin/jasny.css">

@@ -105,7 +105,8 @@ font-weight: bold;
 <div class="row">
 <!-- top -->
 <div class="brand_top">
-<img src="{{asset('img/product/product_detel/top.png')}}" width="100%"/>
+<img src="<?php echo base_url();?>img/product/product_detel/top.png"width="100%" / >
+
 </div>
 <div class="text_top">
 HOME / PRODUCT / BRAKE SYSTEM / <span>DISC BRAKE</span>
@@ -131,16 +132,16 @@ HOME / PRODUCT / BRAKE SYSTEM / <span>DISC BRAKE</span>
           <div id="vertical-slider">
             <ul>
               <li
-                data-image="{{asset('img/product/category/1.png')}}"
+                data-image="<?php echo base_url('img/product/category/1.png');?>"
               ></li>
               <li
-                data-image="{{asset('img/product/category/2.png')}}"
+                data-image="<?php echo base_url('img/product/category/2.png');?>"
               ></li>
               <li
-                data-image="{{asset('img/product/category/3.png')}}"
+                data-image="<?php echo base_url('img/product/category/3.png');?>"
               ></li>
               <li
-                data-image="{{asset('img/product/category/4.png')}}"
+              data-image="<?php echo base_url('img/product/category/4.png');?>"
               ></li>
 
             </ul>
@@ -150,22 +151,21 @@ HOME / PRODUCT / BRAKE SYSTEM / <span>DISC BRAKE</span>
           <div id="horizon-slider">
             <ul style="width: 7000px; height: 700px; left: 0px; top: 0px;">
               <li
-                data-image="{{asset('img/product/category/1.png')}}"
+                data-image="<?php echo base_url('img/product/category/1.png');?>"
                 class="ui-draggable"
               ></li>
               <li
-                data-image="{{asset('img/product/category/2.png')}}"
+              data-image="<?php echo base_url('img/product/category/2.png');?>"                
+              class="ui-draggable"
+              ></li>
+              <li
+              data-image="<?php echo base_url('img/product/category/3.png');?>"                
                 class="ui-draggable"
               ></li>
               <li
-                data-image="{{asset('img/product/category/3.png')}}"
+              data-image="<?php echo base_url('img/product/category/4.png');?>"                
                 class="ui-draggable"
               ></li>
-              <li
-                data-image="{{asset('img/product/category/4.png')}}"
-                class="ui-draggable"
-              ></li>
-
             </ul>
           </div>
 

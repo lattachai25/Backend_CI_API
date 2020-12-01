@@ -51,11 +51,11 @@
 
 .bx-wrapper .bx-prev {
     left: 22px;
-    background: url(img/promotion/previous_black.png) no-repeat 6px -1px;
+    background: url(<?php base_url();?>img/promotion/previous_black.png) no-repeat  6px -1px ;
 }
 .bx-wrapper .bx-next {
     right: 10px;
-    background: url(img/promotion/next_black.png) no-repeat 0px 5px;
+    background: url(<?php base_url();?>img/promotion/next_black.png) no-repeat 0px 5px ;
 }
 
 .bx-wrapper {
@@ -143,7 +143,7 @@
     color:#FFF;
     font-size: 15px;
     font-weight: 700;
-    background-image:url("{{asset('img/promotion/orange.png')}}");
+    background-image: url("img/promotion/orange.png");
     background-repeat: no-repeat, repeat;
 }
 .show_top2{
@@ -154,7 +154,7 @@
     color:#FFF;
     font-size: 15px;
     font-weight: 700;
-    background-image:url("{{asset('img/promotion/red.png')}}");
+    background-image: url("img/promotion/red.png");
     background-repeat: no-repeat, repeat;
 }
 
@@ -166,11 +166,9 @@
     color:#FFF;
     font-size: 15px;
     font-weight: 700;
-    background-image:url("{{asset('img/promotion/blue.png')}}");
+    background-image: url("img/promotion/blue.png");
     background-repeat: no-repeat, repeat;
 }
-
-
 
 .text_title{
     font-family: 'RSU';
@@ -213,11 +211,11 @@ span{
 
 
 <div class="bg"></div>
-<img src="{{asset('img/news/latest.png')}}" width="100%" alt=""/>
+<img src="<?php echo base_url();?>img/news/latest.png" width="100%" alt=""/ >
 <br><br>
 <div class="row">
 <div class="col-12">
-<img src="{{asset('img/news/slide.png')}}" width="100%" alt=""/>
+<img src="<?php echo base_url();?>img/news/slide.png" width="100%" alt=""/ >
 </div>
 </div>
 
@@ -226,20 +224,17 @@ span{
         <div class="col-10" style="min-height:500px;">
             <div class="row justify-content-center">
                 <div class="col-11" style="min-height:500px;">
-
                     <div class="row">
-
-
 <!-- box -->     
                         <div class="col-4">
                         <br>
                         <a href="<?php echo base_url('News_show'); ?>">            
                             <div class="container">
                                 <center>
-                                <img src="{{asset('img/news/news1.jpg')}}" alt="Avatar" class="image" style="width:100%">
+                                    <img src="<?php echo base_url();?>img/news/news1.png" alt="Avatar" class="image" style="width:100%">
                                 </center>
                                 <div class="overlay">
-                                    <div class="text">READ MORD <i class="fas fa-arrow-right"></i></div>
+                                    <div class="text">READ MORE<i class="fas fa-arrow-right"></i></div>
                                 </div>
                             </div>
                         </a> 
@@ -260,10 +255,10 @@ span{
                         <a href="<?php echo base_url('News_show'); ?>">            
                               <div class="container">
                                 <center>
-                                <img src="{{asset('img/news/news2.jpg')}}" alt="Avatar" class="image" style="width:100%">
+                                <img src="<?php echo base_url();?>img/news/news2.png" alt="Avatar" class="image" style="width:100%">
                                 </center>
                                 <div class="overlay">
-                                    <div class="text">READ MORD <i class="fas fa-arrow-right"></i></div>
+                                    <div class="text">READ MORE <i class="fas fa-arrow-right"></i></div>
                                 </div>
                             </div>
                         </a> 
@@ -284,10 +279,10 @@ span{
                         <a href="<?php echo base_url('News_show'); ?>">            
                             <div class="container">
                                 <center>
-                                <img src="{{asset('img/news/news3.jpg')}}" alt="Avatar" class="image" style="width:100%">
+                                <img src="<?php echo base_url();?>img/news/news3.png" alt="Avatar" class="image" style="width:100%">
                                 </center>
                                 <div class="overlay">
-                                    <div class="text">READ MORD <i class="fas fa-arrow-right"></i></div>
+                                    <div class="text">READ MORE <i class="fas fa-arrow-right"></i></div>
                                 </div>
                             </div>
                         </a> 
@@ -308,10 +303,10 @@ span{
                         <a href="<?php echo base_url('News_show'); ?>">                            
                             <div class="container">
                                 <center>
-                                <img src="{{asset('img/news/news4.jpg')}}" alt="Avatar" class="image" style="width:100%">
+                                <img src="<?php echo base_url();?>img/news/news4.png" alt="Avatar" class="image" style="width:100%">
                                 </center>
                                 <div class="overlay">
-                                    <div class="text">READ MORD <i class="fas fa-arrow-right"></i></div>
+                                    <div class="text">READ MORE <i class="fas fa-arrow-right"></i></div>
                                 </div>
                             </div>
                         </a> 
@@ -332,10 +327,10 @@ span{
                         <a href="<?php echo base_url('News_show'); ?>">            
                             <div class="container">
                                 <center>
-                                <img src="{{asset('img/news/news5.jpg')}}" alt="Avatar" class="image" style="width:100%">
+                                <img src="<?php echo base_url();?>img/news/news5.png" alt="Avatar" class="image" style="width:100%">
                                 </center>
                                 <div class="overlay">
-                                    <div class="text">READ MORD <i class="fas fa-arrow-right"></i></div>
+                                    <div class="text">READ MORE <i class="fas fa-arrow-right"></i></div>
                                 </div>
                             </div>
                         </a> 
@@ -356,10 +351,10 @@ span{
                         <a href="<?php echo base_url('News_show'); ?>">            
                             <div class="container">
                                 <center>
-                                <img src="{{asset('img/news/news5.jpg')}}" alt="Avatar" class="image" style="width:100%">
+                                <img src="<?php echo base_url();?>img/news/news6.png" alt="Avatar" class="image" style="width:100%">
                                 </center>
                                 <div class="overlay">
-                                    <div class="text">READ MORD <i class="fas fa-arrow-right"></i></div>
+                                    <div class="text">READ MORE <i class="fas fa-arrow-right"></i></div>
                                 </div>
                             </div>
                         </a> 
@@ -380,10 +375,10 @@ span{
                         <a href="<?php echo base_url('News_show'); ?>">            
                             <div class="container">
                                 <center>
-                                <img src="{{asset('img/news/news7.jpg')}}" alt="Avatar" class="image" style="width:100%">
+                                <img src="<?php echo base_url();?>img/news/news7.png" alt="Avatar" class="image" style="width:100%">
                                 </center>
                                 <div class="overlay">
-                                    <div class="text">READ MORD <i class="fas fa-arrow-right"></i></div>
+                                    <div class="text">READ MORE <i class="fas fa-arrow-right"></i></div>
                                 </div>
                             </div>
                         </a> 
@@ -404,10 +399,10 @@ span{
                         <a href="<?php echo base_url('News_show'); ?>">            
                             <div class="container">
                                 <center>
-                                <img src="{{asset('img/news/news8.jpg')}}" alt="Avatar" class="image" style="width:100%">
+                                <img src="<?php echo base_url();?>img/news/news8.png" alt="Avatar" class="image" style="width:100%">
                                 </center>
                                 <div class="overlay">
-                                    <div class="text">READ MORD <i class="fas fa-arrow-right"></i></div>
+                                    <div class="text">READ MORE <i class="fas fa-arrow-right"></i></div>
                                 </div>
                             </div>
                         </a> 
@@ -428,10 +423,11 @@ span{
                         <a href="<?php echo base_url('News_show'); ?>">            
                             <div class="container">
                                 <center>
-                                <img src="{{asset('img/news/news9.jpg')}}" alt="Avatar" class="image" style="width:100%">
+                                <img src="<?php echo base_url();?>img/news/news9.png" width="100%" alt="Avatar"class="image" style="width:100%" >
+                          
                                 </center>
                                 <div class="overlay">
-                                    <div class="text">READ MORD <i class="fas fa-arrow-right"></i></div>
+                                    <div class="text">READ MORE <i class="fas fa-arrow-right"></i></div>
                                 </div>
                             </div>
                         </a> 
@@ -447,7 +443,6 @@ span{
                         </div>
 <!-- box -->
 
-
                     </div>
                 </div>
             </div>
@@ -455,7 +450,8 @@ span{
 </div>
 
 <br><br>
-<img src="{{asset('img/promotion/03-13-06-2020_promotion_10.png')}}" width="100%" alt=""/>
+<img src="<?php echo base_url();?>img/promotion/03-13-06-2020_promotion_10.png"  width="100%" alt=""/>
+
 
 
    <script>

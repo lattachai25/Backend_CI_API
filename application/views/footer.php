@@ -110,7 +110,7 @@
 
         </div>
         <div class="col-3">
-                <div class="title_col">Qiuck Links  </div>
+                <div class="title_col">Quick Links  </div>
                 <div class="menu_footer">
                 <div class="qiuck_links">Select your bike</div>
                 <div class="qiuck_links">Category</div>
