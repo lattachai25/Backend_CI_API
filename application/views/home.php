@@ -205,7 +205,7 @@ span{
     <div class="bxslider">
         <!-- @for ($i = 0; $i < 10; $i++) -->
         <div><img src="<?php echo base_url();?>img/home/slider_bar.png" width="100%" alt=""/></div>
-        <div><img src="<?php echo base_url();?>img/home/Slide_Banner_n02.jpg" width="100%" alt=""/></div>
+        <div><img src="<?php echo base_url();?>img/home/slidebanner.jpg" width="100%" alt=""/></div>
 
         <!-- @endfor -->
     </div>
