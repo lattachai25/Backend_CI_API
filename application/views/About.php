@@ -83,11 +83,7 @@ span{ color:#ff6634; }
 
 </style>
 
-<div class="row col-12">
-
-<div style="margin-top:10%;"></div>
-
-
+<div class="row col-12" style="margin-top:150px;">
 
 <img src="<?php echo base_url();?>img/about/bartop.png" width="100%" alt=""/>
 

@@ -192,7 +192,7 @@ span{
 
 </style>
 
-<div class="bg" style="margin-top:0px;"></div>
+<div class="bg" style="margin-top:120px;"></div>
     
     <!-- img_top -->
     <div class="top_img"> 

@@ -1,6 +1,7 @@
-
-<div class="row">
-<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+<div class="row"></div>
+<nav class="navbar fixed-top" id="mainNav">
+<div class="col-1"></div>
+<div class="col-10">
         <ul>
             <li><img src="<?php echo base_url();?>img/icon_menu/MPK_logo-02.png" width="180" alt=""></li>
     
@@ -37,12 +38,12 @@
             <li><a href="<?php echo base_url('Contact');?>"><i class="fas fa-map-marker-alt" style="color:#ff6634;"></i></a></li>
             <li><img src="<?php echo base_url();?>/img/icon_menu/menu1_14.png" width="90px" /></li>
         </ul>
-  
+</div>  
+<div class="col-1"></div>
     </nav>
 
+
 </div>
-
-
 
 <script>
 $(document).ready(function(){

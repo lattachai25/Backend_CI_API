@@ -140,7 +140,7 @@ span{
 
 
 
-<div class="bg" style="margin-top:80px;"></div>
+<div class="bg" style="margin-top:120px;"></div>
 
 <div class="top" style="min-height:900px; background-color:#000;">
 <br><br>

@@ -210,7 +210,7 @@ span{
 </style>
 
 
-<div class="bg"></div>
+<div class="bg" style="margin-top:120px;"></div>
 <img src="<?php echo base_url();?>img/news/latest.png" width="100%" alt=""/ >
 <br><br>
 <div class="row">

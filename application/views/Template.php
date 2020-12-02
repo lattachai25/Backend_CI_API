@@ -56,9 +56,12 @@ html, body {
 
 </style>
  <body id="page-top">
-<?php $this->load->view('Menubar');?>
+ <div class="container">
 
+<?php $this->load->view('Menubar');?>
+</div>
 <?php if(isset($content)){ echo $content; } ?>
+
 
 <?php $this->load->view('Footer');?>
 

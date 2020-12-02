@@ -188,7 +188,7 @@ span{
 </style>
 
 
-<div class="bg"></div>
+<div class="bg" style="margin-top:120px;"></div>
 <img src="<?php echo base_url();?>img/promotion/2_01_02.png" width="100%" alt=""/>
 <br><br>
 <div class="row">

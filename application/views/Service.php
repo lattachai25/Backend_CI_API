@@ -130,7 +130,7 @@ margin:10px;
 
 
 
-<div class="col-md-12" style="margin-top:0px;">
+<div class="col-md-12" style="margin-top:120px;">
 <div class="row">
 
 <img src="<?php echo base_url(); ?>img/service/topbar.png" width="100%" alt=""/>
