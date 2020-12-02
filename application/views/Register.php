@@ -38,7 +38,7 @@
   outline: none;
 }
 </style>
-<div class="row" style="margin-top:80px;">
+<div class="row" sstyle="margin-top:120px;">
 		<img src="<?php echo base_url();?>img/register/register_02.png" width="100%">	
 
 		<div style="width: 100%; min-height:750px; background-image: url(img/register/adsa.png); background-repeat: no-repeat;background-size:cover;">
