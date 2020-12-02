@@ -1,7 +1,7 @@
 <style>
 .bg_select{
     height:500px;
-    background-image:url('{{asset('img/product/BG_Selectyourvehicle.png')}}');
+    background-image:url('<?php echo base_url();?>img/product/BG_Selectyourvehicle.png');
     background-repeat: no-repeat;
     background-size:cover;
     background-size:100% 100%;
@@ -32,7 +32,7 @@
 .bar_item{
     width:100%;
     min-height:180px;
-    background-image:url('{{asset('img/product/bar_top2.png')}}');
+    background-image:url('<?php echo base_url();?>img/product/bar_top2.png');
     background-repeat: no-repeat;
     background-size:100% 100%;
 }
@@ -117,7 +117,7 @@
     color:#FFF;
     font-size: 15px;
     font-weight: 700;
-    background-image:url("{{asset('img/promotion/orange.png')}}");
+    background-image:url("<?php echo base_url();?>img/promotion/orange.png");
     background-repeat: no-repeat, repeat;
 }
 .show_top2{
@@ -128,7 +128,7 @@
     color:#FFF;
     font-size: 15px;
     font-weight: 700;
-    background-image:url("{{asset('img/promotion/red.png')}}");
+    background-image:url("<?php echo base_url();?>img/promotion/red.png");
     background-repeat: no-repeat, repeat;
 }
 
@@ -140,7 +140,7 @@
     color:#FFF;
     font-size: 15px;
     font-weight: 700;
-    background-image:url("{{asset('img/promotion/blue.png')}}");
+    background-image:url("<?php echo base_url();?>img/promotion/blue.png");
     background-repeat: no-repeat, repeat;
 }
 
@@ -474,7 +474,7 @@ span{
 <div class="col-8">
     <div class="row"><!-- row Bar -->
         <div class="col-2" style="color:#666666; font-size:14px; font-weight:bold; padding-top:60px;"> 11 ITEMS </div>
-        <div class="col-10"><img src="{{asset('img/product/bar_right.png')}}" style="float:right;" width="100%" alt=""/> </div>
+        <div class="col-10"><img src="<?php echo base_url();?>img/product/bar_right.png" style="float:right;" width="100%" alt=""/> </div>
     </div><!-- row Bar -->
 
 
@@ -484,13 +484,13 @@ span{
     <div class="col-1"></div>
     <div class="col-10">
     <div class="row">
-                         @for ($i = 1; $i < 13; $i++)
+                         <?php for ($i = 1; $i < 13; $i++) { ?>
                         <div class="col-4">
                         <a href="{{ url('Promotion_show') }}">
                         <br>
                             <div class="container">
                                 <center>
-                                <img src="{{asset('img/product/'.$i.'.png')}}" class="image" />
+                                <img src="<?php echo base_url();?>img/product/<?php echo $i ?>.png" class="image" />
                                 </center>
                                 <div class="overlay">
                                     <div class="text">READ MORD <i class="fas fa-arrow-right"></i></div>
@@ -504,10 +504,10 @@ span{
                                 <div class="col-2 text_price1"><s>฿3,210</s></div>
                                 <div class="col-2 text_price2">฿1,234</div>
                                 <div class="col-5"></div>
-                                <div class="col-2"><img src="{{asset('img/promotion/cart.png')}}" width="20px"></div>
+                                <div class="col-2"><img src="<?php echo base_url();?>img/promotion/cart.png" width="20px"></div>
                             </div>
                         </div>
-                    @endfor
+                         <?php } ?>
     </div>
     </div>
 
@@ -520,16 +520,16 @@ span{
     <div class="row">
                 <div class="col-4"></div>
                     <div class="col-4">
-                    <img src="{{asset('img/gallery/back_orange.png')}}"  width="10px" />
+                    <img src="<?php echo base_url();?>img/gallery/back_orange.png"  width="10px" />
                      &nbsp; &nbsp; 1 &nbsp; &nbsp; 2 &nbsp; &nbsp; 3 &nbsp; &nbsp; 4 &nbsp; &nbsp; 5 &nbsp; &nbsp; <span> 6 </span>&nbsp; &nbsp; 
-                    <img src="{{asset('img/gallery/next_orange.png')}}"  width="10px" />
+                    <img src="<?php echo base_url();?>img/gallery/next_orange.png"  width="10px" />
                      </div>
                 <div class="col-4"></div>     
             </div> 
     <br>       
     </div>
    
-    <img src="{{asset('img/product/bat_footer.png')}}" style="float:right;" width="100%" alt=""/>
+    <img src="<?php echo base_url();?>img/product/bat_footer.png" style="float:right;" width="100%" alt=""/>
 </div>
 </div>
 

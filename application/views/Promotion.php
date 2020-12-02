@@ -129,7 +129,7 @@
     color:#FFF;
     font-size: 15px;
     font-weight: 700;
-    background-image:url("{{asset('img/promotion/orange.png')}}");
+    background-image:url("<?php echo base_url();?>img/promotion/orange.png");
     background-repeat: no-repeat, repeat;
 }
 .show_top2{
@@ -140,7 +140,7 @@
     color:#FFF;
     font-size: 15px;
     font-weight: 700;
-    background-image:url("{{asset('img/promotion/red.png')}}");
+    background-image:url("<?php echo base_url();?>img/promotion/red.png");
     background-repeat: no-repeat, repeat;
 }
 
@@ -152,7 +152,7 @@
     color:#FFF;
     font-size: 15px;
     font-weight: 700;
-    background-image:url("{{asset('img/promotion/blue.png')}}");
+    background-image:url("<?php echo base_url();?>img/promotion/blue.png");
     background-repeat: no-repeat, repeat;
 }
 
@@ -189,19 +189,19 @@ span{
 
 
 <div class="bg"></div>
-<img src="{{asset('img/promotion/2_01_02.png')}}" width="100%" alt=""/>
+<img src="<?php echo base_url();?>img/promotion/2_01_02.png" width="100%" alt=""/>
 <br><br>
 <div class="row">
 <div class="col-1"></div>
 <div class="col-10">
         <div class="bxslider">
         @for ($i = 0; $i < 10; $i++)
-        <div><img src="{{asset('img/promotion/1_03.png')}}" width="100%" alt=""/></div>
+        <div><img src="<?php echo base_url();?>img/promotion/1_03.png" width="100%" alt=""/></div>
         @endfor
         </div>
 </div>
 </div>
-    <img src="{{asset('img/promotion/bar_top.png')}}" width="100%" alt=""/>
+    <img src="<?php echo base_url();?>img/promotion/bar_top.png" width="100%" alt=""/>
 
 <div class="row">
         <div class="col-1"></div>
@@ -212,14 +212,14 @@ span{
                     <div class="row">
              
                  <div class="col-12" style="margin-top:30px; text-align: right; color:#999999; font-weight:700;"> <span>1</span> / 3 < | > </div>                   
-                    @for ($i = 1; $i < 6; $i++)
+                 <?php for ($i = 1; $i < 6; $i++) {?>
                         <div class="col-3">
                         <a href="{{ url('Promotion_show') }}">
                         <br>
                             <div class="container">
                                 <div class="show_top"> &nbsp; &nbsp; HOT DEAL</div>
                                 <center>
-                                <img src="{{asset('img/promotion/item/3.png')}}" class="image" />
+                                <img src="<?php echo base_url();?>img/promotion/item/3.png" class="image" />
                                 </center>
                                 <div class="overlay">
                                     <div class="text">READ MORD <i class="fas fa-arrow-right"></i></div>
@@ -233,19 +233,19 @@ span{
                                 <div class="col-2 text_price1"><s>฿3,210</s></div>
                                 <div class="col-2 text_price2">฿1,234</div>
                                 <div class="col-5"></div>
-                                <div class="col-2"><img src="{{asset('img/promotion/cart.png')}}" width="20px"></div>
+                                <div class="col-2"><img src="<?php echo base_url();?>img/promotion/cart.png" width="20px"></div>
                             </div>
                         </div>
-                    @endfor
+                    <?php  }  ?>
 
-                    @for ($i = 1; $i < 6; $i++)
+                    <?php for ($i = 1; $i < 6; $i++) {?>
                         <div class="col-3">
                         <a href="{{ url('Promotion_show') }}">
                         <br>
                             <div class="container">
                                 <div class="show_top2"> &nbsp; &nbsp; SAVE</div>
                                 <center>
-                                <img src="{{asset('img/promotion/item/11.png')}}" class="image">
+                                <img src="<?php echo base_url();?>img/promotion/item/11.png" class="image">
                                 </center>
                                 <div class="overlay">
                                     <div class="text">READ MORD <i class="fas fa-arrow-right"></i></div>
@@ -259,19 +259,19 @@ span{
                                 <div class="col-2 text_price1"><s>฿3,210</s></div>
                                 <div class="col-2 text_price2">฿1,234</div>
                                 <div class="col-5"></div>
-                                <div class="col-2"><img src="{{asset('img/promotion/cart.png')}}" width="20px"></div>
+                                <div class="col-2"><img src="<?php echo base_url();?>img/promotion/cart.png" width="20px"></div>
                             </div>
                         </div>
-                    @endfor
+                    <?php } ?>
 
-                    @for ($i = 1; $i < 4; $i++)
+                    <?php for ($i = 1; $i < 6; $i++) {?>
                         <div class="col-3">
                         <a href="{{ url('Promotion_show') }}">
                         <br>
                             <div class="container">
                                 <div class="show_top3"> &nbsp; &nbsp; NEW</div>
                                 <center>
-                                <img src="{{asset('img/promotion/item/12.png')}}" class="image">
+                                <img src="<?php echo base_url();?>img/promotion/item/12.png" class="image">
                                 </center>
                                 <div class="overlay">
                                     <div class="text">READ MORD <i class="fas fa-arrow-right"></i></div>
@@ -284,20 +284,20 @@ span{
                                 <div class="col-2 text_price1"><s>฿3,210</s></div>
                                 <div class="col-2 text_price2">฿1,234</div>
                                 <div class="col-5"></div>
-                                <div class="col-2"><img src="{{asset('img/promotion/cart.png')}}" width="20px"></div>
+                                <div class="col-2"><img src="<?php echo base_url();?>img/promotion/cart.png" width="20px"></div>
                             </div>
                             
                         </div>
-                    @endfor
+                    <?php } ?>
 
-                    @for ($i = 0; $i < 3; $i++)
+                    <?php for ($i = 1; $i < 6; $i++) {?>
                         <div class="col-3">
                         <a href="{{ url('Promotion_show') }}">
                         <br>
                             <div class="container">
                                 
                                 <center>
-                                <img src="{{asset('img/promotion/item/13.png')}}" class="image" style="width:90%">
+                                <img src="<?php echo base_url();?>img/promotion/item/13.png" class="image" style="width:90%">
                                 </center>
                                 <div class="overlay">
                                     <div class="text">READ MORD <i class="fas fa-arrow-right"></i></div>
@@ -310,11 +310,11 @@ span{
                                 <div class="col-2 text_price1"><s>฿3,210</s></div>
                                 <div class="col-2 text_price2">฿1,234</div>
                                 <div class="col-5"></div>
-                                <div class="col-2"><img src="{{asset('img/promotion/cart.png')}}" width="20px"></div>
+                                <div class="col-2"><img src="<?php echo base_url();?>img/promotion/cart.png" width="20px"></div>
                             </div>
                         
                         </div>
-                    @endfor
+                    <?php } ?>
 
 
                     </div>
@@ -326,13 +326,13 @@ span{
 <br><br>
 <div class="row">
 <div class="col-4"></div>
-<div class="col-4"><center> <img src="{{asset('img/promotion/poit.png')}}" width="250px" alt=""/> </center></div>
+<div class="col-4"><center> <img src="<?php echo base_url();?>img/promotion/poit.png" width="250px" alt=""/> </center></div>
 <div class="col-4"></div>
 </div>
 <br>
 
 
-<img src="{{asset('img/promotion/03-13-06-2020_promotion_10.png')}}" width="100%" alt=""/>
+<img src="<?php echo base_url();?>img/promotion/03-13-06-2020_promotion_10.png" width="100%" alt=""/>
 
 
    <script>

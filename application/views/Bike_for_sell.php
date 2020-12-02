@@ -155,8 +155,8 @@ span{
   <div class="col-1"></div>
   <div class="col-11">
       <div id="owl-demo" class="owl-carousel owl-theme">
-      <img src="<?php echo base_url();?>img/product/bike/01-1.png.png" width="100%" alt=""/>
-      <img src="<?php echo base_url();?>img/product/bike/Bike_02.png.png" width="100%" alt=""/>
+      <img src="<?php echo base_url();?>img/product/bike/01-1.png" width="100%" alt=""/>
+      <img src="<?php echo base_url();?>img/product/bike/Bike_02.png" width="100%" alt=""/>
       <img src="<?php echo base_url();?>img/product/bike/Bike_03.png" width="100%" alt=""/>
       <img src="<?php echo base_url();?>img/product/bike/Bike_04.png" width="100%" alt=""/>
   

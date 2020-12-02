@@ -1,7 +1,7 @@
 <style>
 .bg_select{
     height:500px;
-    background-image: url('/assets/img/product/BG_Selectyourvehicle.png');
+    background-image: url('<?php echo base_url();?>img/product/BG_Selectyourvehicle.png');
     background-repeat: no-repeat;
     background-size:cover;
     background-size:100% 100%;
@@ -33,7 +33,7 @@
 .bar_item{
     width:100%;
     min-height:135px;
-    background-image: url('/assets/img/product/bar_top2.png');
+    background-image: url('<?php echo base_url();?>img/product/bar_top2.png');
     background-repeat: no-repeat;
     background-size:cover;
     background-size:100% 100%;
@@ -118,7 +118,7 @@
     color:#FFF;
     font-size: 15px;
     font-weight: 700;
-    background-image:url('/asset/img/promotion/orange.png');
+    background-image:url('<?php echo base_url();?>img/promotion/orange.png');
     background-repeat: no-repeat, repeat;
 }
 .show_top2{
@@ -129,7 +129,7 @@
     color:#FFF;
     font-size: 15px;
     font-weight: 700;
-    background-image:url('/assets/img/promotion/red.png');
+    background-image:url('<?php echo base_url();?>img/promotion/red.png');
     background-repeat: no-repeat, repeat;
 }
 
@@ -524,7 +524,7 @@ color:#ff6634;
     <div class="col-1"></div>
     <div class="col-10">
     <div class="row">
-                         @for ($i = 1; $i < 13; $i++)
+                         <?php for ($i = 1; $i < 13; $i++) { ?>
                         <div class="col-4">
                         <a href="http://">
                         <br>
@@ -549,7 +549,7 @@ color:#ff6634;
                                 </div>
                             </div>
                         </div>
-                    @endfor
+                         <?php } ?>
     </div>
     </div>
     </div>

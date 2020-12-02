@@ -51,11 +51,11 @@
 
 .bx-wrapper .bx-prev {
     left: 22px;
-    background: url(<?php base_url();?>img/promotion/previous_black.png) no-repeat  6px -1px ;
+    background: url('img/promotion/previous_black.png') no-repeat  6px -1px ;
 }
 .bx-wrapper .bx-next {
     right: 10px;
-    background: url(<?php base_url();?>img/promotion/next_black.png) no-repeat 0px 5px ;
+    background: url('img/promotion/next_black.png') no-repeat 0px 5px ;
 }
 
 .bx-wrapper {
@@ -231,7 +231,7 @@ span{
                         <a href="<?php echo base_url('News_show'); ?>">            
                             <div class="container">
                                 <center>
-                                    <img src="<?php echo base_url();?>img/news/news1.png" alt="Avatar" class="image" style="width:100%">
+                                    <img src="<?php echo base_url();?>img/news/news1.jpg" alt="Avatar" class="image" style="width:100%" />
                                 </center>
                                 <div class="overlay">
                                     <div class="text">READ MORE<i class="fas fa-arrow-right"></i></div>
@@ -255,7 +255,7 @@ span{
                         <a href="<?php echo base_url('News_show'); ?>">            
                               <div class="container">
                                 <center>
-                                <img src="<?php echo base_url();?>img/news/news2.png" alt="Avatar" class="image" style="width:100%">
+                                <img src="<?php echo base_url();?>img/news/news2.jpg" alt="Avatar" class="image" style="width:100%">
                                 </center>
                                 <div class="overlay">
                                     <div class="text">READ MORE <i class="fas fa-arrow-right"></i></div>
@@ -279,7 +279,7 @@ span{
                         <a href="<?php echo base_url('News_show'); ?>">            
                             <div class="container">
                                 <center>
-                                <img src="<?php echo base_url();?>img/news/news3.png" alt="Avatar" class="image" style="width:100%">
+                                <img src="<?php echo base_url();?>img/news/news3.jpg" alt="Avatar" class="image" style="width:100%">
                                 </center>
                                 <div class="overlay">
                                     <div class="text">READ MORE <i class="fas fa-arrow-right"></i></div>
@@ -303,7 +303,7 @@ span{
                         <a href="<?php echo base_url('News_show'); ?>">                            
                             <div class="container">
                                 <center>
-                                <img src="<?php echo base_url();?>img/news/news4.png" alt="Avatar" class="image" style="width:100%">
+                                <img src="<?php echo base_url();?>img/news/news4.jpg" alt="Avatar" class="image" style="width:100%">
                                 </center>
                                 <div class="overlay">
                                     <div class="text">READ MORE <i class="fas fa-arrow-right"></i></div>
@@ -327,7 +327,7 @@ span{
                         <a href="<?php echo base_url('News_show'); ?>">            
                             <div class="container">
                                 <center>
-                                <img src="<?php echo base_url();?>img/news/news5.png" alt="Avatar" class="image" style="width:100%">
+                                <img src="<?php echo base_url();?>img/news/news5.jpg" alt="Avatar" class="image" style="width:100%">
                                 </center>
                                 <div class="overlay">
                                     <div class="text">READ MORE <i class="fas fa-arrow-right"></i></div>
@@ -351,7 +351,7 @@ span{
                         <a href="<?php echo base_url('News_show'); ?>">            
                             <div class="container">
                                 <center>
-                                <img src="<?php echo base_url();?>img/news/news6.png" alt="Avatar" class="image" style="width:100%">
+                                <img src="<?php echo base_url();?>img/news/news6.jpg" alt="Avatar" class="image" style="width:100%">
                                 </center>
                                 <div class="overlay">
                                     <div class="text">READ MORE <i class="fas fa-arrow-right"></i></div>
@@ -375,7 +375,7 @@ span{
                         <a href="<?php echo base_url('News_show'); ?>">            
                             <div class="container">
                                 <center>
-                                <img src="<?php echo base_url();?>img/news/news7.png" alt="Avatar" class="image" style="width:100%">
+                                <img src="<?php echo base_url();?>img/news/news7.jpg" alt="Avatar" class="image" style="width:100%">
                                 </center>
                                 <div class="overlay">
                                     <div class="text">READ MORE <i class="fas fa-arrow-right"></i></div>
@@ -399,7 +399,7 @@ span{
                         <a href="<?php echo base_url('News_show'); ?>">            
                             <div class="container">
                                 <center>
-                                <img src="<?php echo base_url();?>img/news/news8.png" alt="Avatar" class="image" style="width:100%">
+                                <img src="<?php echo base_url();?>img/news/news8.jpg" alt="Avatar" class="image" style="width:100%">
                                 </center>
                                 <div class="overlay">
                                     <div class="text">READ MORE <i class="fas fa-arrow-right"></i></div>
@@ -423,7 +423,7 @@ span{
                         <a href="<?php echo base_url('News_show'); ?>">            
                             <div class="container">
                                 <center>
-                                <img src="<?php echo base_url();?>img/news/news9.png" width="100%" alt="Avatar"class="image" style="width:100%" >
+                                <img src="<?php echo base_url();?>img/news/news9.jpg" width="100%" alt="Avatar"class="image" style="width:100%" >
                           
                                 </center>
                                 <div class="overlay">

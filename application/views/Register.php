@@ -39,7 +39,7 @@
 }
 </style>
 <div class="row" style="margin-top:80px;">
-		<img src="  {{asset('img/register/register_02.png')}}" width="100%">	
+		<img src="<?php echo base_url();?>img/register/register_02.png" width="100%">	
 
 		<div style="width: 100%; min-height:750px; background-image: url(img/register/adsa.png); background-repeat: no-repeat;background-size:cover;">
 					
@@ -109,7 +109,7 @@
 							</div>
 							</div>
                   
-							<div class="col-1" style="padding-left:60px;"><center><img src="{{asset('img/register/centerAA.png')}}"></center></div>
+							<div class="col-1" style="padding-left:60px;"><center><img src="<?php echo base_url();?>img/register/centerAA.png"></center></div>
 
 							<div class="col-5">
 					
@@ -132,21 +132,21 @@
 										</div>
 
 										<div class="col-12" style="margin-top:5%;">
-                                        <img type="submit" src="{{asset('img/register/login.png')}}" width="100%" alt=""/>
+                                        <img type="submit" src="<?php echo base_url();?>img/register/login.png" width="100%" alt=""/>
 										</div>
 										
 										<div class="col-12" style="margin-top:15%; margin-bottom:5%;"> 
 
-                                        <img type="submit" src="{{asset('img/register/register_04.gif')}}" width="100%" alt=""/>
+                                        <img type="submit" src="<?php echo base_url();?>img/register/register_04.gif" width="100%" alt=""/>
 										</div>
 
 										<div class="col-12">
-                                        <img type="submit" src="{{asset('img/register/facebook.png')}}" width="100%" alt=""/>
+                                        <img type="submit" src="<?php echo base_url();?>img/register/facebook.png" width="100%" alt=""/>
 
 										</div>
 
 										<div class="col-12" style="margin-top:5%;">
-                                        <img type="submit" src="{{asset('img/register/google.png')}}" width="100%" alt=""/>
+                                        <img type="submit" src="<?php echo base_url();?>img/register/google.png" width="100%" alt=""/>
 										</div>
 
 

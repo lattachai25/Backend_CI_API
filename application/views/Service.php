@@ -133,7 +133,7 @@ margin:10px;
 <div class="col-md-12" style="margin-top:0px;">
 <div class="row">
 
-<img src="{{asset('img/service/topbar.png')}}" width="100%" alt=""/>
+<img src="<?php echo base_url(); ?>img/service/topbar.png" width="100%" alt=""/>
 
 <div class="row"></div>
 <div class="col-md-3"></div>
@@ -145,8 +145,8 @@ margin:10px;
         <a href="#service1" style="text-decoration:none">
             <div class="card">
             <center>
-                 <img src="{{asset('img/service/icon/installation.png')}}" class="icon_m"/> 
-                 <img src="{{asset('img/service/icon_orange/installation.png')}}" class="icon_m img-top"/> 
+                 <img src="<?php echo base_url(); ?>img/service/icon/installation.png" class="icon_m"/> 
+                 <img src="<?php echo base_url(); ?>img/service/icon_orange/installation.png" class="icon_m img-top"/> 
                  <div class="text">INSTALLATION<br> SERVICE</div>
             </center>                
             </div> 
@@ -158,8 +158,8 @@ margin:10px;
         <a href="#service2" style="text-decoration:none">
         <div class="card">
             <center> 
-                 <img src="{{asset('img/service/icon/maintenance.png')}}" class="icon_m"/> 
-                 <img src="{{asset('img/service/icon_orange/maintenance.png')}}" class="icon_m img-top"/> 
+                 <img src="<?php echo base_url(); ?>img/service/icon/maintenance.png" class="icon_m"/> 
+                 <img src="<?php echo base_url(); ?>img/service/icon_orange/maintenance.png" class="icon_m img-top"/> 
             </center>
                  <div class="text">MAINTENANCE</div>
         </div>
@@ -170,8 +170,8 @@ margin:10px;
         <a href="#service3" style="text-decoration:none">
         <div class="card">
             <center> 
-                 <img src="{{asset('img/service/icon/insurance.png')}}" class="icon_m"/> 
-                 <img src="{{asset('img/service/icon_orange/insurance.png')}}" class="icon_m img-top2"/> 
+                 <img src="<?php echo base_url(); ?>img/service/icon/insurance.png" class="icon_m"/> 
+                 <img src="<?php echo base_url(); ?>img/service/icon_orange/insurance.png" class="icon_m img-top2"/> 
             </center>
                  <div class="text">INSURANCE</div>
         </div>
@@ -182,8 +182,8 @@ margin:10px;
         <a href="#service4" style="text-decoration:none">
         <div class="card">
             <center> 
-                 <img src="{{asset('img/service/icon/bike_hotel.png')}}" class="icon_m"/> 
-                 <img src="{{asset('img/service/icon_orange/bike_hotel.png')}}" class="icon_m img-top3"/> 
+                 <img src="<?php echo base_url(); ?>img/service/icon/bike_hotel.png" class="icon_m"/> 
+                 <img src="<?php echo base_url(); ?>img/service/icon_orange/bike_hotel.png" class="icon_m img-top3"/> 
             </center>
                  <div class="text">BIKE HOTEL</div>
         </div>
@@ -194,8 +194,8 @@ margin:10px;
         <a href="#service5" style="text-decoration:none">
         <div class="card">
             <center> 
-                 <img src="{{asset('img/service/icon/designconsult.png')}}" class="icon_m"/> 
-                 <img src="{{asset('img/service/icon_orange/designconsult.png')}}" class="icon_m img-top4"/> 
+                 <img src="<?php echo base_url(); ?>img/service/icon/designconsult.png" class="icon_m"/> 
+                 <img src="<?php echo base_url(); ?>img/service/icon_orange/designconsult.png" class="icon_m img-top4"/> 
             </center>
                  <div class="text">DESIGN CONSULT</div>
         </div>
@@ -206,8 +206,8 @@ margin:10px;
         <a href="#service6" style="text-decoration:none">
         <div class="card">
             <center> 
-                 <img src="{{asset('img/service/icon/delivery.png')}}" class="icon_m"/> 
-                 <img src="{{asset('img/service/icon_orange/delivery.png')}}" class="icon_m img-top5"/> 
+                 <img src="<?php echo base_url(); ?>img/service/icon/delivery.png" class="icon_m"/> 
+                 <img src="<?php echo base_url(); ?>img/service/icon_orange/delivery.png" class="icon_m img-top5"/> 
             </center>
                  <div class="text">DELIVERY SERVICE</div>
         </div>
@@ -226,22 +226,22 @@ margin:10px;
 
 
 <div class="row" id="service1">
-<img src="{{asset('img/service/bg_01.png')}}" width="100%" alt=""/>
+<img src="<?php echo base_url(); ?>img/service/bg_01.png" width="100%" alt=""/>
 </div>
 <div class="row" id="service2">
-<img src="{{asset('img/service/bg_02.png')}}" width="100%" alt=""/>
+<img src="<?php echo base_url(); ?>img/service/bg_02.png" width="100%" alt=""/>
 </div>
 <div class="row" id="service3">
-<img src="{{asset('img/service/bg_03.png')}}" width="100%" alt=""/>
+<img src="<?php echo base_url(); ?>img/service/bg_03.png" width="100%" alt=""/>
 </div>
 <div class="row" id="service4">
-<img src="{{asset('img/service/bg_04.png')}}" width="100%" alt=""/>
+<img src="<?php echo base_url(); ?>img/service/bg_04.png" width="100%" alt=""/>
 </div>
 <div class="row" id="service5">
-<img src="{{asset('img/service/bg_05.png')}}" width="100%" alt=""/>
+<img src="<?php echo base_url(); ?>img/service/bg_05.png" width="100%" alt=""/>
 </div>
 <div class="row" id="service6">
-<img src="{{asset('img/service/bg_06.png')}}" width="100%" alt=""/>
+<img src="<?php echo base_url(); ?>img/service/bg_06.png" width="100%" alt=""/>
 </div>
 
 </div>

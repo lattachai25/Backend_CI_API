@@ -48,6 +48,8 @@ $(document).ready(function(){
 	  if (scroll > 300) {
         $("#mainNav").css("background" , "#f7f7f7");  
         $("nav a").css("color","#000");
+        $(".active").css("color","#000");
+
 	  }
 
 	  else{
