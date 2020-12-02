@@ -1,10 +1,11 @@
 
-<div class="row col-12">
+<div class="col-12">
+<div class="row">
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <ul>
             <li style="margin-left:40px;"><img src="<?php echo base_url();?>img/icon_menu/MPK_logo-02.png" width="180" alt=""></li>
     
-            <li style="margin-left:20px;"></li>
+            <li style="margin-left:10px;"></li>
             <li class="active"><a href="<?php echo base_url('Home');?>">HOME</a></li>
 
             <li><a href="">PRODUCT</a>
@@ -39,18 +40,21 @@
         </ul>
     </nav>
 </div>
-
+</div>
 
 <script>
 $(document).ready(function(){
   $(window).scroll(function(){
   	var scroll = $(window).scrollTop();
-	  if (scroll > 300) {
-        $("#mainNav").css("background" , "#f7f7f7");  
+	  if (scroll > 30) {
+        $("#mainNav").css("background" , "#f7f7f7");
+        $("nav a").css("color","#000");
+        $(".active").css("color","#000");
 	  }
-
 	  else{
-        $("#mainNav").css("background" , "transparent");	
+      $("#mainNav").css("background" , "#f7f7f7");
+      $("nav a").css("color","#000");
+      $(".active").css("color","#000");
 	  }
   })
 })

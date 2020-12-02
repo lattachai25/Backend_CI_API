@@ -83,8 +83,8 @@ span{ color:#ff6634; }
 
 </style>
 
-
 <div class="row col-12">
+
 <div style="margin-top:10%;"></div>
 
 

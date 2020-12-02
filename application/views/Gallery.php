@@ -8,7 +8,6 @@
     background:#000;
     color:#fff;
 }
-/* background-image: url("{{asset('img/gallery/box_03.png')}}"); */
 
 div {margin: 0 auto}
 
@@ -68,7 +67,7 @@ div {margin: 0 auto}
 
 .image_logo_show:hover{
         filter: grayscale(0%);
-        background-image: url('/assets/img/gallery/box_03.jpg');
+        background-image: url('<?php echo base_url();?>img/gallery/box_03.jpg');
         background-repeat:no-repeat;
 }
 
@@ -145,7 +144,7 @@ div {margin: 0 auto}
     color:#FFF;
     font-size: 15px;
     font-weight: 700;
-    background-image: url('/assets/img/promotion/orange.png');
+    background-image: url('<?php echo base_url();?>img/promotion/orange.png');
     background-repeat: no-repeat, repeat;
 }
 .show_top2{
@@ -156,7 +155,7 @@ div {margin: 0 auto}
     color:#FFF;
     font-size: 15px;
     font-weight: 700;
-    background-image: url('/assets/img/promotion/red.png');
+    background-image: url('<?php echo base_url();?>img/promotion/red.png');
     background-repeat: no-repeat, repeat;
 }
 
@@ -168,7 +167,7 @@ div {margin: 0 auto}
     color:#FFF;
     font-size: 15px;
     font-weight: 700;
-    background-image: url('/assets/img/promotion/blue.png');
+    background-image: url('<?php echo base_url();?>img/promotion/blue.png');
     background-repeat: no-repeat, repeat;
 }
 
@@ -197,8 +196,8 @@ span{
     
     <!-- img_top -->
     <div class="top_img"> 
-        <img src="<?php echo base_url();?>img/gallery/bar_top.png"width="50%" style="position:absolute;" alt=""/ >
-        <img src="<?php echo base_url();?>img/gallery/head.png"width="50%" alt=""/ >
+        <img src="<?php echo base_url();?>img/gallery/bar_top.png" width="50%" style="position:absolute;" alt=""/ >
+        <img src="<?php echo base_url();?>img/gallery/head.png" width="100%" alt=""/ >
     </div>    
     <!-- img_top -->  
     <div class="slide_bar">
@@ -262,17 +261,17 @@ span{
 
             <div class="col-10" style="min-height:600px; border:1px solid #red; background:#FFF; margin-left:50px;">
             <div class="row">
-            @for ($i = 1; $i < 16; $i++)
+            <?php for ($i = 1; $i < 16; $i++) { ?>
             <div class="col-4">
                 <a href="http://">
                         <br>
                     <div class="container">
-                        <img src="<?php echo base_url();?>img/gallery/'.$i.'.png" width="40px" class="image" alt=""/ >
+                        <img src="<?php echo base_url();?>img/gallery/<?php echo $i ?>.png" width="40px" class="image" alt=""/ >
                         <div class="overlay"><div class="text">FULL IMAGE</div></div>
                     </div>
                 </a> 
             </div>
-            @endfor
+            <?php } ?>
             </div>
             </div>
         </div>

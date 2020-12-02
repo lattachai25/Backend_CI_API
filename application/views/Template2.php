@@ -55,14 +55,13 @@ html, body {
             }
 
 </style>
- <body id="page-top">
+<body id="page-top">
 
 <?php $this->load->view('Menubar2');?>
 
 <?php if(isset($content)){ echo $content; } ?>
 
 <?php $this->load->view('Footer');?>
-
 
 </body>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
