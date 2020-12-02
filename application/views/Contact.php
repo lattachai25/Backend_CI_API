@@ -17,7 +17,7 @@
 
 }
 </style>
-<div class="bg" style="margin-top:80px;"></div>
+<div class="bg" style="margin-top:120px;"></div>
 <img src="<?php echo base_url();?>img/contact/contact_02.png"width="100%" alt=""/ >
 <div class="row">
 <div class="col-md-8">
