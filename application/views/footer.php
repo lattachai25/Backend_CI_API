@@ -87,7 +87,7 @@
                     <img class="style_icon" src="<?php echo base_url();?>img/icon_footer/chat_white.png" width="35px"/>
                 </div>
                 <br/>
-                <div class="col-12 call"> <img class="style_icon" src="<?php echo base_url();?>img/icon_footer//footer_tel_orange.png" width="25px"/>     086-3261730 </div>
+                <div class="col-12 call"> <img class="style_icon" src="<?php echo base_url();?>img/icon_footer/footer_tel_orange.png" width="25px"/>     086-3261730 </div>
                 <br/>
                 <div class="col-12 address">1097 Rama 3 Rd. Chong nonsi <br /> Yannawa Bangkok 10120 </div>
             <br>

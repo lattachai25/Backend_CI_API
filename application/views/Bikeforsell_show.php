@@ -252,7 +252,7 @@ HOME / PRODUCT / BRAKE SYSTEM / <span>DISC BRAKE</span>
                         <div class="col-2">
                         <div class="card_2">
 
-                        <img src="<?php echo base_url();?>img//promotion/cart.png.png "width="30px" style="margin-top:-15px;" alt=""/ >
+                        <img src="<?php echo base_url();?>img/promotion/cart.png.png "width="30px" style="margin-top:-15px;" alt=""/ >
                         </div>
                         </div>
                     </div>
