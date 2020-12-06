@@ -216,8 +216,8 @@ span{
       <img src="<?php echo base_url();?>img/home/MPK_Design_001_OK_150820_1A_create_10.png" width="100%" alt=""/>
     <div class="col-12">
         <div class="row" style="margin-top:80px; margin-bottom:80px;">
-            <div class="col-2"></div>
-            <div class="col-8">
+            <div class="col-1"></div>
+            <div class="col-10">
                 <div class="row">
                     <div class="col-3">
                         <div class="row">
@@ -245,7 +245,7 @@ span{
                     </div>
                 </div>
             </div>
-            <div class="col-2"></div>
+            <div class="col-1"></div>
         </div>
     </div>
 <!-- Our Concept -->    
@@ -253,7 +253,8 @@ span{
 <!-- SELECT YOUR BIKE -->    
 <div class="col-12">
     <div class="row">
-        <div class="col-12 bg_select">
+    <div class="col-1"> </div>
+        <div class="col-10 bg_select">
             <div class="row">
                 <div class="col-12" style="margin-top:160px;"></div>
             </div>
@@ -398,11 +399,14 @@ span{
 <!-- SELECT YOUR BIKE --> 
 <!-- Best Seller -->
 <div class="row">
-    <img src="<?php echo base_url();?>img/home/MPK_Design_001_OK_150820_1A_create_12.png" width="98%" height="150px" alt=""/>
+<div class="col-10">
+    <img src="<?php echo base_url();?>img/home/MPK_Design_001_OK_150820_1A_create_12.png" width="100%" height="150px" alt=""/>
+</div>
 </div>
 <!-- Best Seller -->
  <!-- play -->
-<div class="col-12 bg_play">
+ <div class="col-1"></div>
+<div class="col-10 bg_play">
     <div class="row play_vdo">
         <div class="col-3"></div>
         <div class="col-6">
@@ -424,12 +428,14 @@ span{
 </div>
 
  <!-- play -->
-<div class="col-12" style="position:relative; margin-top:-150px;">
- <img src="<?php echo base_url();?>img/home/carbar.png" width="100%"/>
+ <div class="row">
+ <div class="col-1"></div>
+<div class="col-10" style="position:relative; margin-top:-150px;">
+ <img src="<?php echo base_url();?>img/home/carbar.png" width="101%"/>
     <div class="row bgcar">
             <!-- ROW BOX -->
-        <div class="col-1"></div>
-        <div class="col-10">
+        <div class="col-2"></div>
+        <div class="col-9">
         <div class="row">
            <?php for ($i = 1; $i < 4; $i++) { ?>
             <div class="col-4">
@@ -463,13 +469,16 @@ span{
         <img src="<?php echo base_url();?>img/home/poit.png" alt="">
         </center>
         </div>
+        <div class="col-1"></div>
     </div>
     <!-- ROW BOX -->
+</div>
 </div>
 <!-- play -->
 <!-- New Arrivals -->
 <div class="row">
-<div class="col-12" style="min-height:700px;">
+<div class="col-1"></div>
+<div class="col-10" style="min-height:700px;">
     <img src="<?php echo base_url();?>img/home/MPK_Design_001_OK_150820_1A_create_16.png" width="100%" alt=""/>
 
     <!-- ROW BOX -->
@@ -510,7 +519,9 @@ span{
 <!-- New Arrivals -->
 
 <!-- bike for sell -->
-<div class="col-12">
+<div class="row">
+<div class="col-1"></div>
+<div class="col-8">
     <div class="top" style="min-height:900px; background-color:#000;">
     <img src="<?php echo base_url();?>img/home/MPK_Design_001_OK_150820_1A_create_19.png" width="100%" alt=""/>
 
@@ -532,6 +543,9 @@ span{
         </div>
 
     </div>
+</div>
+
+
 </div>
 <!-- bike for sell -->
 <div class="row">

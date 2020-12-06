@@ -53,7 +53,14 @@ html, body {
                 height: 100vh;
                 margin: 0;
             }
-
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -0px;
+    margin-left: -0px;
+}
 </style>
  <body id="page-top">
  <div class="container">

@@ -1,12 +1,13 @@
-<div class="row"></div>
 <nav class="navbar fixed-top" id="mainNav">
+<div class="col-12">
+<div class="row">
 <div class="col-1"></div>
 <div class="col-10">
         <ul>
-            <li><img src="<?php echo base_url();?>img/icon_menu/MPK_logo-02.png" width="180" alt=""></li>
+            <li><img src="<?php echo base_url();?>img/icon_menu/MPK_logo-02.png" width="150" alt=""></li>
     
-            <li style="margin-left:20px;"></li>
-            <li class="active"><a href="<?php echo base_url('Home');?>">HOME</a></li>
+            <li style="margin-left:25px;"></li>
+            <li class="active" ><a href="<?php echo base_url('Home');?>" style="color:#000;">HOME</a></li>
 
             <li><a href="">PRODUCT</a>
            
@@ -15,7 +16,7 @@
                 <li><a href="<?php echo base_url('category');?>">CATEGORY</a>
       
               <ul>
-                    <li><a href="<?php echo base_url('Promotion');?>">HTML/CSS</a></li>
+                    <li><a href="<?php echo base_url('Promotion');?>">HTML/CSS 1111</a></li>
                     <li><a href="<?php echo base_url('Promotion');?>">jQuery</a></li>
                     <li><a href="<?php echo base_url('Promotion');?>">Other</a>
               </ul>      
@@ -36,15 +37,16 @@
             </li>
             <li><a href="<?php echo base_url('Register');?>">Register</a></li>
             <li><a href="<?php echo base_url('Contact');?>"><i class="fas fa-map-marker-alt" style="color:#ff6634;"></i></a></li>
-            <li><img src="<?php echo base_url();?>/img/icon_menu/menu1_14.png" width="90px" /></li>
+            <li><img src="<?php echo base_url();?>/img/icon_menu/menu1_14.png" width="70px" /></li>
         </ul>
+      <div class="col-1"></div>        
 </div>  
-<div class="col-1"></div>
+</div>
     </nav>
 
 
 </div>
-
+</div>
 <script>
 $(document).ready(function(){
   $(window).scroll(function(){
@@ -53,11 +55,11 @@ $(document).ready(function(){
         $("#mainNav").css("background" , "#f7f7f7");  
         $("nav a").css("color","#000");
         $(".active").css("color","#000");
-
 	  }
 
 	  else{
         $("nav a").css("color","#FFF");
+        $(".active a").css("color","#000");
         $("#mainNav").css("background" , "transparent");	
 	  }
   })
