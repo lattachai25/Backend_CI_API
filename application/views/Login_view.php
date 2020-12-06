@@ -14,11 +14,11 @@
     <link rel="stylesheet" href="<?php echo base_url();?>assets/css/admin/dataTable.css">
     <link rel="stylesheet" href="<?php echo base_url();?>assets/css/admin/jasny.css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700,400italic,600italic,700italic,800italic,300italic" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="/code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
     <link rel="stylesheet" href="<?php echo base_url();?>css/jquery.mCustomScrollbar.css" />
 
 <script type="text/javascript" src="<?php echo base_url();?>assets/dist/js/site.min.js"></script>
-<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+<script src="/code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?>js/fancybox.js"></script>
 <script src="<?php echo base_url();?>js/masonry.js"></script>
 <script src="<?php echo base_url();?>js/jquery.mCustomScrollbar.concat.min.js"></script>

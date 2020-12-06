@@ -280,16 +280,16 @@ span{
             <div class="row">
                 <div class="col-3"></div>
                     <div class="col-3">
-                    <img src="<?php echo base_url();?>img/gallery//back_orange.png" width="10px" >
+                    <img src="<?php echo base_url();?>img/gallery/back_orange.png" width="10px" >
                  
                      &nbsp; &nbsp; 1 &nbsp; &nbsp; 2 &nbsp; &nbsp; 3 &nbsp; &nbsp; 4 &nbsp; &nbsp; 5 &nbsp; &nbsp; <span> 6 </span>&nbsp; &nbsp; 
-                     <img src="<?php echo base_url();?>img/gallery//next_orange.png" width="10px" >
+                     <img src="<?php echo base_url();?>img/gallery/next_orange.png" width="10px" >
                    
                      </div>
                 <div class="col-4"></div>     
             </div>        
         </div>
-        <img src="<?php echo base_url();?>img/gallery//bat_footer.png" width="100%" >
+        <img src="<?php echo base_url();?>img/gallery/bat_footer.png" width="100%" >
         </div>
     </div>
     <!-- menu item show  -->
