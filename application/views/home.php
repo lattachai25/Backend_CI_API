@@ -194,9 +194,29 @@ span{
     background: #fff;
     min-height: 500px;
 }
-
-
-
+.bg_slide{
+    z-index:-9;
+    position: relative;
+}
+.text_slide{
+    left:100px;
+    bottom: 260px;
+    font-size:55px;
+    font-weight:bold;
+    color:#fff;
+    position: absolute;
+}
+.box_o{
+    border:1px solid #fff;
+    padding-left:20px;
+    padding-right:20px;
+    left:102px;
+    bottom: 215px;
+    font-size:25px;
+    font-weight:bold;
+    color:#ff5e0d;
+    position: absolute;
+}
 
 
 </style>
@@ -204,8 +224,22 @@ span{
 
     <div class="bxslider">
         <!-- @for ($i = 0; $i < 10; $i++) -->
-        <div><img src="<?php echo base_url();?>img/home/slider_bar.png" width="100%" alt=""/></div>
-        <div><img src="<?php echo base_url();?>img/home/slidebanner.jpg" width="100%" alt=""/></div>
+        
+        <div>
+        <div class="text_slide"> The Ultimate Race</div>
+        <div class="box_o">Explore more</div>
+        <div class="bg_slide">
+        <img src="<?php echo base_url();?>img/home/slidebanner.jpg" width="100%" alt=""/>
+        </div>
+        </div>
+
+        <div>
+        <div class="text_slide"> The Ultimate Race</div>
+        <div class="box_o">Explore more</div>
+        <div class="bg_slide">
+        <img src="<?php echo base_url();?>img/home/slidebanner.jpg" width="100%" alt=""/>
+        </div>
+        </div>
 
         <!-- @endfor -->
     </div>
@@ -213,11 +247,15 @@ span{
  <!-- slide -->
 <!-- Our Concept -->    
     <div class="row" style="background:#f5f5f5;">
-      <img src="<?php echo base_url();?>img/home/MPK_Design_001_OK_150820_1A_create_10.png" width="100%" alt=""/>
     <div class="col-12">
         <div class="row" style="margin-top:80px; margin-bottom:80px;">
             <div class="col-1"></div>
             <div class="col-10">
+      <img src="<?php echo base_url();?>img/home/MPK_Design_001_OK_150820_1A_create_10.png" width="100%" alt=""/>
+               <br>
+               <br>
+               <br>
+               <br>               
                 <div class="row">
                     <div class="col-3">
                         <div class="row">
@@ -399,9 +437,11 @@ span{
 <!-- SELECT YOUR BIKE --> 
 <!-- Best Seller -->
 <div class="row">
+<div class="col-1"></div>
 <div class="col-10">
-    <img src="<?php echo base_url();?>img/home/MPK_Design_001_OK_150820_1A_create_12.png" width="100%" height="150px" alt=""/>
+    <img src="<?php echo base_url();?>img/home/MPK_Design_001_OK_150820_1A_create_12.png" width="100%" height="100px" alt=""/>
 </div>
+<div class="col-1"></div>
 </div>
 <!-- Best Seller -->
  <!-- play -->

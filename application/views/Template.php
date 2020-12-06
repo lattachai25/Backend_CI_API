@@ -45,7 +45,7 @@
  </head>
  <style>
 html, body {
-                background-color: #fff;
+                background: #fff;
                 color: #636b6f;
                 font-family: 'RSU';
                 font-family: 'helvetica', sans-serif;
