@@ -189,25 +189,27 @@ span{
 
 
 <div class="bg" style="margin-top:120px;"></div>
-<img src="<?php echo base_url();?>img/promotion/2_01_02.png" width="100%" alt=""/>
-<br><br>
 <div class="row">
 <div class="col-1"></div>
 <div class="col-10">
+<img src="<?php echo base_url();?>img/promotion/2_01_02.png" width="100%" alt=""/>
+<br><br>
         <div class="bxslider">
         <?php for ($i = 0; $i < 10; $i++) {?>
         <div><img src="<?php echo base_url();?>img/promotion/1_03.png" width="100%" alt=""/></div>
         <?php } ?>
         </div>
-</div>
-</div>
+        <br>
+        <br>
     <img src="<?php echo base_url();?>img/promotion/bar_top.png" width="100%" alt=""/>
+</div>
+</div>
 
 <div class="row">
         <div class="col-1"></div>
         <div class="col-10" style="min-height:500px;">
             <div class="row justify-content-center">
-                <div class="col-11" style="min-height:500px;">
+                <div class="col-12" style="min-height:500px;">
 
                     <div class="row">
              

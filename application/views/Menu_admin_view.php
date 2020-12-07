@@ -181,6 +181,24 @@ a:hover {
                 <li>
                     <a href="<?php echo base_url('administrator/social');?>"><i class="fa fa-camera-retro fa-fw"></i>&nbsp; Social</a>
                 </li>
+                <li>
+                    <a href="#"><i class="glyphicon fa fa-fire fa-fw"> </i>&nbsp; Edit System<span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="<?php echo base_url('administrator/main_category');?>"> <i class="fa fa-picture-o fa-fw"></i>&nbsp; Main Ccategory</a>
+                        </li>
+                       
+						<li>
+                            <a href="<?php echo base_url('administrator/sub_category');?>"> <i class="fa fa-picture-o fa-fw"></i>&nbsp; Sub Category</a>
+						</li>
+						<li>
+                            <a href="<?php echo base_url('administrator/color');?>"> <i class="fa fa-picture-o fa-fw"></i>&nbsp; Color</a>
+                        </li>
+                        <li>
+                            <a href="<?php echo base_url('administrator/color');?>"> <i class="fa fa-picture-o fa-fw"></i>&nbsp; Color</a>
+                        </li>
+					</ul>    
+                </li> 
 			</ul>    	   
 		</div>
 	</div>

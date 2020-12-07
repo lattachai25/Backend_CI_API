@@ -1,6 +1,18 @@
+
+<style>
+nav ul ul li {
+    width: 175px !important;
+    float: none;
+    display: list-item;
+    position: relative;
+    background: #f7f7f7;
+}
+</style>
+
+
 <nav class="navbar fixed-top" id="mainNav">
-<div class="col-12">
-<div class="row">
+<div class="col-12" style="border:1px solid #000;">
+<div class="row" style="border:1px solid #000;">
 <div class="col-1"></div>
 <div class="col-10">
         <ul>

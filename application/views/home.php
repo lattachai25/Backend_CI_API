@@ -222,26 +222,34 @@ span{
 </style>
  <!-- slide -->
 
+
+
+<!-- DB All Start -->
+
+ <?php
+$this->db->select("*");
+$this->db->from("homeslide");
+$query = $this->db->get();
+$slide = $query->result();
+?>
+
+
+<!-- DB All End -->
     <div class="bxslider">
-        <!-- @for ($i = 0; $i < 10; $i++) -->
-        
+
+        <?php foreach($slide as $slides): ?>
+
         <div>
-        <div class="text_slide"> The Ultimate Race</div>
+        <div class="text_slide"><?php echo $slides->content;?></div>
         <div class="box_o">Explore more</div>
         <div class="bg_slide">
-        <img src="<?php echo base_url();?>img/home/slidebanner.jpg" width="100%" alt=""/>
+        <img src="<?php echo base_url();?>assets/uploads/img_slide/<?php echo $slides->img_slide;?>" width="100%">
         </div>
         </div>
 
-        <div>
-        <div class="text_slide"> The Ultimate Race</div>
-        <div class="box_o">Explore more</div>
-        <div class="bg_slide">
-        <img src="<?php echo base_url();?>img/home/slidebanner.jpg" width="100%" alt=""/>
-        </div>
-        </div>
+        <?php endforeach; ?>
 
-        <!-- @endfor -->
+
     </div>
 
  <!-- slide -->
