@@ -482,8 +482,8 @@ $slide = $query->result();
  <img src="<?php echo base_url();?>img/home/carbar.png" width="101%"/>
     <div class="row bgcar">
             <!-- ROW BOX -->
-        <div class="col-2"></div>
-        <div class="col-9">
+
+        <div class="col-12">
         <div class="row">
            <?php for ($i = 1; $i < 4; $i++) { ?>
             <div class="col-4">
@@ -531,7 +531,7 @@ $slide = $query->result();
 
     <!-- ROW BOX -->
     <div class="row">
-<div class="col-1"></div>
+
         <div class="col-10">
 
         <div class="row">

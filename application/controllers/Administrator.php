@@ -66,13 +66,23 @@ function statusDis($value)
 	
 				->order_by('id','id')
 				->display_as('img','img')
+				->display_as('img_top','Images Top')
 				->display_as('content','content ')
-				->display_as('content_main','Content_main')
-				->display_as('text','text')
-				->display_as('date','Day ');
+				->display_as('img_people','Images People')
+				->display_as('people_name','ชื่อ')
+				->display_as('img_center_left','รูปภาพซ้าย')
+				->display_as('content_center_left','รายละเอียดซ้าย')
+				->display_as('img_center_right','รูปภาพขาว')
+				->display_as('content_center_right','รายละเอียดขวา')
+				->display_as('people_detel','รายละเอียด');
 	
 				$crud->field_type('status','dropdown',array('1' => 'Active', '0' => 'Inactive'));
 				$crud->set_field_upload('img','assets/uploads/img_about');
+				$crud->set_field_upload('img_top','assets/uploads/img_about');
+				$crud->set_field_upload('img_people','assets/uploads/img_about');
+				$crud->set_field_upload('img_center_left','assets/uploads/img_about');
+				$crud->set_field_upload('img_center_right','assets/uploads/img_about');
+				$crud->set_field_upload('img_people','assets/uploads/img_about');
 				$output = $crud->render();
 				$this->_example_output($output);
 			}
