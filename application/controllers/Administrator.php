@@ -269,12 +269,9 @@ function statusDis($value)
 			$crud->set_table("gallery")
 			->order_by('id','id')
 			->display_as('img_product',' img_product')
-			->display_as('date_modified',' date_modified')
-			->display_as('content',' content')
-			->display_as('detail',' detail')
 			->display_as('date',' Day');
 	
-			// $crud->field_type('status','dropdown',array('1' => 'Active', '0' => 'Inactive'));
+			$crud->field_type('status','dropdown',array('1' => 'Active', '0' => 'Inactive'));
 			$crud->set_field_upload('img_product','assets/uploads/img_gallery');
 			
 			$output = $crud->render();
