@@ -312,7 +312,7 @@ $gallery = $query->row();
     <br><br>
         <div class="row">
 
-            <div class="col-12" style="min-height:600px; border:1px solid #red; background:#FFF; margin-left:40px;">
+            <div class="col-12" style="min-height:600px; border:1px solid red; background:#FFF; margin-left:40px;">
             <div class="row">
             <?php for ($i = 1; $i < 16; $i++) { ?>
             <div class="col-4">
