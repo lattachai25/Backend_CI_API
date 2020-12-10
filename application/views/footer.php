@@ -28,12 +28,19 @@
     color:#929292;
     font-size:18px;
 }
-.qiuck_links{
+.menu_number:hover{
+  color:#929292;
+}
+
+.quick_link{
     margin-top:10px;
     font-family:'helvetica';
     font-weight:100;
     color:#929292;
     font-size:18px;
+}
+.quick_link:hover{
+    color:#929292;
 }
 
 .copyright{
@@ -49,7 +56,6 @@
 }
 
 .input_email_main{
-
     border:1px solid #f46738;
     background-color:#000;
 }
@@ -58,6 +64,7 @@
     background-color:#000;
     margin-left: -13px;
     width: 237px;
+    color:#ffffff;
 }
 .title_col{
     font-weight:bold;
@@ -99,26 +106,26 @@
                 <div class="title_col">Menu  </div>
                 
                 <div class="menu_footer">
-                    <div class="menu_number">Home</div>
-                    <div class="menu_number">Product</div>
-                    <div class="menu_number">Promotion</div>
-                    <div class="menu_number">Service</div>
-                    <div class="menu_number">News</div>
-                    <div class="menu_number">Gallery</div>
-                    <div class="menu_number">About</div>
+                   <div><a class="menu_number" href="<?php echo base_url('/') ?>">Home</a></div> 
+                    <div><a class="menu_number" href="<?php echo base_url('Product') ?>">Product</a></div>
+                    <div><a class="menu_number" href="<?php echo base_url('Promotion') ?>">Promotion</a></div>
+                    <div><a class="menu_number" href="<?php echo base_url('Service') ?>">Service</a></div>
+                    <div><a class="menu_number" href="<?php echo base_url('News') ?>">News</a></div>
+                    <div><a class="menu_number" href="<?php echo base_url('Gallery') ?>">Gallery</a></div>
+                    <div><a class="menu_number" href="<?php echo base_url('About') ?>">About</a></div>
                 </div>
 
         </div>
         <div class="col-3">
                 <div class="title_col">Quick Links  </div>
                 <div class="menu_footer">
-                <div class="qiuck_links">Select your bike</div>
-                <div class="qiuck_links">Category</div>
-                <div class="qiuck_links">Bike for sell</div>
-                <div class="qiuck_links">News & Update</div>
-                <div class="qiuck_links">Idea</div>
-                <div class="qiuck_links">Register</div>
-                <div class="qiuck_links">Contact Us</div>
+                    <div><a class="quick_link" href="<?php echo base_url('select_your_bike') ?>" >Select your bike</a></div>
+                    <div><a class="quick_link" href="<?php echo base_url('category') ?>" >Category</a></div>
+                    <div><a class="quick_link" href="<?php echo base_url('bike_for_sell') ?> ">Bike for sell</a></div>
+                    <div><a class="quick_link" href="<?php echo base_url('') ?> ">News & Update</a></div>
+                    <div><a class="quick_link" href="<?php echo base_url('') ?> ">Idea</a></div>
+                    <div><a class="quick_link" href="<?php echo base_url('Register') ?> ">Register</a></div>
+                    <div><a class="quick_link" href="<?php echo base_url('Contact') ?> ">Contact Us</a></div>
                 </div>
         </div>
 

@@ -95,7 +95,7 @@
     height: auto;
     padding: 0px;
 }
-}
+
 
 .image {
   display: block;
