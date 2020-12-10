@@ -74,20 +74,6 @@ a:hover {
                         </div>
                 </li>
 
-				<li>
-					<a href="<?php echo base_url('administrator/main_category');?>"><i class="fa fa-cog fa-fw"></i>&nbsp; main_category</a>
-				</li>
-				<li>
-					<a href="<?php echo base_url('administrator/sub_category');?>"><i class="fa fa-cog fa-fw"></i>&nbsp; sub_category</a>
-				</li>
-
-
-
-
-
-
-
-
                 <li>
                     <a href="<?php echo base_url('administrator');?>"><i class="fa fa-home fa-fw"></i>&nbsp; HOME<span class="fa arrow"></span></a>
 					<ul class="nav nav-second-level">
@@ -157,20 +143,21 @@ a:hover {
                     <a href="#"><i class="glyphicon fa fa-fire fa-fw"> </i>&nbsp; Gallery<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
-                            <a href="<?php echo base_url('administrator/gallery');?>"> <i class="fa fa-picture-o fa-fw"></i>&nbsp; Gallery</a>
+                            <a href="<?php echo base_url('administrator/product_category');?>"> <i class="fa fa-picture-o fa-fw"></i>&nbsp;Add Gallery Product </a>
                         </li>
+
                        
 						<li>
-                            <a href="<?php echo base_url('administrator/gallery_img_head');?>"> <i class="fa fa-picture-o fa-fw"></i>&nbsp; Gallery-Head</a>
+                            <a href="<?php echo base_url('administrator/gallery_img_head');?>"> <i class="fa fa-picture-o fa-fw"></i>&nbsp; Images-Head</a>
 						</li>
-						<li>
+						<!-- <li>
                             <a href="<?php echo base_url('administrator/gallery_img_logo');?>"> <i class="fa fa-picture-o fa-fw"></i>&nbsp; Gallery-Logo</a>
-                        </li>
+                        </li> -->
                         <li>
-                        <a href="#"><i class="glyphicon fa fa-plus-square"> </i>&nbsp; Category<span class="fa arrow"></span></a>
+                        <a href="#"><i class="glyphicon fa fa-plus-square"> </i>&nbsp; Edit Brand And Model<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="<?php echo base_url('administrator/product_category');?>">&nbsp; &nbsp;<i class="fa fa-wrench fa-fw"></i>&nbsp; Product Category</a>
+                                    <a href="<?php echo base_url('administrator/gallery_img_logo');?>">&nbsp; &nbsp;<i class="fa fa-wrench fa-fw"></i>&nbsp; Main Brand</a>
                                 </li>  
                                 <li>
                                     <a href="<?php echo base_url('administrator/model_category');?>">&nbsp; &nbsp;<i class="fa fa-wrench fa-fw"></i>&nbsp; Product Model</a>

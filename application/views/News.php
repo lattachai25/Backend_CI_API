@@ -210,13 +210,35 @@ span{
 </style>
 
 
+
+<?php
+$this->db->select("*");
+$this->db->from("news");
+$this->db->order_by('id','desc');
+$query = $this->db->get();
+$news = $query->result();
+?>
+
+
+
+
 <div class="bg" style="margin-top:120px;"></div>
+<div class="row">
+<div class="col-1"></div>
+<div class="col-10">
 <img src="<?php echo base_url();?>img/news/latest.png" width="100%" alt=""/ >
 <br><br>
+</div>
+<div class="col-1"></div>
+</div>
+
+
 <div class="row">
-<div class="col-12">
+<div class="col-1"></div>
+<div class="col-10">
 <img src="<?php echo base_url();?>img/news/slide.png" width="100%" alt=""/ >
 </div>
+<div class="col-1"></div>
 </div>
 
 <div class="row" style="margin-top:50px;">
@@ -226,12 +248,14 @@ span{
                 <div class="col-11" style="min-height:500px;">
                     <div class="row">
 <!-- box -->     
+<?php foreach($news as $news2): ?>
                         <div class="col-4">
                         <br>
                         <a href="<?php echo base_url('News_show'); ?>">            
                             <div class="container">
                                 <center>
-                                    <img src="<?php echo base_url();?>img/news/news1.jpg" alt="Avatar" class="image" style="width:100%" />
+                                <img class="image_logo_show" src="<?php echo base_url();?>assets/uploads/img_news/<?php echo $news2->img;?>" class="image" style="width:100%" alt="" />
+                                    <!-- <img src="<?php echo base_url();?>img/news/news1.jpg" alt="Avatar" class="image" style="width:100%" /> -->
                                 </center>
                                 <div class="overlay">
                                     <div class="text">READ MORE<i class="fas fa-arrow-right"></i></div>
@@ -244,204 +268,13 @@ span{
                                 <center>
                                 <div class="line"></div>
                                 </center>
-                                ทำไมต้องใส่กันล้ม?</div>
+                                <?php echo $news2->title_show;?></div>
                             </div>
                               
                         </div>
+<?php endforeach; ?>                        
 <!-- box -->
-<!-- box -->     
-<div class="col-4">
-                        <br>
-                        <a href="<?php echo base_url('News_show'); ?>">            
-                              <div class="container">
-                                <center>
-                                <img src="<?php echo base_url();?>img/news/news2.jpg" alt="Avatar" class="image" style="width:100%">
-                                </center>
-                                <div class="overlay">
-                                    <div class="text">READ MORE <i class="fas fa-arrow-right"></i></div>
-                                </div>
-                            </div>
-                        </a> 
-                            <div class="row">
-                                
-                            <div class="col-12 text_title">
-                                <center>
-                                <div class="line"></div>
-                                </center>
-                                ระยะเวลาการใช้งานของแบตเตอรี่</div>
-                            </div>
-                              
-                        </div>
-<!-- box -->
-<!-- box -->     
-<div class="col-4">
-                        <br>
-                        <a href="<?php echo base_url('News_show'); ?>">            
-                            <div class="container">
-                                <center>
-                                <img src="<?php echo base_url();?>img/news/news3.jpg" alt="Avatar" class="image" style="width:100%">
-                                </center>
-                                <div class="overlay">
-                                    <div class="text">READ MORE <i class="fas fa-arrow-right"></i></div>
-                                </div>
-                            </div>
-                        </a> 
-                            <div class="row">
-                                
-                            <div class="col-12 text_title">
-                                <center>
-                                <div class="line"></div>
-                                </center>
-                                กันล้มมีกี่ส่วน มีประโยชน์อะไรบ้าง?</div>
-                            </div>
-                              
-                        </div>
-<!-- box -->
-<!-- box -->     
-<div class="col-4">
-                        <br>
-                        <a href="<?php echo base_url('News_show'); ?>">                            
-                            <div class="container">
-                                <center>
-                                <img src="<?php echo base_url();?>img/news/news4.jpg" alt="Avatar" class="image" style="width:100%">
-                                </center>
-                                <div class="overlay">
-                                    <div class="text">READ MORE <i class="fas fa-arrow-right"></i></div>
-                                </div>
-                            </div>
-                        </a> 
-                            <div class="row">
-                                
-                            <div class="col-12 text_title">
-                                <center>
-                                <div class="line"></div>
-                                </center>
-                                การดูแลรักษาแบตเตอรี่</div>
-                            </div>
-                              
-                        </div>
-<!-- box -->
-<!-- box -->     
-<div class="col-4">
-                        <br>
-                        <a href="<?php echo base_url('News_show'); ?>">            
-                            <div class="container">
-                                <center>
-                                <img src="<?php echo base_url();?>img/news/news5.jpg" alt="Avatar" class="image" style="width:100%">
-                                </center>
-                                <div class="overlay">
-                                    <div class="text">READ MORE <i class="fas fa-arrow-right"></i></div>
-                                </div>
-                            </div>
-                        </a> 
-                            <div class="row">
-                                
-                            <div class="col-12 text_title">
-                                <center>
-                                <div class="line"></div>
-                                </center>
-                                เลือกกันล้มแบบไหนดี?</div>
-                            </div>
-                              
-                        </div>
-<!-- box -->
-<!-- box -->     
-<div class="col-4">
-                        <br>
-                        <a href="<?php echo base_url('News_show'); ?>">            
-                            <div class="container">
-                                <center>
-                                <img src="<?php echo base_url();?>img/news/news6.jpg" alt="Avatar" class="image" style="width:100%">
-                                </center>
-                                <div class="overlay">
-                                    <div class="text">READ MORE <i class="fas fa-arrow-right"></i></div>
-                                </div>
-                            </div>
-                        </a> 
-                            <div class="row">
-                                
-                            <div class="col-12 text_title">
-                                <center>
-                                <div class="line"></div>
-                                </center>
-                                ปลายแฮนด์ช่วยลดอาการมือชา</div>
-                            </div>
-                              
-                        </div>
-<!-- box -->
-<!-- box -->     
-<div class="col-4">
-                        <br>
-                        <a href="<?php echo base_url('News_show'); ?>">            
-                            <div class="container">
-                                <center>
-                                <img src="<?php echo base_url();?>img/news/news7.jpg" alt="Avatar" class="image" style="width:100%">
-                                </center>
-                                <div class="overlay">
-                                    <div class="text">READ MORE <i class="fas fa-arrow-right"></i></div>
-                                </div>
-                            </div>
-                        </a> 
-                            <div class="row">
-                                
-                            <div class="col-12 text_title">
-                                <center>
-                                <div class="line"></div>
-                                </center>
-                                อาการมือชาขณะขับมอเตอร์ไซค์<br>เกิดขึ้นได้อย่างไร?</div>
-                            </div>
-                              
-                        </div>
-<!-- box -->
-<!-- box -->     
-<div class="col-4">
-                        <br>
-                        <a href="<?php echo base_url('News_show'); ?>">            
-                            <div class="container">
-                                <center>
-                                <img src="<?php echo base_url();?>img/news/news8.jpg" alt="Avatar" class="image" style="width:100%">
-                                </center>
-                                <div class="overlay">
-                                    <div class="text">READ MORE <i class="fas fa-arrow-right"></i></div>
-                                </div>
-                            </div>
-                        </a> 
-                            <div class="row">
-                                
-                            <div class="col-12 text_title">
-                                <center>
-                                <div class="line"></div>
-                                </center>
-                                ปลายแฮนด์มีแบบไหนบ้าง?</div>
-                            </div>
-                              
-                        </div>
-<!-- box -->
-<!-- box -->     
-<div class="col-4">
-                        <br>
-                        <a href="<?php echo base_url('News_show'); ?>">            
-                            <div class="container">
-                                <center>
-                                <img src="<?php echo base_url();?>img/news/news9.jpg" width="100%" alt="Avatar"class="image" style="width:100%" >
-                          
-                                </center>
-                                <div class="overlay">
-                                    <div class="text">READ MORE <i class="fas fa-arrow-right"></i></div>
-                                </div>
-                            </div>
-                        </a> 
-                            <div class="row">
-                                
-                            <div class="col-12 text_title">
-                                <center>
-                                <div class="line"></div>
-                                </center>
-                                เลือกยี่ห้อกันล้ม?</div>
-                            </div>
-                              
-                        </div>
-<!-- box -->
+
 
                     </div>
                 </div>

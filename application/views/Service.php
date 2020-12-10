@@ -129,6 +129,14 @@ margin:10px;
 </style>
 
 
+<?php
+$this->db->select("*");
+$this->db->from("service");
+// $this->db->order_by('id','desc');
+$query = $this->db->get();
+$service = $query->result();
+?>
+
 
 <div class="col-md-12" style="margin-top:120px;">
 <div class="row">
@@ -230,11 +238,13 @@ margin:10px;
 </div>
 
 
-
-<div class="row" id="service1">
-<img src="<?php echo base_url(); ?>img/service/bg_01.png" width="100%" alt=""/>
+<?php foreach($service as $service2): ?>
+<div class="row" id="service<?php echo $service2->id;?>">
+<img src="<?php echo base_url();?>assets/uploads/img_service/<?php echo $service2->img;?>" width="100%" alt="" />
+<!-- <img src="<?php echo base_url(); ?>img/service/bg_01.png" width="100%" alt=""/> -->
 </div>
-<div class="row" id="service2">
+<?php endforeach; ?>  
+<!-- <div class="row" id="service2">
 <img src="<?php echo base_url(); ?>img/service/bg_02.png" width="100%" alt=""/>
 </div>
 <div class="row" id="service3">
@@ -248,7 +258,7 @@ margin:10px;
 </div>
 <div class="row" id="service6">
 <img src="<?php echo base_url(); ?>img/service/bg_06.png" width="100%" alt=""/>
-</div>
+</div> -->
 
 </div>
 </div>

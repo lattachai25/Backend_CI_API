@@ -147,7 +147,7 @@ function statusDis($value)
 			$crud->set_theme("bootstrap");
 			$crud->set_table("service")
 			->order_by('id','id')		
-			->display_as('img','img')
+			->display_as('img','img Show')
 			->display_as('text','text')
 			->display_as('date',' Day');
 	
@@ -235,7 +235,7 @@ function statusDis($value)
 			$crud = new grocery_CRUD();
 			$crud->set_theme("bootstrap");
 			$crud->set_table("news")
-			->order_by('id','id')
+			->order_by('id','desc')
 			->display_as('date',' Day')
 			->display_as('title','Title')
 			->display_as('title_show',' Title Show')
