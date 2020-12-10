@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Dec 10, 2020 at 07:25 AM
+-- Generation Time: Dec 10, 2020 at 10:05 AM
 -- Server version: 5.7.24
 -- PHP Version: 7.2.19
 
@@ -71,6 +71,13 @@ CREATE TABLE `color` (
   `id` int(10) NOT NULL,
   `name_color` varchar(250) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `color`
+--
+
+INSERT INTO `color` (`id`, `name_color`) VALUES
+(1, 'READ');
 
 -- --------------------------------------------------------
 
@@ -268,13 +275,28 @@ INSERT INTO `model_category` (`id`, `name`) VALUES
 
 CREATE TABLE `news` (
   `id` int(11) NOT NULL,
-  `datetime` timestamp NOT NULL,
-  `title` varchar(255) NOT NULL,
   `title_show` varchar(255) NOT NULL,
   `img` varchar(255) NOT NULL,
   `detail` text NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `datetime` timestamp NOT NULL,
   `status` enum('1','0') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `news`
+--
+
+INSERT INTO `news` (`id`, `title_show`, `img`, `detail`, `title`, `datetime`, `status`) VALUES
+(1, 'ทำไมต้องใส่กันล้ม?', '90456-news1.jpg', '', '', '0000-00-00 00:00:00', '1'),
+(2, 'ระยะเวลาการใช้งานของแบตเตอรี่', '02832-news2.jpg', '', '', '0000-00-00 00:00:00', '1'),
+(3, 'กันล้มมีกี่ส่วน มีประโยชน์อะไรบ้าง?', '75655-news3.jpg', '', '', '0000-00-00 00:00:00', ''),
+(4, 'การดูแลรักษาแบตเตอรี่', 'bf9ee-news4.jpg', '', '', '0000-00-00 00:00:00', ''),
+(5, 'เลือกกันล้มแบบไหนดี?', 'a9b1b-news5.jpg', '', '', '0000-00-00 00:00:00', ''),
+(6, 'ปลายแฮนด์ช่วยลดอาการมือชา', '2a766-news6.jpg', '', '', '0000-00-00 00:00:00', ''),
+(7, 'อาการมือชาขณะขับมอเตอร์ไซค์ เกิดขึ้นได้อย่างไร?', '616c0-news7.jpg', '', '', '0000-00-00 00:00:00', ''),
+(8, 'ปลายแฮนด์มีแบบไหนบ้าง?', '46179-news8.jpg', '', '', '0000-00-00 00:00:00', ''),
+(9, 'เลือกยี่ห้อกันล้ม?', '6ae31-news9.jpg', '', '', '0000-00-00 00:00:00', '');
 
 -- --------------------------------------------------------
 
@@ -306,15 +328,15 @@ CREATE TABLE `product` (
   `Discount` varchar(250) NOT NULL,
   `Brand` varchar(250) NOT NULL,
   `Detail` text NOT NULL,
-  `Color_product` varchar(250) NOT NULL,
+  `name_color` varchar(250) NOT NULL,
   `Size_product` varchar(250) NOT NULL,
   `Year` varchar(250) NOT NULL,
   `Main_Category` date NOT NULL,
   `Sub_category` date NOT NULL,
   `Type` int(200) NOT NULL,
-  `Status` int(10) NOT NULL DEFAULT '1',
   `StartDate` date NOT NULL,
-  `EndDate` date NOT NULL
+  `EndDate` date NOT NULL,
+  `Status` int(10) NOT NULL DEFAULT '1'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -341,6 +363,26 @@ INSERT INTO `product_category` (`id`, `id_brand_category`, `id_model_category`, 
 (1, 8, 6, '6729e-1.png', '<h2 style=\"margin: 0px 0px 10px; padding: 0px; font-weight: 400; font-family: DauphinPlain; font-size: 24px; line-height: 24px; background-color: rgb(255, 255, 255);\">\n	Lorem Ipsum คืออะไร?</h2>\n<p style=\"margin: 0px 0px 15px; padding: 0px; text-align: justify; font-family: &quot;Open Sans&quot;, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);\">\n	Lorem Ipsum คือ เนื้อหาจำลองแบบเรียบๆ ที่ใช้กันในธุรกิจงานพิมพ์หรืองานเรียงพิมพ์ มันได้กลายมาเป็นเนื้อหาจำลองมาตรฐานของธุรกิจดังกล่าวมาตั้งแต่ศตวรรษที่ 16 เมื่อเครื่องพิมพ์โนเนมเครื่องหนึ่งนำรางตัวพิมพ์มาสลับสับตำแหน่งตัวอักษรเพื่อทำหนังสือตัวอย่าง Lorem Ipsum อยู่ยงคงกระพันมาไม่ใช่แค่เพียงห้าศตวรรษ แต่อยู่มาจนถึงยุคที่พลิกโฉมเข้าสู่งานเรียงพิมพ์ด้วยวิธีทางอิเล็กทรอนิกส์ และยังคงสภาพเดิมไว้อย่างไม่มีการเปลี่ยนแปลง มันได้รับความนิยมมากขึ้นในยุค ค.ศ. 1960 เมื่อแผ่น Letraset วางจำหน่ายโดยมีข้อความบนนั้นเป็น Lorem Ipsum และล่าสุดกว่านั้น คือเมื่อซอฟท์แวร์การทำสื่อสิ่งพิมพ์ (Desktop Publishing) อย่าง Aldus PageMaker ได้รวมเอา Lorem Ipsum เวอร์ชั่นต่างๆ เข้าไว้ในซอฟท์แวร์ด้วย</p>\n', '2020-12-10', 1),
 (2, 9, 5, '5b62d-2.png', '<h2 style=\"margin: 0px 0px 10px; padding: 0px; font-weight: 400; font-family: DauphinPlain; font-size: 24px; line-height: 24px; background-color: rgb(255, 255, 255);\">\n	Lorem Ipsum คืออะไร?</h2>\n<p style=\"margin: 0px 0px 15px; padding: 0px; text-align: justify; font-family: &quot;Open Sans&quot;, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);\">\n	Lorem Ipsum คือ เนื้อหาจำลองแบบเรียบๆ ที่ใช้กันในธุรกิจงานพิมพ์หรืองานเรียงพิมพ์ มันได้กลายมาเป็นเนื้อหาจำลองมาตรฐานของธุรกิจดังกล่าวมาตั้งแต่ศตวรรษที่ 16 เมื่อเครื่องพิมพ์โนเนมเครื่องหนึ่งนำรางตัวพิมพ์มาสลับสับตำแหน่งตัวอักษรเพื่อทำหนังสือตัวอย่าง Lorem Ipsum อยู่ยงคงกระพันมาไม่ใช่แค่เพียงห้าศตวรรษ แต่อยู่มาจนถึงยุคที่พลิกโฉมเข้าสู่งานเรียงพิมพ์ด้วยวิธีทางอิเล็กทรอนิกส์ และยังคงสภาพเดิมไว้อย่างไม่มีการเปลี่ยนแปลง มันได้รับความนิยมมากขึ้นในยุค ค.ศ. 1960 เมื่อแผ่น Letraset วางจำหน่ายโดยมีข้อความบนนั้นเป็น Lorem Ipsum และล่าสุดกว่านั้น คือเมื่อซอฟท์แวร์การทำสื่อสิ่งพิมพ์ (Desktop Publishing) อย่าง Aldus PageMaker ได้รวมเอา Lorem Ipsum เวอร์ชั่นต่างๆ เข้าไว้ในซอฟท์แวร์ด้วย</p>\n', '2020-12-10', 1),
 (3, 10, 4, '16c1b-3.png', '<h2 style=\"margin: 0px 0px 10px; padding: 0px; font-weight: 400; font-family: DauphinPlain; font-size: 24px; line-height: 24px; background-color: rgb(255, 255, 255);\">\n	Lorem Ipsum คืออะไร?</h2>\n<p style=\"margin: 0px 0px 15px; padding: 0px; text-align: justify; font-family: &quot;Open Sans&quot;, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);\">\n	Lorem Ipsum คือ เนื้อหาจำลองแบบเรียบๆ ที่ใช้กันในธุรกิจงานพิมพ์หรืองานเรียงพิมพ์ มันได้กลายมาเป็นเนื้อหาจำลองมาตรฐานของธุรกิจดังกล่าวมาตั้งแต่ศตวรรษที่ 16 เมื่อเครื่องพิมพ์โนเนมเครื่องหนึ่งนำรางตัวพิมพ์มาสลับสับตำแหน่งตัวอักษรเพื่อทำหนังสือตัวอย่าง Lorem Ipsum อยู่ยงคงกระพันมาไม่ใช่แค่เพียงห้าศตวรรษ แต่อยู่มาจนถึงยุคที่พลิกโฉมเข้าสู่งานเรียงพิมพ์ด้วยวิธีทางอิเล็กทรอนิกส์ และยังคงสภาพเดิมไว้อย่างไม่มีการเปลี่ยนแปลง มันได้รับความนิยมมากขึ้นในยุค ค.ศ. 1960 เมื่อแผ่น Letraset วางจำหน่ายโดยมีข้อความบนนั้นเป็น Lorem Ipsum และล่าสุดกว่านั้น คือเมื่อซอฟท์แวร์การทำสื่อสิ่งพิมพ์ (Desktop Publishing) อย่าง Aldus PageMaker ได้รวมเอา Lorem Ipsum เวอร์ชั่นต่างๆ เข้าไว้ในซอฟท์แวร์ด้วย</p>\n', '2020-12-10', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `product_status`
+--
+
+CREATE TABLE `product_status` (
+  `id` int(10) NOT NULL,
+  `name` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `product_status`
+--
+
+INSERT INTO `product_status` (`id`, `name`) VALUES
+(1, 'HOT DEAL'),
+(2, 'SAVE'),
+(3, 'NEW');
 
 -- --------------------------------------------------------
 
@@ -377,6 +419,15 @@ CREATE TABLE `promotion_slide` (
   `status` enum('1','0') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Dumping data for table `promotion_slide`
+--
+
+INSERT INTO `promotion_slide` (`id`, `img_slide`, `content`, `status`) VALUES
+(1, 'ecade-1_03.png', '', '1'),
+(2, 'd0743-1_03.png', '', ''),
+(3, '04823-1_03.png', '', '');
+
 -- --------------------------------------------------------
 
 --
@@ -389,6 +440,18 @@ CREATE TABLE `service` (
   `text` text NOT NULL,
   `status` enum('1','0') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `service`
+--
+
+INSERT INTO `service` (`id`, `img`, `text`, `status`) VALUES
+(1, 'b9dbd-bg_01.png', '', '1'),
+(2, '82110-bg_02.png', '', ''),
+(3, '1dc7e-bg_03.png', '', '1'),
+(4, 'ed398-bg_04.png', '', '1'),
+(5, '09f5f-bg_05.png', '', '1'),
+(6, 'df6cb-bg_06.png', '', '1');
 
 -- --------------------------------------------------------
 
@@ -616,6 +679,12 @@ ALTER TABLE `product_category`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `product_status`
+--
+ALTER TABLE `product_status`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `promotion_product`
 --
 ALTER TABLE `promotion_product`
@@ -677,7 +746,7 @@ ALTER TABLE `brand_category`
 -- AUTO_INCREMENT for table `color`
 --
 ALTER TABLE `color`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `contactus`
@@ -743,7 +812,7 @@ ALTER TABLE `model_category`
 -- AUTO_INCREMENT for table `news`
 --
 ALTER TABLE `news`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `product`
@@ -756,6 +825,24 @@ ALTER TABLE `product`
 --
 ALTER TABLE `product_category`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `product_status`
+--
+ALTER TABLE `product_status`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `promotion_slide`
+--
+ALTER TABLE `promotion_slide`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `service`
+--
+ALTER TABLE `service`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `sub_category`
