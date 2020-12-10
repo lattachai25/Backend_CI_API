@@ -310,7 +310,7 @@ $model = $query->result();
     <br><br>
         <div class="row">
 
-            <div class="col-12" style="min-height:600px; border:1px solid red; background:#FFF; margin-left:40px;">
+            <div class="col-12" style="min-height:600px; margin-left:40px;">
             <div class="row">
             <?php foreach($product as $products): ?>
             <div class="col-4">
@@ -328,8 +328,6 @@ $model = $query->result();
         </div>
       <div class="row" style="min-height:80px; margin-top:50px;">
         <div class="col-10">
-
-        <?php echo $this->pagination->create_links() ?>
 
             <!-- <div class="row">
                 <div class="col-4"></div>
