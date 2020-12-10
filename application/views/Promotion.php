@@ -186,6 +186,13 @@ span{
 
 
 </style>
+<?php
+$this->db->select("*");
+$this->db->from("promotion_slide");
+$this->db->order_by('id','desc');
+$query = $this->db->get();
+$promo = $query->result();
+?>
 
 
 <div class="bg" style="margin-top:120px;"></div>
@@ -195,9 +202,11 @@ span{
 <img src="<?php echo base_url();?>img/promotion/2_01_02.png" width="100%" alt=""/>
 <br><br>
         <div class="bxslider">
-        <?php for ($i = 0; $i < 10; $i++) {?>
-        <div><img src="<?php echo base_url();?>img/promotion/1_03.png" width="100%" alt=""/></div>
-        <?php } ?>
+        <?php foreach($promo as $promos): ?>
+        <div>
+        <img src="<?php echo base_url();?>assets/uploads/img_promotion_slide/<?php echo $promos->img_slide;?>" style="width:100%" alt="" />
+        </div>
+        <?php endforeach; ?>  
         </div>
         <br>
         <br>
@@ -332,7 +341,7 @@ span{
 <br><br>
 <div class="row">
 <div class="col-4"></div>
-<div class="col-4"><center> <img src="<?php echo base_url();?>img/promotion/poit.png" width="250px" alt=""/> </center></div>
+<!-- <div class="col-4"><center> <img src="<?php echo base_url();?>img/promotion/poit.png" width="250px" alt=""/> </center></div> -->
 <div class="col-4"></div>
 </div>
 <br>

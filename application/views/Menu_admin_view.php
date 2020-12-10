@@ -93,7 +93,7 @@ a:hover {
                     <a href="#"><i class="glyphicon fa fa-plus-square"> </i>&nbsp; &nbsp; Product<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
-                            <a href="<?php echo base_url('administrator/product1');?>"> <i class="fa fa-certificate"></i>&nbsp; Product 1</a>
+                            <a href="<?php echo base_url('administrator/product');?>"> <i class="fa fa-certificate"></i>&nbsp;Add Products</a>
                         </li>
                         <li>
                         <a href="#"><i class="glyphicon fa fa-plus-square"> </i>&nbsp; Category<span class="fa arrow"></span></a>

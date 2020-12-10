@@ -179,12 +179,11 @@ function statusDis($value)
 			$crud->set_theme("bootstrap");
 			$crud->set_table("promotion_slide")
 			->order_by('id','id')
-			->display_as('img_slide','img_slide')
-			->display_as('content','content')		
-			->display_as('date',' Day');
+			->display_as('img_slide','Images Slide')
+			->display_as('content','content');
 	
 			$crud->field_type('status','dropdown',array('1' => 'Active', '0' => 'Inactive'));
-			$crud->set_field_upload('img','assets/uploads/img_promotion_slide');
+			$crud->set_field_upload('img_slide','assets/uploads/img_promotion_slide');
 			
 			$output = $crud->render();
 			$this->_example_output($output);
@@ -389,7 +388,50 @@ function statusDis($value)
 			$this->_example_output($output);
 		}	
 
+		function product(){
+			$crud = new grocery_CRUD();
+			$crud->set_theme("bootstrap");
+			$crud->set_subject('Products');
+			
+			$crud->set_table("product")
+			->order_by('id','id')
+			->display_as('Image_product1','Images1')
+			->display_as('Image_product2','Images2')
+			->display_as('Image_product3','Images3')
+			->display_as('Image_product4','Images4')
+			->display_as('Prict','Prict')
+			->display_as('Discount','Discount')
+			->display_as('Brand','Brand')
+			->display_as('Detail','Detail')
+			->display_as('name_color','Color')
+			->display_as('Size_product','Size_product')
+			->display_as('Year','name_year')
+			->display_as('Prict','Prict')
+			->display_as('description','description')
+			->display_as('Type','product_status')
+			->display_as('StartDate','StartDate')
+			->display_as('EndDate','EndDate')
 
+			->display_as('date','date');
+
+
+			
+
+			$crud->set_relation('id','main_Category','name');
+			$crud->set_relation('id','sub_category','name');
+			$crud->set_relation('name_color','color','name_color');
+			$crud->set_relation('name_year','year','name_year');
+			$crud->set_relation('id','product_status','name');
+			$crud->set_relation('id','model_category','name');
+
+			$crud->field_type('status','dropdown',array('1' => 'Active', '0' => 'Inactive'));
+			$crud->set_field_upload('Image_product1','assets/uploads/products');
+			$crud->set_field_upload('Image_product2','assets/uploads/products');
+			$crud->set_field_upload('Image_product3','assets/uploads/products');
+			$crud->set_field_upload('Image_product4','assets/uploads/products');
+			$output = $crud->render();
+			$this->_example_output($output);
+		}	
 
 
 }
