@@ -74,6 +74,20 @@ a:hover {
                         </div>
                 </li>
 
+				<li>
+					<a href="<?php echo base_url('administrator/main_category');?>"><i class="fa fa-cog fa-fw"></i>&nbsp; main_category</a>
+				</li>
+				<li>
+					<a href="<?php echo base_url('administrator/sub_category');?>"><i class="fa fa-cog fa-fw"></i>&nbsp; sub_category</a>
+				</li>
+
+
+
+
+
+
+
+
                 <li>
                     <a href="<?php echo base_url('administrator');?>"><i class="fa fa-home fa-fw"></i>&nbsp; HOME<span class="fa arrow"></span></a>
 					<ul class="nav nav-second-level">
@@ -156,10 +170,10 @@ a:hover {
                         <a href="#"><i class="glyphicon fa fa-plus-square"> </i>&nbsp; Category<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="<?php echo base_url('administrator/product1');?>">&nbsp; &nbsp;<i class="fa fa-wrench fa-fw"></i>&nbsp; Category 1</a>
+                                    <a href="<?php echo base_url('administrator/product_category');?>">&nbsp; &nbsp;<i class="fa fa-wrench fa-fw"></i>&nbsp; Product Category</a>
                                 </li>  
                                 <li>
-                                    <a href="<?php echo base_url('administrator/product1');?>">&nbsp; &nbsp;<i class="fa fa-wrench fa-fw"></i>&nbsp; Category 2</a>
+                                    <a href="<?php echo base_url('administrator/model_category');?>">&nbsp; &nbsp;<i class="fa fa-wrench fa-fw"></i>&nbsp; Product Model</a>
                                 </li>  
                             </ul>   
                         </li>   

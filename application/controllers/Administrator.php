@@ -298,8 +298,6 @@ function statusDis($value)
 			$crud->set_table("gallery_img_head")
 			->order_by('id','id')
 			->display_as('img','img')
-			->display_as('link',' link')
-			->display_as('content',' content')
 			->display_as('date',' Day');
 	
 			$crud->field_type('status','dropdown',array('1' => 'Active', '0' => 'Inactive'));
@@ -314,17 +312,86 @@ function statusDis($value)
 			$crud->set_theme("bootstrap");
 			$crud->set_table("gallery_img_logo")
 			->order_by('id','id')
-			->display_as('img',' img')
-			->display_as('link',' link')
-			->display_as('content',' content')
-			->display_as('date',' Day');
+			->display_as('img_logo',' LOGO')
+			->display_as('name_brand',' Name Brand');
 	
 			$crud->field_type('status','dropdown',array('1' => 'Active', '0' => 'Inactive'));
-			$crud->set_field_upload('img','assets/uploads/gallery_logo');
+			$crud->set_field_upload('img_logo','assets/uploads/gallery_logo');
 			
 			$output = $crud->render();
 			$this->_example_output($output);
 		}		
+
+		function main_category(){
+			$crud = new grocery_CRUD();
+			$crud->set_theme("bootstrap");
+			$crud->set_table("main_category")
+			->order_by('id','id')
+			->display_as('name','Name');
+	
+			// $crud->field_type('status','dropdown',array('1' => 'Active', '0' => 'Inactive'));
+			// $crud->set_field_upload('img_logo','assets/uploads/gallery_logo');
+			
+			$output = $crud->render();
+			$this->_example_output($output);
+		}	
+		function sub_category(){
+			$crud = new grocery_CRUD();
+			$crud->set_theme("bootstrap");
+			$crud->set_table("sub_category")
+			->order_by('id','id')
+			->display_as('name_subcategory	','Name');
+	
+			// $crud->field_type('status','dropdown',array('1' => 'Active', '0' => 'Inactive'));
+			// $crud->set_field_upload('img_logo','assets/uploads/gallery_logo');
+			
+			$output = $crud->render();
+			$this->_example_output($output);
+		}	
+		function model_category(){
+			$crud = new grocery_CRUD();
+			$crud->set_theme("bootstrap");
+			$crud->set_table("model_category")
+			->order_by('id','id')
+			->display_as('name','Name Model');
+	
+			// $crud->field_type('status','dropdown',array('1' => 'Active', '0' => 'Inactive'));
+			// $crud->set_field_upload('img_logo','assets/uploads/gallery_logo');
+			
+			$output = $crud->render();
+			$this->_example_output($output);
+		}	
+
+		function product_category(){
+			$crud = new grocery_CRUD();
+			$crud->set_theme("bootstrap");
+			$crud->set_subject('Gallery Products');
+			
+			$crud->set_table("product_category")
+			->order_by('id','id')
+			->display_as('name_subcategory	','Name')
+			->display_as('name','images')
+			->display_as('description','description')
+			->display_as('id_brand_category','brand_category')
+			->display_as('id_model_category','model_category')
+			->display_as('date','date');
+
+
+			
+
+			$crud->set_relation('id_brand_category','gallery_img_logo','name_brand');
+			$crud->set_relation('id_model_category','model_category','name');
+
+			$crud->field_type('status','dropdown',array('1' => 'Active', '0' => 'Inactive'));
+			$crud->set_field_upload('name','assets/uploads/product_category');
+			
+			$output = $crud->render();
+			$this->_example_output($output);
+		}	
+
+
+
+
 }
 
 

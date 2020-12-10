@@ -66,9 +66,10 @@ div {margin: 0 auto}
 }
 
 .image_logo_show:hover{
-        filter: grayscale(0%);
-        background-image: url('<?php echo base_url();?>img/gallery/box_03.jpg');
+         filter: grayscale(0%);
+        background-image: url('<?php echo base_url();?>img/gallery/box_03.png');
         background-repeat:no-repeat;
+
 }
 
 .owl-item{
@@ -143,7 +144,7 @@ div {margin: 0 auto}
     color:#FFF;
     font-size: 15px;
     font-weight: 700;
-    background-image: url('<?php echo base_url();?>img/promotion/orange.png');
+    background-image: url(<?php echo base_url('img/gallery/box_03.png') ?>);
     background-repeat: no-repeat, repeat;
 }
 .show_top2{
@@ -154,7 +155,7 @@ div {margin: 0 auto}
     color:#FFF;
     font-size: 15px;
     font-weight: 700;
-    background-image: url('<?php echo base_url();?>img/promotion/red.png');
+    background-image: url('../../img/promotion/red.png');
     background-repeat: no-repeat, repeat;
 }
 
@@ -166,7 +167,7 @@ div {margin: 0 auto}
     color:#FFF;
     font-size: 15px;
     font-weight: 700;
-    background-image: url('<?php echo base_url();?>img/promotion/blue.png');
+    background-image: url('../../img/promotion/blue.png');
     background-repeat: no-repeat, repeat;
 }
 
@@ -192,10 +193,34 @@ span{
 </style>
 <?php
 $this->db->select("*");
-$this->db->from("gallery");
+$this->db->from("gallery_img_head");
 $query = $this->db->get();
 $gallery = $query->row();
 ?>
+
+
+<?php
+$this->db->select("*");
+$this->db->from("gallery_img_logo");
+$query = $this->db->get();
+$gallery2 = $query->result();
+?>
+
+<?php
+$this->db->select("*");
+$this->db->from("product_category");
+$query = $this->db->get();
+$product = $query->result();
+?>
+
+<?php
+$this->db->select("*");
+$this->db->from("model_category");
+$query = $this->db->get();
+$model = $query->result();
+?>
+
+
 <div class="bg" style="margin-top:100px;"></div>
     
 
@@ -203,9 +228,8 @@ $gallery = $query->row();
     <!-- img_top -->
     <div class="top_img"> 
         <img src="<?php echo base_url();?>img/gallery/bar_top.png" width="50%" style="position:absolute;" alt=""/ >
-        <img src="<?php echo base_url();?>assets/uploads/img_gallery/<?php echo $gallery->img_product;?>" width="100%" alt="" />
+        <img src="<?php echo base_url();?>assets/uploads/gallery_head/<?php echo $gallery->img;?>" width="100%" alt="" />
     </div>  
-
 
 
     <!-- img_top -->  
@@ -216,67 +240,36 @@ $gallery = $query->row();
                 <div style="width:100%; margin-left:10px; display: inline-block;">
                     <div class="row"> <!--  row   -->
 
-                        <div class="col-1">
+                        <div class="col-1" style="padding: 0px !important; margin-left: 188px !important;">
                             <div class="customNavigation">
-                                <a class="btn prev" style="margin-top:70px; margin-left:0px;">
+                                <a class="btn prev" style="margin-top:70px; float:left;">
                                 <img src="<?php echo base_url();?>img/gallery/back_orange_slide.png" width="40px" alt=""/ >
                                 </a>
                             </div>
                         </div>
-                        <div class="col-10">
+                        <div class="col-8" style="padding: 0px !important;">
                         
-                            <div class="box_logo1" style="width:100%; display:inline-block;">
+                            <div class="box_logo1" style="width:100%; display:inline-block; padding-right:0px; padding-left: 0px !important; padding-right: 0px !important;">
                                 <div id="owl-demo" class="owl-carousel owl-theme">
-                                <div class="item"><img class="image_logo_show"  src="<?php echo base_url();?>img/gallery/icon_color/bmw.png" alt=""/></div>
-                                <div class="item"><img class="image_logo_show"  src="<?php echo base_url();?>img/gallery/icon_color/ducati.png" alt=""/></div>
-                                <div class="item"><img class="image_logo_show"  src="<?php echo base_url();?>img/gallery/icon_color/honda.png" alt=""/></div>
-                                <div class="item"><img class="image_logo_show " src="<?php echo base_url();?>img/gallery/icon_color/norton.png" alt=""/></div>
-                                <div class="item"><img class="image_logo_show"  src="<?php echo base_url();?>img/gallery/icon_color/suzuki.png" alt=""/></div> 
+                                <?php foreach($gallery2 as $gallery2s): ?>
+                                    <div class="item">
+                                    <img class="image_logo_show" src="<?php echo base_url();?>assets/uploads/gallery_logo/<?php echo $gallery2s->img_logo;?>" alt="" />
+                                    </div>
 
-                                <div class="item"><img class="image_logo_show"  src="<?php echo base_url();?>img/gallery/icon_color/bmw.png" alt=""/></div>
-                                <div class="item"><img class="image_logo_show"  src="<?php echo base_url();?>img/gallery/icon_color/ducati.png" alt=""/></div>
-                                <div class="item"><img class="image_logo_show"  src="<?php echo base_url();?>img/gallery/icon_color/honda.png" alt=""/></div>
-                                <div class="item"><img class="image_logo_show " src="<?php echo base_url();?>img/gallery/icon_color/norton.png" alt=""/></div>
-                                <div class="item"><img class="image_logo_show"  src="<?php echo base_url();?>img/gallery/icon_color/suzuki.png" alt=""/></div> 
-                            </div>
-                        
-                        </div> 
+                                <?php endforeach; ?>
+                                <div class="item"><img class="image_logo_show" src="<?php echo base_url();?>img/gallery/icon_color/ducati.png" /></div>
+                                </div>
+                            </div> 
                     </div>
-                    <div class="col-1">
+                    <div class="col-1" style="padding: 0px !important;">
                         <div class="customNavigation">
-                            <a class="btn next" style="margin-top:70px; float:right; margin-right:0px;">
+                            <a class="btn next" style="margin-top:70px; float:right;">
                                 <img src="<?php echo base_url();?>img/gallery/next_orange_slide.png" width="40px" alt=""/ >
                             </a>
                         </div>
                     </div>   
                 </div>
-<!-- 
-                            <div style="width:20px; display: inline-block;">
 
-                            </div> -->
-                            <!-- <div class="box_logo1" style="width:100%; display:inline-block;">
-                                <div id="owl-demo" class="owl-carousel owl-theme">
-                                <div class="item"><img class="image_logo_show"  src="<?php echo base_url();?>img/gallery/icon_color/bmw.png" alt=""/></div>
-                                <div class="item"><img class="image_logo_show"  src="<?php echo base_url();?>img/gallery/icon_color/ducati.png" alt=""/></div>
-                                <div class="item"><img class="image_logo_show"  src="<?php echo base_url();?>img/gallery/icon_color/honda.png" alt=""/></div>
-                                <div class="item"><img class="image_logo_show " src="<?php echo base_url();?>img/gallery/icon_color/norton.png" alt=""/></div>
-                                <div class="item"><img class="image_logo_show"  src="<?php echo base_url();?>img/gallery/icon_color/suzuki.png" alt=""/></div> 
-
-                                <div class="item"><img class="image_logo_show"  src="<?php echo base_url();?>img/gallery/icon_color/bmw.png" alt=""/></div>
-                                <div class="item"><img class="image_logo_show"  src="<?php echo base_url();?>img/gallery/icon_color/ducati.png" alt=""/></div>
-                                <div class="item"><img class="image_logo_show"  src="<?php echo base_url();?>img/gallery/icon_color/honda.png" alt=""/></div>
-                                <div class="item"><img class="image_logo_show " src="<?php echo base_url();?>img/gallery/icon_color/norton.png" alt=""/></div>
-                                <div class="item"><img class="image_logo_show"  src="<?php echo base_url();?>img/gallery/icon_color/suzuki.png" alt=""/></div> 
-                            </div> -->
-                            <!-- </div>
-                            <div style="width:20px; display: inline-block;"> 
-                                <div class="customNavigation">
-                                <a class="btn next" style="margin-top:70px; float:right; margin-right:-510px;">
-                                    <img src="<?php echo base_url();?>img/gallery/next_orange_slide.png" width="40px" alt=""/ >
-                                </a>
-                            </div> -->
-                            <!-- </div>
-                        </div>   Row End  -->
                 </div>
         </div>        
         </div>
@@ -285,25 +278,30 @@ $gallery = $query->row();
 
 </div> 
 
-
-
-
 <!-- div menu  -->
 <div class="col-10">
 <div class="row">
 
+<style>
+#linkimg{
+    color:#fff; 
+}
+#linkimg a:link {
+  text-decoration: none; 
+}
 
+</style>
 
     <!-- menu_left -->  
     <div class="col-3" style="min-height:600px; background:#000; margin-left:0px;">
         <div class="row">
-            <div class="col-12 itembox"> &nbsp; &nbsp; C 650 SPORT GT </div>
-            <div class="col-12 itembox"> &nbsp; &nbsp; R 1200 1250 GS </div>
-            <div class="col-12 itembox"> &nbsp; &nbsp; R NINE T </div>
-            <div class="col-12 itembox"> &nbsp; &nbsp; S 1000 R </div>
-            <div class="col-12 itembox"> &nbsp; &nbsp; S 1000 RR 2015-2018 </div>
-            <div class="col-12 itembox avction"> &nbsp; &nbsp; S 1000 RR 2020 </div>
-            <div class="col-12 itembox"> &nbsp; &nbsp; S 1000 XR </div>
+        <?php foreach($model as $models): ?>
+            
+        <div class="col-12"> <a href="<?php echo base_url();?>Gallery" id="linkimg"> <div class="itembox"> &nbsp; &nbsp; <?php echo $models->name;?> </div> </a> </div>
+            
+            <!-- <div class="col-12 itembox avction"> &nbsp; &nbsp; S 1000 RR 2020 </div> -->
+
+            <?php endforeach; ?>
         </div>
     </div>
     <!-- menu_left -->
@@ -314,33 +312,34 @@ $gallery = $query->row();
 
             <div class="col-12" style="min-height:600px; border:1px solid #red; background:#FFF; margin-left:40px;">
             <div class="row">
-            <?php for ($i = 1; $i < 16; $i++) { ?>
+            <?php foreach($product as $products): ?>
             <div class="col-4">
                 <a href="http://">
                         <br>
                     <div class="container">
-                        <img src="<?php echo base_url();?>img/gallery/<?php echo $i ?>.png" width="40px" class="image" alt=""/ >
+                        <img src="<?php echo base_url();?>assets/uploads/product_category/<?php echo $products->name;?>"  width="40px" class="image" alt=""/ >
                         <div class="overlay"><div class="text">FULL IMAGE</div></div>
                     </div>
                 </a> 
             </div>
-            <?php } ?>
+            <?php endforeach; ?>
             </div>
             </div>
         </div>
       <div class="row" style="min-height:80px; margin-top:50px;">
         <div class="col-10">
-            <div class="row">
+
+        <?php echo $this->pagination->create_links() ?>
+
+            <!-- <div class="row">
                 <div class="col-4"></div>
                     <div class="col-7">
                     <img src="<?php echo base_url();?>img/gallery/back_orange.png" width="10px" >
-                 
                      &nbsp; &nbsp; 1 &nbsp; &nbsp; 2 &nbsp; &nbsp; 3 &nbsp; &nbsp; 4 &nbsp; &nbsp; 5 &nbsp; &nbsp; <span> 6 </span>&nbsp; &nbsp; 
                      <img src="<?php echo base_url();?>img/gallery/next_orange.png" width="10px" >
-                   
                      </div>
                 <div class="col-1"></div>     
-            </div>        
+            </div>         -->
         </div>
         <img src="<?php echo base_url();?>img/gallery/bat_footer.png" width="100%" >
         </div>
@@ -363,10 +362,10 @@ $(document).ready(function() {
  var owl = $("#owl-demo");
 
  owl.owlCarousel({
-     items : 5,
-     itemsDesktop : [1000,5],
-     itemsDesktopSmall : [900,5],
-     itemsTablet: [600,5],
+     items : 4,
+     itemsDesktop : [1000,4],
+     itemsDesktopSmall : [900,4],
+     itemsTablet: [600,4],
      itemsMobile : false,
      pagination: false,
      dots: false,
