@@ -293,7 +293,7 @@ span{
               <a data-fancybox="gallery" href ="<?php echo base_url('img/product/bike/5.png'); ?>"> 
               <img src="<?php echo base_url();?>img/product/bike/5.png" class="image alt=""/ >
                 <div class="overlay">
-                  <div class="text">FUll IMAGE</div>
+                  <div class="text">FULL IMAGE</div>
                 </div>
                 </a>  
               </div>

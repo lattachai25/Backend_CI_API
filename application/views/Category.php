@@ -559,7 +559,7 @@ color:#ff6634;
     <div class="row">
                 <div class="col-4"></div>
                     <div class="col-4">
-                    <img src="{{asset('img/gallery/back_orange.png')}}"  width="10px" />
+                    <img src="<?php echo base_url();?>img/gallery/back_orange.png" width="10px" >
                      &nbsp; &nbsp; 1 &nbsp; &nbsp; 2 &nbsp; &nbsp; 3 &nbsp; &nbsp; 4 &nbsp; &nbsp; 5 &nbsp; &nbsp; <span> 6 </span>&nbsp; &nbsp; 
                      <img src="<?php echo base_url();?>img/gallery/next_orange.png"width="10px" >  
                      

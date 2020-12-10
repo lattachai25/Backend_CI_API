@@ -116,6 +116,7 @@ $about = $query->result();
     <div class="col-1"></div>
     <div class="col-10" style="min-height:500px; background-color:#f5f5f5;">
         <div class="row">
+        
         <img src="<?php echo base_url();?>img/about/bg_06.png"width="100%" alt=""/>
                 <div class="col-md-12">
                     <div class="row">

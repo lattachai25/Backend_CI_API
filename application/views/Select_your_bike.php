@@ -486,7 +486,8 @@ span{
     <div class="row">
                          <?php for ($i = 1; $i < 13; $i++) { ?>
                         <div class="col-4">
-                        <a href="{{ url('Promotion_show') }}">
+                        <a href="<?php echo base_url('Promotion_show'); ?>">
+                        
                         <br>
                             <div class="container">
                                 <center>

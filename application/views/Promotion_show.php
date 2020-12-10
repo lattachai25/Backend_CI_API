@@ -195,7 +195,7 @@ HOME / PRODUCT / BRAKE SYSTEM / <span>DISC BRAKE</span>
 
       <div class="row">
           <div class="col-8">
-          <img src="{{asset('img/product/product_detel/color.png')}}" width="50%"/>
+          <img src="<?php echo base_url();?>img/product/product_detel/color.png"width="50%" alt="" >
 
           <div class="boxshop">
             <div class="4">
@@ -206,7 +206,7 @@ HOME / PRODUCT / BRAKE SYSTEM / <span>DISC BRAKE</span>
                 <div class="4" style="border:1px solid #ff6634; color:#ff6634; padding:10px;"> + ADD TO CART </div>
                 </div>
             </div>
-          <!-- <img src="{{asset('img/product/product_detel/shop.png')}}" width="50%"/> -->
+           
           </div>
           </div>
           <div class="col-3" style="text-align:center;">3</div>
@@ -219,15 +219,15 @@ HOME / PRODUCT / BRAKE SYSTEM / <span>DISC BRAKE</span>
     </div>
 </div>
 
+<img src="<?php echo base_url();?>img/product/product_detel/center.png"width="100%" alt="" >
+<img src="<?php echo base_url();?>img/product/product_detel/barslide.png"width="100%" alt="" >
 
-<img src="{{asset('img/product/product_detel/center.png')}}" width="100%"/>
-<img src="{{asset('img/product/product_detel/barslide.png')}}" width="100%"/>
     <div class="boxslidebar">
       <div class="row">
         <div class="col-1">
             <div class="customNavigation">
             <a class="btn prev" style="margin-top:100px;float: right; margin-right: -20px;">
-            <img src="{{asset('img/gallery/back_orange_slide.png')}}" width="40px" />
+            <img src="<?php echo base_url();?>img/gallery/back_orange_slide.png"width="40px" alt="" >
             </a>
             </div>
         </div>
@@ -239,7 +239,7 @@ HOME / PRODUCT / BRAKE SYSTEM / <span>DISC BRAKE</span>
             <div class="item">
                 <div class="col-12">
                 <div class="container">
-                    <img src="{{asset('img/product/'.$i.'.png')}}" width="100%" style="object-fit: cover; width:237px; height:237px;" />
+                  <img src="<?php echo base_url();?>img/product/'.$i.'.png" width="100%" style="object-fit: cover; width:237px; height:237px;" />
                 </div>    
                     <div class="row">
                         <div class="col-12 text_title2">BRAKE DISC 321X6 EWC <br> S1000 RR 2019</div>
@@ -249,7 +249,7 @@ HOME / PRODUCT / BRAKE SYSTEM / <span>DISC BRAKE</span>
                         <div class="col-4"></div>
                         <div class="col-2">
                         <div class="card_2">
-                        <img src="{{asset('img/promotion/cart.png')}}" width="30px" style="margin-top:-15px;">
+                        <img src="<?php echo base_url();?>img/promotion/cart.png" width="30px" style="margin-top:-15px;">
                         </div>
                         </div>
                     </div>
@@ -263,7 +263,7 @@ HOME / PRODUCT / BRAKE SYSTEM / <span>DISC BRAKE</span>
         <div class="col-1"> 
             <div class="customNavigation">
             <a class="btn next" style="margin-top:100px;float: left; margin-left: -16px;">
-            <img src="{{asset('img/gallery/next_orange_slide.png')}}"  width="40px" />
+            <img src="<?php echo base_url();?>img/gallery/next_orange_slide.png" width="40px" >
             </a>
             </div>
         </div>
@@ -271,7 +271,7 @@ HOME / PRODUCT / BRAKE SYSTEM / <span>DISC BRAKE</span>
   </div>
 </div>
 <!-- Center --->
-<img src="{{asset('img/product/product_detel/footer.png')}}" width="100%"/>
+<img src="<?php echo base_url();?>img/product/product_detel/footer.png" width="100%" >
 
 <script>
 $(document).ready(function() {

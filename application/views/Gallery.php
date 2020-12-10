@@ -310,7 +310,7 @@ $model = $query->result();
     <br><br>
         <div class="row">
 
-            <div class="col-12" style="min-height:600px; border:1px solid #red; background:#FFF; margin-left:40px;">
+            <div class="col-12" style="min-height:600px; border:1px solid red; background:#FFF; margin-left:40px;">
             <div class="row">
             <?php foreach($product as $products): ?>
             <div class="col-4">
