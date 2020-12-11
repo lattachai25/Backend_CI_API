@@ -404,11 +404,11 @@ function statusDis($value)
 			->display_as('Brand','Brand')
 			->display_as('Detail','Detail')
 			->display_as('name_color','Color')
-			->display_as('Size_product','Size_product')
-			->display_as('Year','name_year')
+			->display_as('name_size','Size')
+			->display_as('name_year','year')
 			->display_as('Prict','Prict')
 			->display_as('description','description')
-			->display_as('Type','product_status')
+			->display_as('Type','Product Status ')
 			->display_as('StartDate','StartDate')
 			->display_as('EndDate','EndDate')
 
@@ -417,14 +417,18 @@ function statusDis($value)
 
 			
 
-			$crud->set_relation('id','main_Category','name');
-			$crud->set_relation('id','sub_category','name');
+			$crud->set_relation('Name','main_Category','name');
+			$crud->set_relation('Name','sub_category','name');
 			$crud->set_relation('name_color','color','name_color');
 			$crud->set_relation('name_year','year','name_year');
-			$crud->set_relation('id','product_status','name');
-			$crud->set_relation('id','model_category','name');
+			$crud->set_relation('name_size','Size_product','name_size');
+			$crud->set_relation('name','model_category','name');
+			$crud->set_relation('Type','product_status','name');
+			$crud->set_relation('main_category','main_category','name');
+			$crud->set_relation('name_subcategory','sub_category','name_subcategory');
+			$crud->set_relation('Brand','brand','name');
 
-			$crud->field_type('status','dropdown',array('1' => 'Active', '0' => 'Inactive'));
+			$crud->field_type('Status','dropdown',array('1' => 'Active', '0' => 'Inactive'));
 			$crud->set_field_upload('Image_product1','assets/uploads/products');
 			$crud->set_field_upload('Image_product2','assets/uploads/products');
 			$crud->set_field_upload('Image_product3','assets/uploads/products');
