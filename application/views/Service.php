@@ -65,7 +65,7 @@ margin:10px;
 
 .card {
     position: relative;
-    display: -ms-flexbox;
+    display: -ms-flex;
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;

@@ -7,13 +7,14 @@
     margin-top:80px;
 }
 
-
 #text_name{
     color:#FFF;
     font-family:'helvetica';
     font-weight:bold;
     font-size:25px;
+	
 }
+
 .input_box{
     min-width:300px;
     height:40px;
@@ -40,36 +41,30 @@
 </style>
 <div class="row" style="margin-top:120px;">
 		<img src="<?php echo base_url();?>img/register/register_02.png" width="100%">	
-
 		<div style="width: 100%; min-height:750px; background-image: url(img/register/adsa.png); background-repeat: no-repeat;background-size:cover;">
-					
-					
-	
-						<form action="action_page.php">
+					<form action="action_page.php">
 						<div class="row">
 						<div class="col-1"></div>
 							<div class="col-5">
-							<div class="text_title2"> &nbsp; CREATE AN ACCOUNT</div>
+								<div class="text_title2"> &nbsp; CREATE AN ACCOUNT</div>
+								<div class="col-12" style="margin-top:50px;">
+								<div class="row">
 
-			
-							<div class="col-12" style="margin-top:50px;">
+									<div class="col-6" style="margin-left:-15px" >
+									<div id="text_name">NAME</div>
+									<input type="text" width="100%" name="email" class="input_box">
+									</div>
 
-							<div class="row">
+									<div class="col-6">
+									<div id="text_name">SURNAME</div>
+									<input type="text" name="email" class="input_box">
+									</div>
 
-								<div class="col-6">
-								<div id="text_name">NAME</div>
-								<input type="text" width="100%" name="email" class="input_box">
 								</div>
-
-								<div class="col-6">
-								<div id="text_name">SURNAME</div>
-								<input type="text" name="email" class="input_box">
-								</div>
-
 							</div>
+						
 
 
-							</div>
 
 							<div class="col-12">
 							<br>
@@ -83,7 +78,7 @@
 							<div class="col-12" style="margin-top:4.5%;">
 							<div class="row">
 
-								<div class="col-6">
+								<div class="col-6" style="margin-left:-15px" >
 								<div id="text_name">TEL</div>
 								<input type="text"  name="email" class="input_box">
 								</div>
@@ -98,16 +93,17 @@
 							</div>
 
 							<div class="col-12" style="margin-top:4.5%;">
-							<div class="row">
+								<div class="row">
 
-								<div class="col-6">
-								<div id="text_name">PASSWORD</div>
-								<input type="text" name="email" class="input_box">
+									<div class="col-6" style="margin-left:-15px" >
+									<div id="text_name">PASSWORD</div>
+									<input type="text" name="email" class="input_box">
+									</div>
+
 								</div>
-
 							</div>
-							</div>
-							</div>
+							
+						</div>
                   
 							<div class="col-1" style="padding-left:60px;"><center><img src="<?php echo base_url();?>img/register/centerAA.png"></center></div>
 
