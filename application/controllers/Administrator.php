@@ -417,8 +417,8 @@ function statusDis($value)
 
 			
 
-			$crud->set_relation('Name','main_Category','name');
-			$crud->set_relation('Name','sub_category','name');
+			// $crud->set_relation('id','main_Category','name');
+			// $crud->set_relation('id','sub_category','name');
 			$crud->set_relation('name_color','color','name_color');
 			$crud->set_relation('name_year','year','name_year');
 			$crud->set_relation('name_size','Size_product','name_size');

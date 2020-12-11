@@ -193,7 +193,15 @@ $this->db->order_by('id','desc');
 $query = $this->db->get();
 $promo = $query->result();
 ?>
-
+<?php
+$this->db->select("*");
+$this->db->from("product");
+$this->db->where("Type",1);
+$this->db->where_in('status', 1);
+$this->db->order_by('id','desc');
+$query = $this->db->get();
+$pro = $query->result();
+?>
 
 <div class="bg" style="margin-top:120px;"></div>
 <div class="row">
@@ -223,7 +231,8 @@ $promo = $query->result();
                     <div class="row">
              
                  <div class="col-12" style="margin-top:30px; text-align: right; color:#999999; font-weight:700;"> <span>1</span> / 3 < | > </div>                   
-                 <?php for ($i = 1; $i < 6; $i++) {?>
+                
+                    <?php foreach($pro as $pros): ?>
                         <div class="col-3">
                         <a href="<?php echo base_url('Promotion_show'); ?>">
                         <!-- <a href="{{ url('Promotion_show') }}"> -->
@@ -231,7 +240,8 @@ $promo = $query->result();
                             <div class="container">
                                 <div class="show_top"> &nbsp; &nbsp; HOT DEAL</div>
                                 <center>
-                                <img src="<?php echo base_url();?>img/promotion/item/3.png" class="image" />
+                                <!-- <img src="<?php echo base_url();?>img/promotion/item/3.png" class="image" /> -->
+                                <img src="<?php echo base_url();?>assets/uploads/products/<?php echo $pros->Image_product1;?>" class="image" alt="" />
                                 </center>
                                 <div class="overlay">
                                     <div class="text">READ MORD <i class="fas fa-arrow-right"></i></div>
@@ -240,15 +250,15 @@ $promo = $query->result();
                             </a> 
 
                             <div class="row">
-                                <div class="col-12 text_title">BRAKE DISC 321X6 EWC S1000 RR 2019</div>
+                                <div class="col-12 text_title"><?php echo $pros->Detail;?></div>
                                 <div class="col-12" style="height:10px;"></div>
-                                <div class="col-2 text_price1"><s>฿3,210</s></div>
-                                <div class="col-2 text_price2">฿1,234</div>
+                                <div class="col-2 text_price1"><s>฿<?php echo $pros->Discount;?></s></div>
+                                <div class="col-2 text_price2">฿<?php echo $pros->Prict;?></div>
                                 <div class="col-5"></div>
                                 <div class="col-2"><img src="<?php echo base_url();?>img/promotion/cart.png" width="20px"></div>
                             </div>
                         </div>
-                    <?php  }  ?>
+                        <?php endforeach; ?>
 
                     <?php for ($i = 1; $i < 6; $i++) {?>
                         <div class="col-3">
