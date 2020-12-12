@@ -114,19 +114,12 @@ a:hover {
                 <a href="#"><i class="fa fa-money"></i>&nbsp; &nbsp;Promotion<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
-                            <a href="<?php echo base_url('administrator/promotion_slide');?>"> <i class="fa fa-certificate"></i>&nbsp; Slide</a>
+                            <a href="<?php echo base_url('administrator/promotion_slide');?>"> <i class="fa fa-certificate"></i>&nbsp; Add Slide</a>
                         </li>
                         <li>
-                        <a href="#"><i class="glyphicon fa fa-plus-square"> </i>&nbsp; Product<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="<?php echo base_url('administrator/promotion_product');?>">&nbsp; &nbsp;<i class="fa fa-wrench fa-fw"></i>&nbsp;Add Product</a>
-                                </li>  
-                                <!-- <li>
-                                    <a href="<?php echo base_url('administrator/product1');?>">&nbsp; &nbsp;<i class="fa fa-wrench fa-fw"></i>&nbsp; Product 2</a>
-                                </li>   -->
-                            </ul>   
-                        </li>   
+                            <a href="<?php echo base_url('administrator/promotion_product');?>"> <i class="fa fa-certificate"></i>&nbsp; Add Product</a>
+                        </li>
+                      
 					</ul>    
                 </li> 
                 

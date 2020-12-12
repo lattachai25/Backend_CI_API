@@ -283,6 +283,7 @@ HOME / PRODUCT / <?php echo $id_cate->Name;?> / <span><?php echo $id_sub->name_s
             <?php foreach($random as $randoms): ?>
             <div class="item">
                 <div class="col-12">
+                <a href="<?php echo base_url();?>Promotion/view/<?php echo $randoms->id;?>">
                 <div class="container">
                   <img src="<?php echo base_url();?>assets/uploads/img_promotion_product/<?php echo $randoms->img1;?>" width="100%" style="object-fit: cover; width:237px; height:237px;" />
                 </div>    
@@ -298,6 +299,7 @@ HOME / PRODUCT / <?php echo $id_cate->Name;?> / <span><?php echo $id_sub->name_s
                         </div>
                         </div>
                     </div>
+                  </a>  
                 </div>
             </div>
             <?php endforeach; ?>

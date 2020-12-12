@@ -190,6 +190,7 @@ span{
 $this->db->select("*");
 $this->db->from("promotion_slide");
 $this->db->order_by('id','desc');
+$this->db->where_in('status', 1);
 $query = $this->db->get();
 $promo = $query->result();
 ?>
