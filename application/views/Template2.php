@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <title><?php if($title === ''){echo "intro";}else{ echo  $title;} ?></title>
-          <meta name="keywords" content="<?=$keywords;?>">
-          <meta name="description" content="<?=$description;?>">
+          <meta name="keywords" content="<?php echo $keywords;?>">
+          <meta name="description" content="<?php echo $description;?>">
 
 <link href="https://fontawesome.com/v4.7.0/assets/font-awesome/css/font-awesome.css" rel="stylesheet">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">

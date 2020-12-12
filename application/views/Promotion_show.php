@@ -101,7 +101,47 @@ font-weight: bold;
 
 </style>
 
-<div class="bg" style="margin-top:0px;"></div>
+
+<?php
+$this->db->select("*");
+$this->db->from("promotion_product");
+$this->db->where("promotion_product.id",$id);
+$query = $this->db->get();
+$pro= $query->row();
+?>
+
+<?php $id_category = $pro->category; ?>
+<?php
+$this->db->select("*");
+$this->db->from("main_category");
+$this->db->where("main_category.id",$id_category);
+$query = $this->db->get();
+$id_cate= $query->row();
+?>
+
+<?php $id_subcate = $pro->sub_category; ?>
+<?php
+$this->db->select("*");
+$this->db->from("sub_category");
+$this->db->where("sub_category.id",$id_subcate);
+$query = $this->db->get();
+$id_sub= $query->row();
+?>
+
+<?php $randomsub = $pro->sub_category?>
+
+<?php
+$this->db->select("*");
+$this->db->from("promotion_product");
+$this->db->order_by('id','RANDOM');
+$this->db->where("promotion_product.sub_category",$randomsub);
+$query = $this->db->get();
+$random = $query->result();
+?>
+
+
+
+<div class="bg" style="margin-top:80px;"></div>
 <div class="row">
 <!-- top -->
 <div class="brand_top">
@@ -109,7 +149,7 @@ font-weight: bold;
 
 </div>
 <div class="text_top">
-HOME / PRODUCT / BRAKE SYSTEM / <span>DISC BRAKE</span>
+HOME / PRODUCT / <?php echo $id_cate->Name;?> / <span><?php echo $id_sub->name_subcategory;?></span>
 </div>
 <!-- top -->
 <!-- Center --->
@@ -127,21 +167,27 @@ HOME / PRODUCT / BRAKE SYSTEM / <span>DISC BRAKE</span>
         data-mobilelandscape="500"
         data-mobileportrait="375"
       >
+
+<!-- 
+      <img src="<?php echo base_url();?>assets/uploads/img_promotion_product/<?php echo $promos->img_slide;?>" style="width:100%" alt="" /> -->
+
+
+
         <div class="close"></div>
         <div class="vertical-wrapper">
           <div id="vertical-slider">
             <ul>
               <li
-                data-image="<?php echo base_url('img/product/category/1.png');?>"
+                data-image="<?php echo base_url();?>assets/uploads/img_promotion_product/<?php echo $pro->img1;?>"
               ></li>
               <li
-                data-image="<?php echo base_url('img/product/category/2.png');?>"
+                data-image="<?php echo base_url();?>assets/uploads/img_promotion_product/<?php echo $pro->img2;?>"
               ></li>
               <li
-                data-image="<?php echo base_url('img/product/category/3.png');?>"
+                data-image="<?php echo base_url();?>assets/uploads/img_promotion_product/<?php echo $pro->img3;?>"
               ></li>
               <li
-              data-image="<?php echo base_url('img/product/category/4.png');?>"
+              data-image="<?php echo base_url();?>assets/uploads/img_promotion_product/<?php echo $pro->img4;?>"
               ></li>
 
             </ul>
@@ -151,19 +197,19 @@ HOME / PRODUCT / BRAKE SYSTEM / <span>DISC BRAKE</span>
           <div id="horizon-slider">
             <ul style="width: 7000px; height: 700px; left: 0px; top: 0px;">
               <li
-                data-image="<?php echo base_url('img/product/category/1.png');?>"
+                data-image="<?php echo base_url();?>assets/uploads/img_promotion_product/<?php echo $pro->img1;?>"
                 class="ui-draggable"
               ></li>
               <li
-              data-image="<?php echo base_url('img/product/category/2.png');?>"                
+              data-image="<?php echo base_url();?>assets/uploads/img_promotion_product/<?php echo $pro->img2;?>"                
               class="ui-draggable"
               ></li>
               <li
-              data-image="<?php echo base_url('img/product/category/3.png');?>"                
+              data-image="<?php echo base_url();?>assets/uploads/img_promotion_product/<?php echo $pro->img3;?>"                
                 class="ui-draggable"
               ></li>
               <li
-              data-image="<?php echo base_url('img/product/category/4.png');?>"                
+              data-image="<?php echo base_url();?>assets/uploads/img_promotion_product/<?php echo $pro->img4;?>"                
                 class="ui-draggable"
               ></li>
             </ul>
@@ -175,15 +221,14 @@ HOME / PRODUCT / BRAKE SYSTEM / <span>DISC BRAKE</span>
   <div class="col-4">
     <div class="del" style="margin-top:80px;">
       <div class="brand">BRAND</div>
-      <div class="text_title">BRAKE DISC 321X6 EWC <br> S1000 RR 2019</div>
-      <div class="number">ORDER CODE NO.00504</div>
-      <div class="procecut"><s>3,210.00 BAHT</s></div>
-      <div class="price">1,234.00 BAHT</div>
+      <div class="text_title"><?php echo $pro->name;?></div>
+      <div class="number">ORDER CODE NO.<?php echo $pro->no_code;?></div>
+      <div class="procecut"><s><?php echo $pro->discount_price;?> BAHT</s></div>
+      <div class="price"><?php echo $pro->price;?> BAHT</div>
 
       <div class="detel">
       DESCRIPTION <br>
-
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+      <?php echo $pro->detail;?>
       </div>
   </div>  
   <div class="box_num">
@@ -209,7 +254,7 @@ HOME / PRODUCT / BRAKE SYSTEM / <span>DISC BRAKE</span>
            
           </div>
           </div>
-          <div class="col-3" style="text-align:center;">3</div>
+          <div class="col-3" style="text-align:center;"><?php echo $pro->quality;?></div>
       </div>
 
   </div>
@@ -235,17 +280,17 @@ HOME / PRODUCT / BRAKE SYSTEM / <span>DISC BRAKE</span>
         <!-- row -->
         <div class="row">
             <div id="owl-demo" class="owl-carousel owl-theme">
-            @for ($i = 1; $i < 8; $i++)
+            <?php foreach($random as $randoms): ?>
             <div class="item">
                 <div class="col-12">
                 <div class="container">
-                  <img src="<?php echo base_url();?>img/product/'.$i.'.png" width="100%" style="object-fit: cover; width:237px; height:237px;" />
+                  <img src="<?php echo base_url();?>assets/uploads/img_promotion_product/<?php echo $randoms->img1;?>" width="100%" style="object-fit: cover; width:237px; height:237px;" />
                 </div>    
                     <div class="row">
-                        <div class="col-12 text_title2">BRAKE DISC 321X6 EWC <br> S1000 RR 2019</div>
+                        <div class="col-12 text_title2"><?php echo $pro->name;?></div>
                         <div class="col-12" style="height:10px;"></div>
-                        <div class="col-2 text_price1"><s>฿3,210</s></div>
-                        <div class="col-2 text_price2">฿1,234</div>
+                        <div class="col-2 text_price1"><s>฿<?php echo $randoms->discount_price;?></s></div>
+                        <div class="col-2 text_price2">฿<?php echo $randoms->price;?></div>
                         <div class="col-4"></div>
                         <div class="col-2">
                         <div class="card_2">
@@ -255,7 +300,7 @@ HOME / PRODUCT / BRAKE SYSTEM / <span>DISC BRAKE</span>
                     </div>
                 </div>
             </div>
-            @endfor
+            <?php endforeach; ?>
             </div>
         </div>
         <!-- row -->
