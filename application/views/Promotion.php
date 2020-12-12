@@ -184,7 +184,6 @@ span{
     margin-top:0px;
 }
 
-
 </style>
 <?php
 $this->db->select("*");
@@ -335,7 +334,7 @@ $pro_none = $query->result();
                                 <div class="show_top3"> &nbsp; &nbsp; NEW</div>
                                 <center>
                                
-                                <img src="<?php echo base_url();?>assets/uploads/img_promotion_product/<?php echo $pro_news->img1;?>" class="image"  alt="" />
+                                <img src="<?php echo base_url();?>assets/uploads/img_promotion_product/<?php echo $pro_news->img1;?>" class="image" style="width:80%"  alt="" />
                                 </center>
                                 <div class="overlay">
                                     <div class="text">READ MORD <i class="fas fa-arrow-right"></i></div>
@@ -365,7 +364,7 @@ $pro_none = $query->result();
                             <div class="container">
                                 
                                 <center>
-                                <img src="<?php echo base_url();?>assets/uploads/img_promotion_product/<?php echo $pro_nones->img1;?>" class="image" style="width:90%" alt="" />
+                                <img src="<?php echo base_url();?>assets/uploads/img_promotion_product/<?php echo $pro_nones->img1;?>" class="image" style="width:80%" alt="" />
                             
                                 </center>
                                 <div class="overlay">

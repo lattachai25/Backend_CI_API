@@ -7,17 +7,17 @@
 
 .text_title_product{
   color:#ff6634;
-  font-size:30px;
+  font-size:25px;
   font-weight:bold;
 }
 .text_price_cut{
   color:#666666;
-  font-size:20px;
+  font-size:15px;
   font-weight:bold;
 }
 .text_price{
   color:#ff6634;
-  font-size:25px;
+  font-size:20px;
   font-weight:bold;
 }
 .text_left{
@@ -50,8 +50,8 @@
     margin-top: 488px;
 }
 .csall_bar{
-  width:300px;
-  height:400px;
+  width:350px;
+  height:280px;
   overflow: auto;
   border-top:1px solid #e0e0e0;
   border-bottom:1px solid #e0e0e0;
@@ -59,7 +59,7 @@
 
 .box_cart{
   margin-left:-20px;
-  margin-top:150px;
+  margin-top:50px;
   font-size:13px;
   padding:15px;
   border:1px solid #ff6634;
@@ -74,15 +74,11 @@
     padding-left: 0px;
 }
 
-
 .boximage{
   width:24%;
   height:250px;
   display: inline-block;
 }
-
-
-
 
 
 .container {
@@ -134,14 +130,17 @@ span{
   font-weight:bold;
 }
 
-
-
 </style>
-
-
-
+<?php
+$this->db->select("*");
+$this->db->from("bike_for_sell");
+$query = $this->db->get();
+$bike = $query->result();
+?>
 <div class="bg" style="margin-top:120px;"></div>
-
+<div class="row">
+<div class="col-1"></div>
+<div class="col-10">
 <div class="top" style="min-height:900px; background-color:#000;">
 <br><br>
 
@@ -155,7 +154,11 @@ span{
   <div class="col-1"></div>
   <div class="col-11">
       <div id="owl-demo" class="owl-carousel owl-theme">
-      <img src="<?php echo base_url();?>img/product/bike/01-1.png" width="100%" alt=""/>
+      <?php foreach($bike as $bikes): ?>
+        <img src="<?php echo base_url();?>assets/uploads/img_promotion_product/<?php echo $bikes->img1;?>" width="100%" alt="" />
+      <?php endforeach; ?>
+      
+      
       <img src="<?php echo base_url();?>img/product/bike/Bike_02.png" width="100%" alt=""/>
       <img src="<?php echo base_url();?>img/product/bike/Bike_03.png" width="100%" alt=""/>
       <img src="<?php echo base_url();?>img/product/bike/Bike_04.png" width="100%" alt=""/>
@@ -183,7 +186,7 @@ span{
     <!-- boxcontent -->
     <div class="boxcontent" style="min-height:800px; position:absolute;">
         <!-- box -->
-        <div class="row" style="margin-top:150px;">
+        <div class="row" style="margin-top:115px;">
         <div class="col-3">
             <div class="text_right"><i>PANIGALE V4S 2018</i></div>
             <div class="text_left"><i>DUCATI</i></div>
@@ -193,7 +196,9 @@ span{
         <!-- row scall -->
               <div class="row">
                   <div class="col-6">
-                  <img src="<?php echo base_url();?>img/product/bike/1.png" width="100%" style="margin-left:20px;" alt=""/ >
+                  <?php foreach($bike as $bikes): ?>
+                    <img src="<?php echo base_url();?>assets/uploads/img_promotion_product/<?php echo $bikes->img1;?>" width="100%" style="margin-left:20px;" alt="" />
+                  <?php endforeach; ?>
                   </div>
                   <div class="col-1"></div>
                   <div class="col-5">
@@ -235,7 +240,7 @@ span{
                     </div>
                     <div class="col-12">
               <div class="row">
-                  <div class="col-6">
+                  <div class="col-8">
                   <div class="box_cart"> + ADD TO CART
                   <img src="<?php echo base_url();?>img/product/bike/cart.png" width="25px" alt=""/ > </div>
                   <br><br>
@@ -252,12 +257,14 @@ span{
         <!-- box scall -->
         <div class="row">
           <div class="col-3"></div>
-          <div class="col-9">
-
-            <div class="boximage">
+          <div class="col-8">
+<div class="row">
+                                  
+<?php foreach($bike as $bikes): ?>
+            <div class="boximage col-3">
               <div class="container">
               <a data-fancybox="gallery" href ="<?php echo base_url('img/product/bike/2.png'); ?>"> 
-              <img src="<?php echo base_url();?>img/product/bike/2.png" class="image alt=""/ >
+              <img src="<?php echo base_url();?>assets/uploads/img_promotion_product/<?php echo $bikes->img2;?>" width="100%" class="image" alt="" />
                 <div class="overlay">
                   <div class="text">FULL IMAGE</div>
                 </div>
@@ -265,11 +272,10 @@ span{
               </div>
             </div>
 
-            <div class="boximage">
+            <div class="boximage col-3">
               <div class="container">
-              <a data-fancybox="gallery" href ="<?php echo base_url('img/product/bike/3.png'); ?>"> 
-              <img src="<?php echo base_url();?>img/product/bike/3.png" class="image alt=""/ >
-             
+              <a data-fancybox="gallery" href ="<?php echo base_url('img/product/bike/2.png'); ?>"> 
+              <img src="<?php echo base_url();?>assets/uploads/img_promotion_product/<?php echo $bikes->img3;?>" width="100%" class="image" alt="" />
                 <div class="overlay">
                   <div class="text">FULL IMAGE</div>
                 </div>
@@ -277,10 +283,10 @@ span{
               </div>
             </div>
 
-            <div class="boximage">
+            <div class="boximage col-3">
               <div class="container">
-              <a data-fancybox="gallery" href ="<?php echo base_url('img/product/bike/4.png'); ?>"> 
-              <img src="<?php echo base_url();?>img/product/bike/4.png" class="image alt=""/ >
+              <a data-fancybox="gallery" href ="<?php echo base_url('img/product/bike/2.png'); ?>"> 
+              <img src="<?php echo base_url();?>assets/uploads/img_promotion_product/<?php echo $bikes->img4;?>" width="100%" class="image" alt="" />
                 <div class="overlay">
                   <div class="text">FULL IMAGE</div>
                 </div>
@@ -288,31 +294,39 @@ span{
               </div>
             </div>
 
-            <div class="boximage">
+            <div class="boximage col-3">
               <div class="container">
-              <a data-fancybox="gallery" href ="<?php echo base_url('img/product/bike/5.png'); ?>"> 
-              <img src="<?php echo base_url();?>img/product/bike/5.png" class="image alt=""/ >
+              <a data-fancybox="gallery" href ="<?php echo base_url('img/product/bike/2.png'); ?>"> 
+              <img src="<?php echo base_url();?>assets/uploads/img_promotion_product/<?php echo $bikes->img5;?>" width="100%" class="image" alt="" />
                 <div class="overlay">
                   <div class="text">FULL IMAGE</div>
                 </div>
                 </a>  
               </div>
             </div>
-            <img src="<?php echo base_url();?>img/product/bike/barslide.png"  >
+<?php endforeach; ?>
+</div>
 
-          </div>
-        </div>
-        </div>
 
-   
-        <!-- box -->
+  <!-- box -->
     </div>
     <!-- boxcontent -->
     
   </div>
 <!-- row  -->
 </div>
+
+
+</div>
+</div>
 <img src="<?php echo base_url();?>img/product/bike/02_3-18-07-2020_bike-for-sell_06.png"  width="100%" alt=""/>
+
+
+
+
+
+
+
 
 <script>
 $(document).ready(function() {

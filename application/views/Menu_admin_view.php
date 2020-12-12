@@ -119,6 +119,9 @@ a:hover {
                         <li>
                             <a href="<?php echo base_url('administrator/promotion_product');?>"> <i class="fa fa-certificate"></i>&nbsp; Add Product</a>
                         </li>
+                        <li>
+                            <a href="<?php echo base_url('administrator/bike_for_sell');?>"> <i class="fa fa-certificate"></i>&nbsp; Bike for Sell</a>
+                        </li>
                       
 					</ul>    
                 </li> 

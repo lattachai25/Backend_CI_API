@@ -201,6 +201,27 @@ span{
     margin-bottom:10px;
 }
 </style>
+<?php
+$this->db->select("*");
+$this->db->from("brand");
+$query = $this->db->get();
+$brand = $query->result();
+?>
+<?php
+$this->db->select("*");
+$this->db->from("model");
+$query = $this->db->get();
+$model = $query->result();
+?>
+
+<?php
+$this->db->select("*");
+$this->db->from("year");
+$query = $this->db->get();
+$year = $query->result();
+?>
+
+
 
 <div class="bg" style="margin-top:120px;"></div>
 <div class="row">
@@ -222,125 +243,28 @@ span{
     <div class="form-group col-md-3">
         <select id="inputState" class="form-control">
             <option selected> BRAND <i class="far fa-caret-circle-down"></i> </option>
-            <option>ADG</option>
-            <option>Aella</option>
-            <option>Alpha Racing</option>
-            <option>Austin Racing</option>
-            <option>Bonamici</option>
-            <option>Brembo</option>
-            <option>CNC RACING</option>
-            <option>Delight</option>
-            <option>Desmoworld</option>
-            <option>Dinavolt</option>
-            <option>DP</option>
-            <option>Far</option>
-            <option>Futurismoto</option>
-            <option>GB Racing</option>
-            <option>GIAMOTO</option>
-            <option>Hex escan</option>
-            <option>Jetprime</option>
-            <option>Kellermann</option>
-            <option>Kohken</option>
-            <option>Luimoto</option>
-            <option>Magical Racing</option>
-            <option>Motogadget</option>
-            <option>Motul</option>
-            <option>MPK</option>
-            <option>MRA</option>
-            <option>Nexzter</option>
-            <option>NRC</option>
-            <option>Optimate</option>
-            <option>PVM</option>
-            <option>Rizoma</option>
-            <option>RK CHAIN</option>
-            <option>STM Rock</option>
-            <option>Suter</option>
-            <option>Woodcraft</option>
-            <option>Yuasa</option>
+            <?php foreach($brand as $brands): ?>
+            <option><?php echo $brands->name;?></option>
+            <?php endforeach; ?>
         </select>
         </div>
 
         <div class="form-group col-md-3">
         <select id="inputState" class="form-control">
             <option selected> MODEL <i class="far fa-caret-circle-down"></i></option>
-            <option> 1098/SF/Diavel</option>
-            <option>1199</option>
-            <option>1199/899</option>
-            <option>1299/959</option>
-            <option>748/848/916/996/998/1098/1198</option>
-            <option>795/796</option>
-            <option>899</option>
-            <option>899/1299</option>
-            <option>899/959/1199/1299 Panigale </option>
-            <option>959/899/1199/1299 panigale</option>
-            <option>BMW</option>
-            <option>BMW C600Sport /C650GT</option>
-            <option>BMW R9T</option>
-            <option>C600</option>
-            <option>C600/C650</option>
-            <option>CBR1000R 2018</option>
-            <option>CBR600R</option>
-            <option>CBR600RR</option>
-            <option>Classic</option>
-            <option>DIAVEL</option>
-            <option>Diavel / Monster</option>
-            <option>Diavel /1199</option>
-            <option>DIAVEL /M821/M1200</option>
-            <option>Diavel 2012</option>
-            <option>Diavel 2012-14</option>
-            <option>Diavel 2014</option>
-            <option>Diavel 2015</option>
-            <option>Diavel,1098-1198,Multi 1200,SF</option>
-            <option>Diavel,1098-1198,Multi 1200,SF/Panigale1199/1299/V4</option>
-            <option>Diavel/Hyper821/939,Monster797/821/1200,MTS950/1200/1260</option>
-            <option>Diavel/Xdiavel/Hyper1100</option>
-            <option>DUCATI</option>
-            <option>Ducati Scrambler </option>
-            <option>ER6N '09 up</option>
-            <option>ER-6N 2012</option>
-            <option>F800R/ R1200GS/ S1000RR</option>
-            <option>GS1200</option>
-            <option>gsxr1000 -9-11</option>
-            <option>hyp821</option>
-            <option>Hyper 1100</option>
-            <option>HYPER796</option>
-            <option>Hyper796/Monster796/1100/ MTS1200/1260/Scrambler</option>
-            <option>Hyper821</option>
-            <option>Hyper821/Monster821/Multistrada</option>
-            <option>Hyper821/MTS</option>
-            <option>Hypermotard 796/1100</option>
-            <option>Hypermotard 821</option>
-            <option>Hypermotard/Strada 2013</option>
-            <option>Kawasaki all</option>
-            <option>M795/796</option>
-            <option>M796/1100/848</option>
-            <option>M796/HYP821</option>
-            <option>M797/M1200 '17/M821 2018</option>
-            <option>M821 14-17</option>
-            <option>M821/795/796</option>
-            <option>Monster</option>
-            <option>Monster 696/796/1100</option>
-            <option>Monster 796/1100, Hyper796/821/939,SF848</option>
+            <?php foreach($model as $models): ?>
+            <option><?php echo $models->name;?></option>
+            <?php endforeach; ?>
         </select>
         </div>
 
         <div class="form-group col-md-3">
         <select id="inputState" class="form-control">
             <option selected> YEAR <i class="far fa-caret-circle-down"></i></option>
-            <option>2020</option>
-            <option>2019</option>
-            <option>2018</option>
-            <option>2017</option>
-            <option>2016</option>
-            <option>2015</option>
-            <option>2014</option>
-            <option>2013</option>
-            <option>2012</option>
-            <option>2011</option>
-            <option>2010</option>
-            <option>2000</option>
+            <?php foreach($year as $years): ?>
+            <option><?php echo $years->name_year;?></option>
+            <?php endforeach; ?>
             
-
         </select>
         </div>
 
