@@ -75,7 +75,7 @@
 }
 
 .boximage{
-  width:24%;
+  width:100%;
   height:250px;
   display: inline-block;
 }
@@ -131,17 +131,28 @@ span{
 }
 
 </style>
+
 <?php
 $this->db->select("*");
 $this->db->from("bike_for_sell");
 $query = $this->db->get();
 $bike = $query->result();
 ?>
+
+<?php
+$this->db->select("*");
+$this->db->from("brand");
+$query = $this->db->get();
+$brand = $query->result();
+?>
+
+
+
 <div class="bg" style="margin-top:120px;"></div>
-<div class="row">
+<div class="row"> <!--  ROW --->
 <div class="col-1"></div>
 <div class="col-10">
-<div class="top" style="min-height:900px; background-color:#000;">
+<div class="top" style="min-height:700px; background-color:#000;">
 <br><br>
 
 <img src="<?php echo base_url();?>img/product/02_3-18-07-2020_bike-for-sell_02.png" width="100%" alt=""/>
@@ -150,184 +161,171 @@ $bike = $query->result();
 <br>
 <br>
 
-<div class="row">
+<div class="row"> <!--  ROW --->
   <div class="col-1"></div>
   <div class="col-11">
-      <div id="owl-demo" class="owl-carousel owl-theme">
-      <?php foreach($bike as $bikes): ?>
-        <img src="<?php echo base_url();?>assets/uploads/img_promotion_product/<?php echo $bikes->img1;?>" width="100%" alt="" />
-      <?php endforeach; ?>
+      <div id="owl-demo" class="owl-carousel owl-theme"> 
+      <ul class="nav nav-tabs">
+        <?php foreach($bike as $bikes): ?>
+
+          <li><a data-toggle="tab" href="#home<?php echo $bikes->id; ?>">
+                  <img src="<?php echo base_url();?>assets/uploads/img_promotion_product/<?php echo $bikes->img1;?>" width="10%" alt="" />
+              </a>
+          </li>    
+
+        <?php endforeach; ?>
+      </ul>
       
-      
-      <img src="<?php echo base_url();?>img/product/bike/Bike_02.png" width="100%" alt=""/>
-      <img src="<?php echo base_url();?>img/product/bike/Bike_03.png" width="100%" alt=""/>
-      <img src="<?php echo base_url();?>img/product/bike/Bike_04.png" width="100%" alt=""/>
-  
       </div>
   </div>
   <div class="col-2"></div>
   <div class="col-6" style="font-size:20px; font-weight:bold; color:#fff;">
   &nbsp; &nbsp;   01/<span>05</span><br>
-
-  <img src="<?php echo base_url();?>img/product/bike/barslide_top.png" alt=""/>
-
   </div>
-</div>
+</div> <!--  ROW --->
 
-</div>
-<!-- row  -->
-<div class="row">
-  <div class="boxcontent2" style="position:relative;">
+</div> <!--- End col-10 ----->
+</div> <!-- End TOP  -->
+</div><!-- End ROW --->
+<img src="<?php echo base_url();?>img/product/bike/02_3-18-07-2020_bike-for-sell_06.png"  width="100%" alt=""/>
+<div class="container">
 
-  <img src="<?php echo base_url();?>img/product/bike/bg_boke.png" width="100%" alt=""/ >
 
-  </div>
+<div class="tab-content">
+  <?php foreach($bike as $bikes): ?>
 
-    <!-- boxcontent -->
-    <div class="boxcontent" style="min-height:800px; position:absolute;">
-        <!-- box -->
-        <div class="row" style="margin-top:115px;">
-        <div class="col-3">
-            <div class="text_right"><i>PANIGALE V4S 2018</i></div>
-            <div class="text_left"><i>DUCATI</i></div>
-        </div>
+
+
+
+    <div id="home<?php echo $bikes->id;?>" class="tab-pane fade">
+    <div class="row">
+      <div class="boxcontent2" style="position:relative;">
+      <img src="<?php echo base_url();?>img/product/bike/bg_boke.png" width="100%" alt=""/ >
+      </div>
+ <!-- boxcontent -->
+ <div class="boxcontent" style="min-height:800px; position:absolute;">
+ <div class="row" style="margin-top:115px;">
+      <div class="col-3">
+        <div class="text_right"><i>PANIGALE V4S 2018</i></div>
+        <div class="text_left"><i>DUCATI</i></div>
+      </div>
         <!-- box scall-->
         <div class="col-8"> 
-        <!-- row scall -->
-              <div class="row">
-                  <div class="col-6">
-                  <?php foreach($bike as $bikes): ?>
-                    <img src="<?php echo base_url();?>assets/uploads/img_promotion_product/<?php echo $bikes->img1;?>" width="100%" style="margin-left:20px;" alt="" />
-                  <?php endforeach; ?>
-                  </div>
-                  <div class="col-1"></div>
-                  <div class="col-5">
-                    <div class="row">
-                      <div class="col-12">
-                        <div class="text_title_product"> DUCATI <br> PANIGALE V4S 2018 </div>
-                        <div class="text_price_cut"> <s>990,000 BAHT</s> </div>
-                        <div class="text_price"> 899,999.00 BAHT </div>
-                        <br><br>
-                      </div> 
-                      <div class="col-11 csall_bar">
+          <!-- row scall -->
+          <div class="row">
+            <div class="col-6">
+                <img src="<?php echo base_url();?>assets/uploads/img_promotion_product/<?php echo $bikes->img1;?>" width="100%" style="margin-left:20px;" alt="" />
+            </div>
+            <div class="col-1"></div>
+            <div class="col-5">
+            <div class="row"><!---- row  ----->
+              <div class="col-12">
+                  <div class="text_title_product"> <?php echo $bikes->brand;?> <br> <?php echo $bikes->model;?> </div>
+                  <div class="text_price_cut"> <s><?php echo $bikes->discount;?> BAHT</s> </div>
+                  <div class="text_price"> <?php echo $bikes->prict;?> BAHT </div>
+                  <br><br>
+              </div> 
+              <div class="col-11 csall_bar"> <!----  csall_bar  ----->
                         <p>
                           <div style="font-weight:bold; font-size:20px;">DESCRIPTION</div><br>
-                          <div style="font-size:18px; font-family:'RSU'; font-weight:bold">
-                          Panigale V4S ปี 2018 V4S มือสองพร้อมท่อ Full Akrapovic <br>
-                          สภาพสวยเนี๊ยบเหมือนเพิ่งออกจากศูนย์พร้อมของแต่ง <br>
-                          วิ่งน้อยมากแค่ 2,542 km แถมประกันชั้น 1<br>
-                          </div>
-                          <br>
-                          <div style="color:#ff6634; font-weight:bold; font-size:20px; font-family:'RSU';">  
-                          SALE จาก 990,000฿ เหลือเพียง 899,999฿
-                          </div>
-                          <br>
-                          <div style="font-size:18px; font-family:'RSU'; font-weight:bold">                
-                          คุ้มมากมีประกันชั้น 1 (หมด 30/7/2020 FPG) <br>
-                          รถศูนย์ ไม่มีประวัติ ล้ม ชน แปะ มั่นใจตรวจสอบได้ <br>
-                          ราคาพิเศษมาพร้อมของแต่งติดรถแบรนด์แท้เท่านั้น <br>
-                          <br>
-                          &nbsp; &nbsp; &nbsp;  - ท่อ Full Akrapovic ของแท้  <br>
-                          &nbsp; &nbsp; &nbsp;  - ท้ายสั้นพร้อมไฟเลี้ยว Nrc racing <br>
-                          &nbsp; &nbsp; &nbsp;  - ปิดใต้ถัง Evotech <br>
-                          &nbsp; &nbsp; &nbsp;  - ชุดแต่งบังหม้อน้ำ Evotech <br>
-                          &nbsp; &nbsp; &nbsp;  - กันล้มหน้า Evotech<br>
-                            <br>
-                          </div>
+                          <?php echo $bikes->descripion;?>
                         </p>
-                      </div> 
-
-                    </div>
-                    <div class="col-12">
+              </div> <!---- End Row  ----->
+            </div><!---- End csall_bar  ----->
+            <div class="col-12"> <!---- col-12  ----->
               <div class="row">
-                  <div class="col-8">
-                  <div class="box_cart"> + ADD TO CART
-                  <img src="<?php echo base_url();?>img/product/bike/cart.png" width="25px" alt=""/ > </div>
-                  <br><br>
+                  <div class="col-9">
+                    <div class="box_cart"> + ADD TO CART
+                      <img src="<?php echo base_url();?>img/product/bike/cart.png" width="25px" alt=""/ >
+                    </div>
+                      <br><br>
                   </div> 
               </div>
+            </div><!---- End col-12  ----->
+
+
+
             </div>
-                  </div>
-
-              </div>
-            <!-- row scall -->
-
-              </div>
+          </div>
+          <!--End row scall -->
         </div>
-        <!-- box scall -->
-        <div class="row">
+        <!-- End box scall-->
+        <div class="row"  style="margin-top:-140px;">
           <div class="col-3"></div>
-          <div class="col-8">
-<div class="row">
-                                  
-<?php foreach($bike as $bikes): ?>
-            <div class="boximage col-3">
-              <div class="container">
-              <a data-fancybox="gallery" href ="<?php echo base_url('img/product/bike/2.png'); ?>"> 
+          <div class="col-8"><!--col-8-->
+          <div class="col-12"> <!--col-12-->
+          <div class="row"> <!--row-->
+
+          <!-- box gallery 1-->
+          <div class="boximage col-3">
+            <div class="container">
+              <a data-fancybox="gallery" href ="<?php echo base_url();?>assets/uploads/img_promotion_product/<?php echo $bikes->img2;?>"> 
               <img src="<?php echo base_url();?>assets/uploads/img_promotion_product/<?php echo $bikes->img2;?>" width="100%" class="image" alt="" />
                 <div class="overlay">
                   <div class="text">FULL IMAGE</div>
                 </div>
                 </a>  
-              </div>
             </div>
+          </div>
+          <!-- box gallery 1-->
 
-            <div class="boximage col-3">
-              <div class="container">
-              <a data-fancybox="gallery" href ="<?php echo base_url('img/product/bike/2.png'); ?>"> 
+          <!-- box gallery 2-->
+          <div class="boximage col-3">
+            <div class="container">
+              <a data-fancybox="gallery" href ="<?php echo base_url();?>assets/uploads/img_promotion_product/<?php echo $bikes->img3;?>"> 
               <img src="<?php echo base_url();?>assets/uploads/img_promotion_product/<?php echo $bikes->img3;?>" width="100%" class="image" alt="" />
                 <div class="overlay">
                   <div class="text">FULL IMAGE</div>
                 </div>
                 </a>  
-              </div>
             </div>
-
-            <div class="boximage col-3">
-              <div class="container">
-              <a data-fancybox="gallery" href ="<?php echo base_url('img/product/bike/2.png'); ?>"> 
+          </div>
+          <!-- box gallery 2-->
+          <!-- box gallery 3-->
+          <!-- <div class="boximage col-3">
+            <div class="container">
+              <a data-fancybox="gallery" href ="<?php echo base_url();?>assets/uploads/img_promotion_product/<?php echo $bikes->img4;?>"> 
               <img src="<?php echo base_url();?>assets/uploads/img_promotion_product/<?php echo $bikes->img4;?>" width="100%" class="image" alt="" />
                 <div class="overlay">
                   <div class="text">FULL IMAGE</div>
                 </div>
                 </a>  
-              </div>
             </div>
-
-            <div class="boximage col-3">
-              <div class="container">
-              <a data-fancybox="gallery" href ="<?php echo base_url('img/product/bike/2.png'); ?>"> 
+          </div> -->
+          <!-- box gallery 3-->
+          <!-- box gallery 3-->
+          <!-- <div class="boximage col-3">
+            <div class="container">
+              <a data-fancybox="gallery" href ="<?php echo base_url();?>assets/uploads/img_promotion_product/<?php echo $bikes->img5;?>"> 
               <img src="<?php echo base_url();?>assets/uploads/img_promotion_product/<?php echo $bikes->img5;?>" width="100%" class="image" alt="" />
                 <div class="overlay">
                   <div class="text">FULL IMAGE</div>
                 </div>
                 </a>  
-              </div>
             </div>
-<?php endforeach; ?>
-</div>
+          </div> -->
+          <!-- box gallery 3-->
+
+          </div><!-- end row -->
+          </div><!-- end  col-12-->
+        </div><!-- end col-8 -->
+
+        </div>
 
 
-  <!-- box -->
+ </div>
+ </div>
+  
+  
+
+
+
     </div>
-    <!-- boxcontent -->
-    
-  </div>
-<!-- row  -->
-</div>
 
-
+    </div>
+    <?php endforeach; ?>    
 </div>
 </div>
-<img src="<?php echo base_url();?>img/product/bike/02_3-18-07-2020_bike-for-sell_06.png"  width="100%" alt=""/>
-
-
-
-
-
-
-
-
 <script>
 $(document).ready(function() {
  var owl = $("#owl-demo");
