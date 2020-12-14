@@ -323,64 +323,12 @@ $year = $query->result();
             <div class="col-1"> - </div>
         </div>
 
-        <div class="row" style="color:#666666; font-weight:bold; margin-top:15px; padding-top:8px; padding-bottom:8px;"> 
-            <div class="col-10 textmenu"> BRAKE SYSTEM </div>
-            <div class="col-1"> + </div>
-        </div>
-        <div class="row sizemenu"> 
-            <div class="col-10 textmenu"> ENGINE & CLUTCH </div>
-            <div class="col-1"> + </div>
-        </div>
 
-        <div class="row sizemenu"> 
-            <div class="col-10 textmenu" style="color:#ff6634;"> EXHAUST </div>
-            <div class="col-1">  </div>
-        </div>
 
-        <div class="row sizemenu"> 
-            <div class="col-10 textmenu"> FLUID TANK</div>
-            <div class="col-1">  </div>
-        </div>
-        <div class="row sizemenu"> 
-            <div class="col-10 textmenu"> GRIPS & HANDLEBAR </div>
-            <div class="col-1"> + </div>
-        </div>
-        <div class="row sizemenu"> 
-            <div class="col-10 textmenu"> INDICATOR LIGHT </div>
-            <div class="col-1">  </div>
-        </div>
-        <div class="row sizemenu"> 
-            <div class="col-10 textmenu"> MAINTENANCE & CARE </div>
-            <div class="col-1"> + </div>
-        </div>
-        <div class="row sizemenu"> 
-            <div class="col-10 textmenu"> MIRROR</div>
-            <div class="col-1">  </div>
-        </div>
-        <div class="row sizemenu"> 
-            <div class="col-10 textmenu" style="color:#ff6634;"> PARTS & ACCESSORIES </div>
-            <div class="col-1"> + </div>
-        </div>
-        <div class="row sizemenu"> 
-            <div class="col-10 textmenu"> PROTECTION </div>
-            <div class="col-1"> + </div>
-        </div>
-        <div class="row sizemenu"> 
-            <div class="col-10 textmenu"> STEERING & SUSPENSION </div>
-            <div class="col-1"> + </div>
-        </div>
-        <div class="row sizemenu"> 
-            <div class="col-10 textmenu"> TRANSMISSION </div>
-            <div class="col-1"> + </div>
-        </div>
-        <div class="row sizemenu"> 
-            <div class="col-10 textmenu"> WHEELS </div>
-            <div class="col-1"> + </div>
-        </div>
-        <div class="row sizemenu"> 
-            <div class="col-10 textmenu"> OTHER </div>
-            <div class="col-1"> + </div>
-        </div>
+
+
+
+
     </div>
 
 
@@ -460,3 +408,5 @@ $year = $query->result();
 
 </div>
 </div><!-- row min-height -->
+
+

@@ -265,6 +265,26 @@ function statusDis($value)
 			$this->_example_output($output);
 		}
 
+		function news_idea(){
+			$crud = new grocery_CRUD();
+			$crud->set_theme("bootstrap");
+			$crud->set_table("news_idea")
+			->order_by('id','desc')
+			->display_as('date',' Day')
+			->display_as('title','Title')
+			->display_as('title_show',' Title Show')
+			->display_as('img','img');
+	
+			$crud->field_type('status','dropdown',array('1' => 'Active', '0' => 'Inactive'));
+			$crud->set_field_upload('img','assets/uploads/img_news_idea');
+			$output = $crud->render();
+			$this->_example_output($output);
+		}
+
+
+
+
+
 		function contactus(){
 			$crud = new grocery_CRUD();
 			$crud->set_theme("bootstrap");

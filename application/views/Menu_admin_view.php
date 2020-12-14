@@ -135,8 +135,31 @@ a:hover {
 				</li>
 	             
                 <li>
-                    <a href="<?php echo base_url('administrator/news');?>"><i class="fa fa-pencil fa-fw"></i>&nbsp; News</a>
-                </li>
+                    <a href="#"><i class="glyphicon fa fa-fire fa-fw"> </i>&nbsp; News<span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="<?php echo base_url('administrator/news');?>"> <i class="fa fa-picture-o fa-fw"></i>&nbsp;news & Update</a>
+                        </li>
+
+						<li>
+                            <a href="<?php echo base_url('administrator/news_idea');?>"> <i class="fa fa-picture-o fa-fw"></i>&nbsp; news Idea</a>
+						</li>
+  
+					</ul>    
+                </li> 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                 <li>
                     <a href="#"><i class="glyphicon fa fa-fire fa-fw"> </i>&nbsp; Gallery<span class="fa arrow"></span></a>

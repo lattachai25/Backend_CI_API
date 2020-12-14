@@ -217,7 +217,7 @@ $bike = $query->result();
 <div class="row"> <!--  ROW --->
 <div class="col-1"></div>
 <div class="col-10">
-<div class="top" style="min-height:700px; background-color:#000;">
+<div class="top" style="min-height:800px; background-color:#000;">
 <br><br>
 
 <img src="<?php echo base_url();?>img/product/02_3-18-07-2020_bike-for-sell_02.png" width="100%" alt=""/>
@@ -232,7 +232,6 @@ $bike = $query->result();
   <section class="my-slide">
       <ul class="row owl-carousel owl-theme nav nav-tabs">
         <?php foreach($bike as $bikes): ?>
-
           <li class="owl-item">
             <div class="item-cat">
               <a data-toggle="tab" href="#home<?php echo $bikes->id; ?>">
@@ -243,14 +242,14 @@ $bike = $query->result();
 
         <?php endforeach; ?>
 
-
       </ul>
   </section> 
  
   </div>
   <div class="col-2"></div>
-  <div class="col-6" style="font-size:20px; font-weight:bold; color:#fff;">
+  <div class="col-6" style="font-size:20px; font-weight:bold; color:#fff; margin-top:-100px !important;">
   &nbsp; &nbsp;   01/<span>05</span><br>
+  <img src="<?php echo base_url();?>img/product/bike/barslide_top.png" alt=""/>
   </div>
 </div> <!--  ROW --->
 

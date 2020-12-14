@@ -18,6 +18,14 @@ nav ul ul li {
 </style>
 
 
+<?php
+$this->db->select("*");
+$this->db->from("main_category");
+$query = $this->db->get();
+$main_category = $query->result();
+?>
+
+
 <div class="row"></div>
 <nav class="navbar fixed-top" id="mainNav">
 <div class="col-1"></div>
@@ -41,9 +49,9 @@ nav ul ul li {
                 <li><a href="<?php echo base_url('category');?>">CATEGORY</a>
       
               <ul>
-                    <li><a href="<?php echo base_url('Promotion');?>">HTML/CSS 1111</a></li>
-                    <li><a href="<?php echo base_url('Promotion');?>">jQuery</a></li>
-                    <li><a href="<?php echo base_url('Promotion');?>">Other</a>
+                <?php foreach($main_category as $main_categorys): ?>
+                    <li><a href="<?php echo base_url('');?>"><?php echo $main_categorys->Name;?></a></li>
+                <?php endforeach; ?>
               </ul>      
               
               </li>
@@ -53,7 +61,25 @@ nav ul ul li {
  
             <li <?php if($this->uri->segment(1)=="Promotion"){echo 'class="active"';}?>><a href="<?php echo base_url('Promotion');?>">PROMOTION</a></li>
             <li  <?php if($this->uri->segment(1)=="Service"){echo 'class="active"';}?>><a href="<?php echo base_url('Service');?>">SERVICE</a></li>
-            <li  <?php if($this->uri->segment(1)=="News"){echo 'class="active"';}?>><a href="<?php echo base_url('News');?>">NEWS</a></li>
+            <!-- <li  <?php if($this->uri->segment(1)=="News"){echo 'class="active"';}?>><a href="<?php echo base_url('News');?>">NEWS</a></li> -->
+
+            <li <?php if($this->uri->segment(1)=="")
+            {echo 'class="active"';}
+            elseif ($this->uri->segment(1)=="")
+            {echo 'class="active"';}
+            elseif ($this->uri->segment(1)=="")
+            {echo 'class="active"';}
+            ?> ><a href="">NEWS</a>
+           
+            <ul>
+                <li><a href="<?php echo base_url('News');?>">NEWS & Update</a></li>
+                <li><a href="<?php echo base_url('News_idea');?>">IDEA</a></li>
+            </ul>
+            </li>
+
+
+
+
             <li  <?php if($this->uri->segment(1)=="Gallery"){echo 'class="active"';}?>><a href="<?php echo base_url('Gallery');?>">GALLERY</a></li>
             <li  <?php if($this->uri->segment(1)=="About"){echo 'class="active"';}?>><a href="<?php echo base_url('About');?>">ABOUT</a></li>
             <li style="width:100px;">

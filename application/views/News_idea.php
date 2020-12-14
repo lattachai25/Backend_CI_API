@@ -213,7 +213,7 @@ span{
 
 <?php
 $this->db->select("*");
-$this->db->from("news");
+$this->db->from("news_idea");
 $this->db->order_by('id','desc');
 $query = $this->db->get();
 $news = $query->result();
@@ -226,7 +226,7 @@ $news = $query->result();
 <div class="row">
 <div class="col-1"></div>
 <div class="col-10">
-<img src="<?php echo base_url();?>img/news/news_latest.png" width="100%" alt=""/ >
+<img src="<?php echo base_url();?>img/news/latest.png" width="100%" alt=""/ >
 
 <br><br>
 </div>
@@ -255,7 +255,7 @@ $news = $query->result();
                         <a href="<?php echo base_url('News_show'); ?>">            
                             <div class="container">
                                 <center>
-                                <img class="image_logo_show" src="<?php echo base_url();?>assets/uploads/img_news/<?php echo $news2->img;?>" class="image" style="width:100%" alt="" />
+                                <img class="image_logo_show" src="<?php echo base_url();?>assets/uploads/img_news_idea/<?php echo $news2->img;?>" class="image" style="width:100%" alt="" />
                                     <!-- <img src="<?php echo base_url();?>img/news/news1.jpg" alt="Avatar" class="image" style="width:100%" /> -->
                                 </center>
                                 <div class="overlay">
