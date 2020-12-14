@@ -42,12 +42,14 @@ $main_category = $query->result();
             {echo 'class="active"';}
             elseif ($this->uri->segment(1)=="")
             {echo 'class="active"';}
-            ?> ><a href="">PRODUCT</a>
+            ?> >
+            
+            <a href="">PRODUCT</a>
            
             <ul>
                 <li><a href="<?php echo base_url('select_your_bike');?>">SELECT YOUR BIKE</a></li>
                 <li><a href="<?php echo base_url('category');?>">CATEGORY</a>
-      
+
               <ul>
                 <?php foreach($main_category as $main_categorys): ?>
                     <li><a href="<?php echo base_url('');?>"><?php echo $main_categorys->Name;?></a></li>
@@ -57,6 +59,7 @@ $main_category = $query->result();
               </li>
                 <li><a href="<?php echo base_url('bike_for_sell');?>">BIKE FOR SELL</a></li>
             </ul>
+
             </li>
  
             <li <?php if($this->uri->segment(1)=="Promotion"){echo 'class="active"';}?>><a href="<?php echo base_url('Promotion');?>">PROMOTION</a></li>

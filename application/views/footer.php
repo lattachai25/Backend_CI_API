@@ -122,7 +122,7 @@
                     <div><a class="quick_link" href="<?php echo base_url('select_your_bike') ?>" >Select your bike</a></div>
                     <div><a class="quick_link" href="<?php echo base_url('category') ?>" >Category</a></div>
                     <div><a class="quick_link" href="<?php echo base_url('bike_for_sell') ?> ">Bike for sell</a></div>
-                    <div><a class="quick_link" href="<?php echo base_url('') ?> ">News & Update</a></div>
+                    <div><a class="quick_link" href="<?php echo base_url('News') ?> ">News & Update</a></div>
                     <div><a class="quick_link" href="<?php echo base_url('') ?> ">Idea</a></div>
                     <div><a class="quick_link" href="<?php echo base_url('Register') ?> ">Register</a></div>
                     <div><a class="quick_link" href="<?php echo base_url('Contact') ?> ">Contact Us</a></div>

@@ -1,3 +1,8 @@
+<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</head>
+
 <style>
 .bg_select{
     height:500px;
@@ -212,6 +217,43 @@ span{
 font-size:50px;
 color:#ff6634;
 }
+
+
+#nav a.active {
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff!important;
+}
+
+
+.tel{
+    border:2px solid #979797; 
+    background-color: #a3a3a3;
+}
+
+#nav a {
+    padding: 8px 45px !important;
+    margin: 8px 1px;
+    padding: 8px 36px !important;
+    margin: 0 10px;
+    font-weight: 400;
+    color: #2c3e50;
+    text-decoration: none;
+}
+
+.menuside{
+    color:#666666; 
+    font-weight:bold; 
+    margin-top:15px; 
+    padding-top:8px; 
+    padding-bottom:8px;
+}
+
+.active{
+    color:#ff6634;
+    font-weight:bold;
+    background-color:#fff;
+}
 </style>
 
 
@@ -403,7 +445,40 @@ color:#ff6634;
             <div class="col-1"> - </div>
         </div>
 
-        <div class="row" style="color:#666666; font-weight:bold; margin-top:15px; padding-top:8px; padding-bottom:8px;"> 
+
+
+
+        <ul class="dropdown-menu">
+  <li><span class="dropdown-item-text">Dropdown item text</span></li>
+  <li><a class="dropdown-item" href="#">Action</a></li>
+  <li><a class="dropdown-item" href="#">Another action</a></li>
+  <li><a class="dropdown-item" href="#">Something else here</a></li>
+</ul>
+
+
+      
+
+
+
+<div class="dropdown">
+  <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" style="color:#ff6634; font-weight:bold; ">
+  BRAKE SYSTEM 
+  <!-- <?php echo $this->uri->segment(1); ?> -->
+  </button>
+  <ul class="dropdown-menu" >
+  
+    <li><a class="<?php if($this->uri->segment(1)=="category"){echo "active";}?> dropdown-item menuside" href="/Backend_CI_API/category">BRAKE MASTER CYLINDER</a></li>
+    <li><a class="dropdown-item menuside" href="#">CLUTCH MASTER CYLINDER</a></li>
+    <li><a class="dropdown-item menuside" href="#">REAR BRAKE MASTER CYLINDER</a></li>
+    <li><a class="dropdown-item menuside" href="#">FRONT CALIPER</a></li>
+    <li><a class="dropdown-item menuside" href="#">REAR CALIPER</a></li>
+    <li><a class="dropdown-item menuside" href="#" aria-current="true" style="color:#ff6634;">DISC BRAKE</a></li>
+    <li><a class="dropdown-item menuside" href="#">BRAKE PAD</a></li>
+    <li><a class="dropdown-item menuside" href="#">SWITCH</a></li>
+  </ul>
+</div>
+
+        <!-- <div class="row" > 
             <div class="col-10 textmenu" style="color:#ff6634;"> BRAKE SYSTEM </div>
             <div class="col-1"> + </div>
         </div>
@@ -430,7 +505,7 @@ color:#ff6634;
         </div>
         <div class="row sizemenu"> 
             <div class="col-12 textmenu2"> SWITCH </div>
-        </div>
+        </div> -->
 
 
 
