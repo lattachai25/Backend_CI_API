@@ -484,6 +484,7 @@ function statusDis($value)
 
 			$crud->set_relation('brand','brand','name');
 			$crud->set_relation('model','model','name');
+			
 			// $crud->set_relation('category','main_category','name');
 			// $crud->set_relation('sub_category','sub_category','name_subcategory');
 
@@ -500,7 +501,49 @@ function statusDis($value)
 		}
 
 
+		function select_your_bike(){
+			$crud = new grocery_CRUD();
+			$crud->set_theme("bootstrap");
+			$crud->set_table("select_your_bike")
+			->order_by('id','id')
+			->display_as('name_product','Name Product')
+			->display_as('img1','img 1 Size 222 x 226 px .PNG')
+			->display_as('img2','img 2 Size 222 x 226 px .PNG')
+			->display_as('img3','img 3 Size 222 x 226 px .PNG')
+			->display_as('img4','img 4 Size 222 x 226 px .PNG')
+			->display_as('img5','img 5 Size 222 x 226 px .PNG')
+			->display_as('category','Category')
+			->display_as('sub_category','Sub Category')
 
+
+			->display_as('name','Name product')
+
+			->display_as('price','price')
+			->display_as('discount','Discount')	
+			->display_as('detail','Detail')
+			->display_as('color','color')
+			->display_as('quality','Quality')
+			->display_as('date',' date')
+			->display_as('datetime',' datetime');
+			$crud->order_by('id','desc');
+	
+			$crud->set_relation('model','model','name');
+			$crud->set_relation('name_color','color','name_color');
+			$crud->set_relation('name_year','year','name_year');
+			$crud->set_relation('category','main_category','name');
+			$crud->set_relation('sub_category','sub_category','name_subcategory');
+
+
+			$crud->field_type('status','dropdown',array('1' => 'Active', '0' => 'Inactive'));
+			$crud->set_field_upload('img1','assets/uploads/img_promotion_product');
+			$crud->set_field_upload('img2','assets/uploads/img_promotion_product');
+			$crud->set_field_upload('img3','assets/uploads/img_promotion_product');
+			$crud->set_field_upload('img4','assets/uploads/img_promotion_product');
+			$crud->set_field_upload('img5','assets/uploads/img_promotion_product');
+			
+			$output = $crud->render();
+			$this->_example_output($output);
+		}
 
 
 

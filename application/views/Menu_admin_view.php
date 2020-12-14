@@ -96,6 +96,10 @@ a:hover {
                             <a href="<?php echo base_url('administrator/product');?>"> <i class="fa fa-certificate"></i>&nbsp;Add Products</a>
                         </li>
                         <li>
+                            <a href="<?php echo base_url('administrator/select_your_bike');?>"> <i class="fa fa-certificate"></i>&nbsp; Select Your Bike</a>
+                        </li>
+
+                        <li>
                         <a href="#"><i class="glyphicon fa fa-plus-square"> </i>&nbsp; Category<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
@@ -105,6 +109,9 @@ a:hover {
                                     <a href="<?php echo base_url('administrator/product1');?>">&nbsp; &nbsp;<i class="fa fa-wrench fa-fw"></i>&nbsp; Category 1</a>
                                 </li> 
                             </ul>   
+                        </li>
+                        <li>
+                            <a href="<?php echo base_url('administrator/bike_for_sell');?>"> <i class="fa fa-certificate"></i>&nbsp; Bike for Sell</a>
                         </li>   
 					</ul>    
 				</li>
@@ -119,10 +126,6 @@ a:hover {
                         <li>
                             <a href="<?php echo base_url('administrator/promotion_product');?>"> <i class="fa fa-certificate"></i>&nbsp; Add Product</a>
                         </li>
-                        <li>
-                            <a href="<?php echo base_url('administrator/bike_for_sell');?>"> <i class="fa fa-certificate"></i>&nbsp; Bike for Sell</a>
-                        </li>
-                      
 					</ul>    
                 </li> 
                 
