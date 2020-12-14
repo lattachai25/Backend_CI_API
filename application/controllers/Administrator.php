@@ -117,7 +117,7 @@ function statusDis($value)
 			->order_by('id','id')
 			->display_as('link_vdo', 'link_vdo')
 			->display_as('img_bg',' img_bg')
-			->display_as('text',' text')
+			->display_as('Model',' Model')
 			->display_as('date',' Day');
 	
 			$crud->field_type('status','dropdown',array('1' => 'Active', '0' => 'Inactive'));

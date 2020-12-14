@@ -8,6 +8,14 @@ nav ul ul li {
 }
 </style>
 
+<?php
+$this->db->select("*");
+$this->db->from("main_category");
+$query = $this->db->get();
+$main_category = $query->result();
+?>
+
+
 <div class="row"></div>
 <nav class="navbar fixed-top" id="mainNav">
 <div class="col-1"></div>
@@ -18,16 +26,22 @@ nav ul ul li {
             <li style="margin-left:50px;"></li>
             <li class="active" ><a href="<?php echo base_url('Home');?>" style="color:#000;">HOME</a></li>
 
-            <li> <a href="">PRODUCT</a>
+            <li <?php if($this->uri->segment(1)=="")
+            {echo 'class="active"';}
+            elseif ($this->uri->segment(1)=="")
+            {echo 'class="active"';}
+            elseif ($this->uri->segment(1)=="")
+            {echo 'class="active"';}
+            ?> ><a href="">PRODUCT</a>
            
             <ul>
                 <li><a href="<?php echo base_url('select_your_bike');?>">SELECT YOUR BIKE</a></li>
                 <li><a href="<?php echo base_url('category');?>">CATEGORY</a>
       
               <ul>
-                    <li><a href="<?php echo base_url('Promotion');?>">HTML/CSS 1111</a></li>
-                    <li><a href="<?php echo base_url('Promotion');?>">jQuery</a></li>
-                    <li><a href="<?php echo base_url('Promotion');?>">Other</a>
+                <?php foreach($main_category as $main_categorys): ?>
+                    <li><a href="<?php echo base_url('');?>"><?php echo $main_categorys->Name;?></a></li>
+                <?php endforeach; ?>
               </ul>      
               
               </li>
@@ -37,7 +51,25 @@ nav ul ul li {
  
             <li <?php if($this->uri->segment(1)=="Promotion"){echo 'class="active"';}?>><a href="<?php echo base_url('Promotion');?>">PROMOTION</a></li>
             <li  <?php if($this->uri->segment(1)=="Service"){echo 'class="active"';}?>><a href="<?php echo base_url('Service');?>">SERVICE</a></li>
-            <li  <?php if($this->uri->segment(1)=="News"){echo 'class="active"';}?>><a href="<?php echo base_url('News');?>">NEWS</a></li>
+            <!-- <li  <?php if($this->uri->segment(1)=="News"){echo 'class="active"';}?>><a href="<?php echo base_url('News');?>">NEWS</a></li> -->
+
+            <li <?php if($this->uri->segment(1)=="")
+            {echo 'class="active"';}
+            elseif ($this->uri->segment(1)=="")
+            {echo 'class="active"';}
+            elseif ($this->uri->segment(1)=="")
+            {echo 'class="active"';}
+            ?> ><a href="">NEWS</a>
+           
+            <ul>
+                <li><a href="<?php echo base_url('News');?>">NEWS & Update</a></li>
+                <li><a href="<?php echo base_url('News_idea');?>">IDEA</a></li>
+            </ul>
+            </li>
+
+
+
+
             <li  <?php if($this->uri->segment(1)=="Gallery"){echo 'class="active"';}?>><a href="<?php echo base_url('Gallery');?>">GALLERY</a></li>
             <li  <?php if($this->uri->segment(1)=="About"){echo 'class="active"';}?>><a href="<?php echo base_url('About');?>">ABOUT</a></li>
             <li style="width:100px;">
@@ -60,18 +92,21 @@ nav ul ul li {
 </div>
 
 <script>
+
 $(document).ready(function(){
   $(window).scroll(function(){
   	var scroll = $(window).scrollTop();
 	  if (scroll > 300) {
         $("#mainNav").css("background" , "#f7f7f7");  
         $("nav a").css("color","#000");
+        $("nav ul li ul li a").css("color","#000");
         $(".active").css("color","#000");
 	  }
 
 	  else{
         $("nav a").css("color","#FFF");
         $(".active a").css("color","#000");
+        $("nav ul li ul li a").css("color","#000");
         $("#mainNav").css("background" , "transparent");	
 	  }
   })
