@@ -8,7 +8,7 @@
 .address{
     font-family:'helvetica';
     font-weight:100;
-    font-size:18px;
+    font-size:17px;
     color:#fff;
     color:#929292;
 }
@@ -63,7 +63,7 @@
 .input_email {
     background-color:#000;
     margin-left: -13px;
-    width: 237px;
+    width: 155px;
     color:#ffffff;
 }
 .title_col{

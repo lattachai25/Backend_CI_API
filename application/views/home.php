@@ -1,3 +1,64 @@
+<?php
+$this->db->select("*");
+$this->db->from("homeslide");
+$query = $this->db->get();
+$slide = $query->result();
+?>
+
+
+<?php
+$this->db->select("*");
+$this->db->from("homeplaylist");
+$query = $this->db->get();
+$homeplaylist = $query->row();
+?>
+<?php
+$this->db->select("*");
+$this->db->from("brand");
+$query = $this->db->get();
+$brand = $query->result();
+?>
+<?php
+$this->db->select("*");
+$this->db->from("model");
+$query = $this->db->get();
+$model = $query->result();
+?>
+
+<?php
+$this->db->select("*");
+$this->db->from("year");
+$query = $this->db->get();
+$year = $query->result();
+?>
+
+
+
+
+<?php
+$this->db->select("*");
+$this->db->from("bike_for_sell");
+$query = $this->db->get();
+$bike = $query->result();
+?>
+
+
+<?php
+$this->db->select("*");
+$this->db->from("promotion_product");
+$this->db->where("Type",1);
+$this->db->limit(3, 0); 
+$this->db->order_by('id','desc');
+$query = $this->db->get();
+$pro = $query->result();
+?>
+
+
+
+
+
+
+
 <style>
 .bx-wrapper {
   -moz-box-shadow: none;
@@ -43,6 +104,13 @@
     font-weight: bold;
 }
 
+.text4:hover{
+    color:#ff6634;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
 .bg_select{
     height:500px;
     background-image:url('<?php echo base_url();?>img/product/BG_Selectyourvehicle.png');
@@ -73,8 +141,10 @@
     color:#fff;
 }
 .bg_play{
+    margin-top: -250px !important;
+    width:100%;
     height:700px;
-    background-image:url('<?php echo base_url();?>img/home/bg_play.png');
+    background-image:url('<?php echo base_url();?>assets/uploads/img_bg/<?php echo $homeplaylist->img_bg; ?>');
     background-repeat: no-repeat;
     background-size:cover;
     background-size:100% 100%;
@@ -124,14 +194,14 @@
   bottom: 0;
   left: -2px;
   right: 0;
-  width: 139%;
-  height: 350px;
+  width: 101%;
+  height: 357px;
   opacity: 0;
   transition: .5s ease;
   background-color: #ff5e0d;
 }
 
-.container2:hover .overlay {
+.container:hover .overlay {
   opacity: 0.8;
 }
 
@@ -192,7 +262,7 @@ span{
 
 .bgcar{
     background: #fff;
-    min-height: 500px;
+    min-height: 400px;
 }
 .bg_slide{
     z-index:-9;
@@ -225,13 +295,6 @@ span{
 
 
 <!-- DB All Start -->
-
- <?php
-$this->db->select("*");
-$this->db->from("homeslide");
-$query = $this->db->get();
-$slide = $query->result();
-?>
 
 
 <!-- DB All End -->
@@ -316,121 +379,25 @@ $slide = $query->result();
                         <div class="form-group col-md-3">
                             <select id="inputState" class="form-control">
                                 <option selected> BRAND <i class="far fa-caret-circle-down"></i> </option>
-                                <option>ADG</option>
-                                <option>Aella</option>
-                                <option>Alpha Racing</option>
-                                <option>Austin Racing</option>
-                                <option>Bonamici</option>
-                                <option>Brembo</option>
-                                <option>CNC RACING</option>
-                                <option>Delight</option>
-                                <option>Desmoworld</option>
-                                <option>Dinavolt</option>
-                                <option>DP</option>
-                                <option>Far</option>
-                                <option>Futurismoto</option>
-                                <option>GB Racing</option>
-                                <option>GIAMOTO</option>
-                                <option>Hex escan</option>
-                                <option>Jetprime</option>
-                                <option>Kellermann</option>
-                                <option>Kohken</option>
-                                <option>Luimoto</option>
-                                <option>Magical Racing</option>
-                                <option>Motogadget</option>
-                                <option>Motul</option>
-                                <option>MPK</option>
-                                <option>MRA</option>
-                                <option>Nexzter</option>
-                                <option>NRC</option>
-                                <option>Optimate</option>
-                                <option>PVM</option>
-                                <option>Rizoma</option>
-                                <option>RK CHAIN</option>
-                                <option>STM Rock</option>
-                                <option>Suter</option>
-                                <option>Woodcraft</option>
-                                <option>Yuasa</option>
+                                <?php foreach($brand as $brands): ?>
+                                     <option><?php echo $brands->name;?></option>
+                                <?php endforeach; ?>
                             </select>
                         </div>
                         <div class="form-group col-md-3">
                             <select id="inputState" class="form-control">
                                 <option selected> MODEL <i class="far fa-caret-circle-down"></i></option>
-                                <option> 1098/SF/Diavel</option>
-                                <option>1199</option>
-                                <option>1199/899</option>
-                                <option>1299/959</option>
-                                <option>748/848/916/996/998/1098/1198</option>
-                                <option>795/796</option>
-                                <option>899</option>
-                                <option>899/1299</option>
-                                <option>899/959/1199/1299 Panigale </option>
-                                <option>959/899/1199/1299 panigale</option>
-                                <option>BMW</option>
-                                <option>BMW C600Sport /C650GT</option>
-                                <option>BMW R9T</option>
-                                <option>C600</option>
-                                <option>C600/C650</option>
-                                <option>CBR1000R 2018</option>
-                                <option>CBR600R</option>
-                                <option>CBR600RR</option>
-                                <option>Classic</option>
-                                <option>DIAVEL</option>
-                                <option>Diavel / Monster</option>
-                                <option>Diavel /1199</option>
-                                <option>DIAVEL /M821/M1200</option>
-                                <option>Diavel 2012</option>
-                                <option>Diavel 2012-14</option>
-                                <option>Diavel 2014</option>
-                                <option>Diavel 2015</option>
-                                <option>Diavel,1098-1198,Multi 1200,SF</option>
-                                <option>Diavel,1098-1198,Multi 1200,SF/Panigale1199/1299/V4</option>
-                                <option>Diavel/Hyper821/939,Monster797/821/1200,MTS950/1200/1260</option>
-                                <option>Diavel/Xdiavel/Hyper1100</option>
-                                <option>DUCATI</option>
-                                <option>Ducati Scrambler </option>
-                                <option>ER6N '09 up</option>
-                                <option>ER-6N 2012</option>
-                                <option>F800R/ R1200GS/ S1000RR</option>
-                                <option>GS1200</option>
-                                <option>gsxr1000 -9-11</option>
-                                <option>hyp821</option>
-                                <option>Hyper 1100</option>
-                                <option>HYPER796</option>
-                                <option>Hyper796/Monster796/1100/ MTS1200/1260/Scrambler</option>
-                                <option>Hyper821</option>
-                                <option>Hyper821/Monster821/Multistrada</option>
-                                <option>Hyper821/MTS</option>
-                                <option>Hypermotard 796/1100</option>
-                                <option>Hypermotard 821</option>
-                                <option>Hypermotard/Strada 2013</option>
-                                <option>Kawasaki all</option>
-                                <option>M795/796</option>
-                                <option>M796/1100/848</option>
-                                <option>M796/HYP821</option>
-                                <option>M797/M1200 '17/M821 2018</option>
-                                <option>M821 14-17</option>
-                                <option>M821/795/796</option>
-                                <option>Monster</option>
-                                <option>Monster 696/796/1100</option>
-                                <option>Monster 796/1100, Hyper796/821/939,SF848</option>
+                                <?php foreach($model as $models): ?>
+                                    <option><?php echo $models->name;?></option>
+                                <?php endforeach; ?>
                             </select>
                         </div>
                         <div class="form-group col-md-3">
                             <select id="inputState" class="form-control">
                                 <option selected> YEAR <i class="far fa-caret-circle-down"></i></option>
-                                <option>2020</option>
-                                <option>2019</option>
-                                <option>2018</option>
-                                <option>2017</option>
-                                <option>2016</option>
-                                <option>2015</option>
-                                <option>2014</option>
-                                <option>2013</option>
-                                <option>2012</option>
-                                <option>2011</option>
-                                <option>2010</option>
-                                <option>2000</option>
+                                <?php foreach($year as $years): ?>
+                                    <option><?php echo $years->name_year;?></option>
+                                <?php endforeach; ?>
                             </select>
                         </div>
                         <div class="form-group col-md-2 bottom_searce">
@@ -454,18 +421,21 @@ $slide = $query->result();
 <!-- Best Seller -->
  <!-- play -->
  <div class="col-1"></div>
-<div class="col-10 bg_play">
+<div class="col-10">
+<div class="bg_play">
     <div class="row play_vdo">
         <div class="col-3"></div>
-        <div class="col-6">
+        <div class="col-6" style="margin-top:260px;">
             <div class="row">
                 <div class="col-8 text_vdo">
-                S1000RR 2020 <br> Review
+                <?php echo $homeplaylist->Model; ?> <br> Review
                 </div>
                 <div class="col-4 icon_play">
                 <center>
                 PLAY
+                <a data-fancybox href=" <?php echo $homeplaylist->link_vdo; ?>">
                 <img src="<?php echo base_url();?>img/home/Play_icon.png" width="100px;"/>                
+                </a>
                 </center>
 
                 </div>
@@ -474,7 +444,7 @@ $slide = $query->result();
         <div class="col-2"></div>
     </div>
 </div>
-
+</div>
  <!-- play -->
  <div class="row">
  <div class="col-1"></div>
@@ -485,36 +455,47 @@ $slide = $query->result();
 
         <div class="col-12">
         <div class="row">
-           <?php for ($i = 1; $i < 4; $i++) { ?>
-            <div class="col-4">
-                <div class="row">
-                    <div style="border:3px solid #e8e8e8; width:420px; height:450px; backgrount-color:#fff;">
-                        <div class="container2">
-                            <center>
-                                <img src="<?php echo base_url();?>img/home/1/<?php echo $i ?>.jpg" width="120%" style="margin-left:10%;" />
-                            </center>
-                            <div class="overlay">
-                                <div class="text">READ MORD <i class="fas fa-arrow-right"></i></div>
+        
+          
+
+
+        <?php foreach($pro as $pros): ?>
+                        <div class="col-4">
+                        <div class="col-11" style="border:1px solid #000;">
+                        <a href="<?php base_url();?>Promotion/view/<?php echo $pros->id;?>">
+                        <br>
+                            <div class="container">
+                                <center>
+                                <img src="<?php echo base_url();?>assets/uploads/img_promotion_product/<?php echo $pros->img1;?>" width="90%" height="230px" alt="" />
+                                </center>
+                                <div class="overlay">
+                                    <div class="text">READ MORD <i class="fas fa-arrow-right"></i></div>
+                                </div>
                             </div>
+                        </a> 
+
+                            <div class="row">
+                                
+                                <div class="col-12 text_title"><?php echo $pros->name;?></div>
+                                <div class="col-12" style="height:10px;"></div>
+                                
+                                <div class="col-2 text_price1"><s>฿<?php echo $pros->discount_price;?></s></div>
+                                <div class="col-2 text_price2">฿<?php echo $pros->price;?></div>
+                                <div class="col-5"></div>
+                                <div class="col-2"><img src="<?php echo base_url();?>img/promotion/cart.png" width="20px"></div>
+                                <div class="col-12" style="height:40px;"></div>
+                            </div>
+                        </div>    
                         </div>
-                    <div class="row" style="margin-top:0px;">
-                    <div class="col-9 text_price4">
-                    &nbsp; &nbsp; Alpha racing brake disc 320x6 EVO <br> 
-                    &nbsp; &nbsp; BMW S1000RR 2019<br>
-                    <span>&nbsp; &nbsp; จ่นเบรคหน้า Alpha</span>
-                    </div>
-                    <div class="col-2 text_price3">
-                        28,500฿
-                    </div>
-                    </div>    
-                    </div> 
-                </div>   
-            </div>
-           <?php } ?>
+        <?php endforeach; ?>
+
+
+
+
         </div>
         <br>
         <center>
-        <img src="<?php echo base_url();?>img/home/poit.png" alt="">
+        <!-- <img src="<?php echo base_url();?>img/home/poit.png" alt=""> -->
         </center>
         </div>
         <div class="col-1"></div>
@@ -532,11 +513,11 @@ $slide = $query->result();
     <!-- ROW BOX -->
     <div class="row">
 
-        <div class="col-10">
+        <div class="col-12">
 
         <div class="row">
             <?php for ($i = 1; $i < 5; $i++) { ?>
-            <div class="col-3">
+            <div class="col-3" style="padding-right: 0px !important; padding-left: 0px !important;">
                 <div class="row">
                     <div style="border:3px solid #e8e8e8; margin:10px; height:400px; backgrount-color:#fff;">
                         <img src="<?php echo base_url();?>img/home/2/<?php echo $i ?>.png" width="100%" />
@@ -570,18 +551,20 @@ $slide = $query->result();
 <div class="row">
 <div class="col-1"></div>
 <div class="col-8">
-    <div class="top" style="min-height:900px; background-color:#000;">
+    <div class="top" style="min-height:600px; background-color:#000;">
     <img src="<?php echo base_url();?>img/home/MPK_Design_001_OK_150820_1A_create_19.png" width="100%" alt=""/>
 
         <div class="row">
             <div class="col-1"></div>
             <div class="col-11">
                 <div id="owl-demo" class="owl-carousel owl-theme">
-                <div class="item"><img src="<?php echo base_url();?>img/product/bike/01-1.png" width="100%" /></div>
-                <div class="item"><img src="<?php echo base_url();?>img/product/bike/Bike_02.png" width="100%" /></div>
-                <div class="item"><img src="<?php echo base_url();?>img/product/bike/Bike_03.png" width="100%" /></div>
-                <div class="item"><img src="<?php echo base_url();?>img/product/bike/Bike_04.png" width="100%" /></div>
+                <?php foreach($bike as $bikes): ?>
+                <a href="<?php base_url();?>bike_for_sell">
+                <div class="item"><img src="<?php echo base_url();?>assets/uploads/img_promotion_product/<?php echo $bikes->img1;?>" width="100%" /></div>
+                </a>
+                <?php endforeach; ?>
                 </div>
+
             </div>
             <div class="col-2"></div>
             <div class="col-6" style="font-size:20px; font-weight:bold; color:#fff;">
