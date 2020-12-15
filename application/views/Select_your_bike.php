@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
 <style>
 .bg_select{
     height:500px;
@@ -200,7 +208,69 @@ span{
     border-bottom:1px solid #000;
     margin-bottom:10px;
 }
+
+
+
+
+
+.menuside{
+    color:#666666; 
+    font-weight:bold; 
+    margin-top:15px; 
+    padding-top:8px; 
+    padding-bottom:8px;
+}
+
+.active{
+    color:#ff6634;
+    font-weight:bold;
+    background-color:#fff;
+}
+
+
+
+
+
+
+
+.circle {
+  border-radius: 0%;
+  width: 100%;
+  height: auto;
+
+  margin-left: 0px;
+  /* width and height can be anything, as long as they're equal */
+  margin-top: 25px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.navbar-default {
+    color:#ff6634; 
+    background-color:#e2e0e1;
+  
+}
+
+#page-wrapper {
+    padding: 0 15px;
+    min-height: 568px;
+    background-color: #d2d2d2;}
+
+a {
+    color: #090909  !important;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+a:hover {
+    color: #090909 !important;
+    text-decoration: underline;
+}
+
+
+
 </style>
+<body>
 <?php
 $this->db->select("*");
 $this->db->from("brand");
@@ -220,7 +290,6 @@ $this->db->from("year");
 $query = $this->db->get();
 $year = $query->result();
 ?>
-
 
 
 <div class="bg" style="margin-top:120px;"></div>
@@ -328,6 +397,170 @@ $year = $query->result();
 
 
 
+        <!-- <!DOCTYPE html>
+<html>
+   <head>
+      <title>Try v1.2 Bootstrap Online</title>
+      <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <script src="bootstrap/scripts/jquery.min.js"></script>
+      <script src="/bootstrap/js/bootstrap.min.js"></script>
+   </head>
+   <body>
+      <nav class = "navbar navbar-default" role = "navigation">
+         <div class = "navbar-header">
+            <a class = "navbar-brand" href = "#">TutorialsPoint</a>
+         </div>
+         <div>
+            <ul class = "nav navbar-nav">
+               <li class = "active"><a href = "#">iOS</a></li>
+               <li><a href = "#">SVN</a></li>
+               <li class = "dropdown">
+                  <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">
+                  Java 
+                  <b class = "caret"></b>
+                  </a>
+                  <ul class = "dropdown-menu">
+                     <li><a href = "#">jmeter</a></li>
+                     <li><a href = "#">EJB</a></li>
+                     <li><a href = "#">Jasper Report</a></li>
+                     <li class = "divider"></li>
+                     <li><a href = "#">Separated link</a></li>
+                     <li class = "divider"></li>
+                     <li><a href = "#">One more separated link</a></li>
+                  </ul>
+               </li>
+            </ul>
+         </div>  
+      </nav>
+   </body>
+</html> -->
+
+
+
+
+
+     
+
+<div class="dropdown">
+  <button class="btn dropdown-toggle <?php if($this->uri->segment(1)==""){echo "active";}?> menuside" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" >
+  BRAKE SYSTEM
+  </button>
+  <ul class="dropdown-menu" >
+    <li><a class="<?php if($this->uri->segment(1)==""){echo "active";}?> dropdown-item menuside" href="">BRAKE MASTER CYLINDER</a></li>
+    <li><a class="dropdown-item menuside" href="#">CLUTCH MASTER CYLINDER</a></li>
+    <li><a class="dropdown-item menuside" href="#">REAR BRAKE MASTER CYLINDER</a></li>
+    <li><a class="dropdown-item menuside" href="#">FRONT CALIPER</a></li>
+    <li><a class="dropdown-item menuside" href="#">REAR CALIPER</a></li>
+    <li><a class="dropdown-item menuside" href="#" >DISC BRAKE</a></li>
+    <li><a class="dropdown-item menuside" href="#">BRAKE PAD</a></li>
+    <li><a class="dropdown-item menuside" href="#">SWITCH</a></li>
+  </ul>
+</div>
+
+
+  <button class="btn  <?php if($this->uri->segment(1)==""){echo "active";}?> menuside" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" >
+  CARBON PARTS
+  </button>
+
+<div class="dropdown">
+  <button class="btn dropdown-toggle <?php if($this->uri->segment(1)==""){echo "active";}?> menuside" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" >
+  ENGINE & CLUTCH
+  </button>
+  <ul class="dropdown-menu" >
+    <li><a class="<?php if($this->uri->segment(1)==""){echo "active";}?> dropdown-item menuside" href="">EXHAUST</a></li>
+    <li><a class="dropdown-item menuside" href="#">FLUID TANK</a></li>
+  </ul>
+</div>
+
+<div class="dropdown">
+  <button class="btn dropdown-toggle <?php if($this->uri->segment(1)==""){echo "active";}?> menuside" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" >
+  GRIPS & HANDLEBAR
+  </button>
+  <ul class="dropdown-menu" >
+    <li><a class="<?php if($this->uri->segment(1)==""){echo "active";}?> dropdown-item menuside" href="">INDICATOR LIGHT</a></li>
+  </ul>
+</div>
+
+<div class="dropdown">
+  <button class="btn dropdown-toggle <?php if($this->uri->segment(1)==""){echo "active";}?> menuside" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" >
+  MAINTENANCE & CARE
+  </button>
+  <ul class="dropdown-menu" >
+    <li><a class="<?php if($this->uri->segment(1)==""){echo "active";}?> dropdown-item menuside" href="">MIRROR</a></li>
+  </ul>
+</div>
+
+<div class="dropdown">
+  <button class="btn dropdown-toggle <?php if($this->uri->segment(1)==""){echo "active";}?> menuside" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" >
+  PARTS & ACCESSORIES
+  </button>
+  <ul class="dropdown-menu" >
+    <li><a class="<?php if($this->uri->segment(1)==""){echo "active";}?> dropdown-item menuside" href=""></a></li>
+  </ul>
+</div>
+
+<div class="dropdown">
+  <button class="btn dropdown-toggle <?php if($this->uri->segment(1)==""){echo "active";}?> menuside" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" >
+  PROTECTION
+  </button>
+  <ul class="dropdown-menu" >
+    <li><a class="<?php if($this->uri->segment(1)==""){echo "active";}?> dropdown-item menuside" href=""></a></li>
+  </ul>
+</div>
+
+<div class="dropdown">
+  <button class="btn dropdown-toggle <?php if($this->uri->segment(1)==""){echo "active";}?> menuside" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" >
+  STEERING & SUSPENSION
+  </button>
+  <ul class="dropdown-menu" >
+    <li><a class="<?php if($this->uri->segment(1)==""){echo "active";}?> dropdown-item menuside" href=""></a></li>
+  </ul>
+</div>
+
+<div class="dropdown">
+  <button class="btn dropdown-toggle <?php if($this->uri->segment(1)==""){echo "active";}?> menuside" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" >
+  TRANSMISSION
+  </button>
+  <ul class="dropdown-menu" >
+    <li><a class="<?php if($this->uri->segment(1)==""){echo "active";}?> dropdown-item menuside" href=""></a></li>
+  </ul>
+</div>
+
+<div class="dropdown">
+  <button class="btn dropdown-toggle <?php if($this->uri->segment(1)==""){echo "active";}?> menuside" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" >
+  TRAN SIGNAL LIGHT
+  </button>
+  <ul class="dropdown-menu" >
+    <li><a class="<?php if($this->uri->segment(1)==""){echo "active";}?> dropdown-item menuside" href=""></a></li>
+  </ul>
+</div>
+
+<div class="dropdown">
+  <button class="btn dropdown-toggle <?php if($this->uri->segment(1)==""){echo "active";}?> menuside" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" >
+  WHEELS
+  </button>
+  <ul class="dropdown-menu" >
+    <li><a class="<?php if($this->uri->segment(1)==""){echo "active";}?> dropdown-item menuside" href=""></a></li>
+  </ul>
+</div>
+
+<div class="dropdown">
+  <button class="btn dropdown-toggle <?php if($this->uri->segment(1)==""){echo "active";}?> menuside" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" >
+  OTHER
+  </button>
+  <ul class="dropdown-menu" >
+    <li><a class="<?php if($this->uri->segment(1)==""){echo "active";}?> dropdown-item menuside" href=""></a></li>
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
 
     </div>
 
@@ -336,7 +569,7 @@ $year = $query->result();
     <div class="col-12 input">
 
     <input type="text" class="search_input" name="search" width="48">
-    <i class="fas fa-search search" style="margin-left:-20px; position: absolute; fone-size:20px; z-imdex:1;"></i>
+    <i class="fas fa-search search" style="margin-left:-20px; position: absolute; font-size:20px; z-index:1;"></i>
     </div>
 
 </div>
@@ -366,7 +599,7 @@ $year = $query->result();
                                 <img src="<?php echo base_url();?>img/product/<?php echo $i ?>.png" class="image" />
                                 </center>
                                 <div class="overlay">
-                                    <div class="text">READ MORD <i class="fas fa-arrow-right"></i></div>
+                                    <div class="text">READ MORE <i class="fas fa-arrow-right"></i></div>
                                 </div>
                             </div>
                             </a> 
@@ -408,5 +641,11 @@ $year = $query->result();
 
 </div>
 </div><!-- row min-height -->
+</body>
 
+<script src="bootstrap/scripts/jquery.min.js"></script>
+<script src="/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
 
+</html>

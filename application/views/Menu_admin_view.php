@@ -151,16 +151,6 @@ a:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
                 <li>
                     <a href="#"><i class="glyphicon fa fa-fire fa-fw"> </i>&nbsp; Gallery<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
