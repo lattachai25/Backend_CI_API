@@ -1,6 +1,5 @@
 <head>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </head>
 
 <style>
@@ -254,6 +253,15 @@ color:#ff6634;
     font-weight:bold;
     background-color:#fff;
 }
+
+
+
+
+
+
+
+
+
 </style>
 
 
@@ -448,35 +456,132 @@ color:#ff6634;
 
 
 
-        <ul class="dropdown-menu">
-  <li><span class="dropdown-item-text">Dropdown item text</span></li>
-  <li><a class="dropdown-item" href="#">Action</a></li>
-  <li><a class="dropdown-item" href="#">Another action</a></li>
-  <li><a class="dropdown-item" href="#">Something else here</a></li>
-</ul>
 
 
-      
+
 
 
 
 <div class="dropdown">
-  <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" style="color:#ff6634; font-weight:bold; ">
-  BRAKE SYSTEM 
-  <!-- <?php echo $this->uri->segment(1); ?> -->
+  <button class="btn dropdown-toggle <?php if($this->uri->segment(1)==""){echo "active";}?> menuside" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" >
+  BRAKE SYSTEM
   </button>
   <ul class="dropdown-menu" >
-  
-    <li><a class="<?php if($this->uri->segment(1)=="category"){echo "active";}?> dropdown-item menuside" href="/Backend_CI_API/category">BRAKE MASTER CYLINDER</a></li>
+    <li><a class="<?php if($this->uri->segment(1)==""){echo "active";}?> dropdown-item menuside" href="">BRAKE MASTER CYLINDER</a></li>
     <li><a class="dropdown-item menuside" href="#">CLUTCH MASTER CYLINDER</a></li>
     <li><a class="dropdown-item menuside" href="#">REAR BRAKE MASTER CYLINDER</a></li>
     <li><a class="dropdown-item menuside" href="#">FRONT CALIPER</a></li>
     <li><a class="dropdown-item menuside" href="#">REAR CALIPER</a></li>
-    <li><a class="dropdown-item menuside" href="#" aria-current="true" style="color:#ff6634;">DISC BRAKE</a></li>
+    <li><a class="dropdown-item menuside" href="#" >DISC BRAKE</a></li>
     <li><a class="dropdown-item menuside" href="#">BRAKE PAD</a></li>
     <li><a class="dropdown-item menuside" href="#">SWITCH</a></li>
   </ul>
 </div>
+
+
+  <button class="btn  <?php if($this->uri->segment(1)==""){echo "active";}?> menuside" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" >
+  CARBON PARTS
+  </button>
+
+<div class="dropdown">
+  <button class="btn dropdown-toggle <?php if($this->uri->segment(1)==""){echo "active";}?> menuside" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" >
+  ENGINE & CLUTCH
+  </button>
+  <ul class="dropdown-menu" >
+    <li><a class="<?php if($this->uri->segment(1)==""){echo "active";}?> dropdown-item menuside" href="">EXHAUST</a></li>
+    <li><a class="dropdown-item menuside" href="#">FLUID TANK</a></li>
+  </ul>
+</div>
+
+<div class="dropdown">
+  <button class="btn dropdown-toggle <?php if($this->uri->segment(1)==""){echo "active";}?> menuside" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" >
+  GRIPS & HANDLEBAR
+  </button>
+  <ul class="dropdown-menu" >
+    <li><a class="<?php if($this->uri->segment(1)==""){echo "active";}?> dropdown-item menuside" href="">INDICATOR LIGHT</a></li>
+  </ul>
+</div>
+
+<div class="dropdown">
+  <button class="btn dropdown-toggle <?php if($this->uri->segment(1)==""){echo "active";}?> menuside" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" >
+  MAINTENANCE & CARE
+  </button>
+  <ul class="dropdown-menu" >
+    <li><a class="<?php if($this->uri->segment(1)==""){echo "active";}?> dropdown-item menuside" href="">MIRROR</a></li>
+  </ul>
+</div>
+
+<div class="dropdown">
+  <button class="btn dropdown-toggle <?php if($this->uri->segment(1)==""){echo "active";}?> menuside" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" >
+  PARTS & ACCESSORIES
+  </button>
+  <ul class="dropdown-menu" >
+    <li><a class="<?php if($this->uri->segment(1)==""){echo "active";}?> dropdown-item menuside" href=""></a></li>
+  </ul>
+</div>
+
+<div class="dropdown">
+  <button class="btn dropdown-toggle <?php if($this->uri->segment(1)==""){echo "active";}?> menuside" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" >
+  PROTECTION
+  </button>
+  <ul class="dropdown-menu" >
+    <li><a class="<?php if($this->uri->segment(1)==""){echo "active";}?> dropdown-item menuside" href=""></a></li>
+  </ul>
+</div>
+
+<div class="dropdown">
+  <button class="btn dropdown-toggle <?php if($this->uri->segment(1)==""){echo "active";}?> menuside" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" >
+  STEERING & SUSPENSION
+  </button>
+  <ul class="dropdown-menu" >
+    <li><a class="<?php if($this->uri->segment(1)==""){echo "active";}?> dropdown-item menuside" href=""></a></li>
+  </ul>
+</div>
+
+<div class="dropdown">
+  <button class="btn dropdown-toggle <?php if($this->uri->segment(1)==""){echo "active";}?> menuside" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" >
+  TRANSMISSION
+  </button>
+  <ul class="dropdown-menu" >
+    <li><a class="<?php if($this->uri->segment(1)==""){echo "active";}?> dropdown-item menuside" href=""></a></li>
+  </ul>
+</div>
+
+<div class="dropdown">
+  <button class="btn dropdown-toggle <?php if($this->uri->segment(1)==""){echo "active";}?> menuside" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" >
+  TRAN SIGNAL LIGHT
+  </button>
+  <ul class="dropdown-menu" >
+    <li><a class="<?php if($this->uri->segment(1)==""){echo "active";}?> dropdown-item menuside" href=""></a></li>
+  </ul>
+</div>
+
+<div class="dropdown">
+  <button class="btn dropdown-toggle <?php if($this->uri->segment(1)==""){echo "active";}?> menuside" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" >
+  WHEELS
+  </button>
+  <ul class="dropdown-menu" >
+    <li><a class="<?php if($this->uri->segment(1)==""){echo "active";}?> dropdown-item menuside" href=""></a></li>
+  </ul>
+</div>
+
+<div class="dropdown">
+  <button class="btn dropdown-toggle <?php if($this->uri->segment(1)==""){echo "active";}?> menuside" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" >
+  OTHER
+  </button>
+  <ul class="dropdown-menu" >
+    <li><a class="<?php if($this->uri->segment(1)==""){echo "active";}?> dropdown-item menuside" href=""></a></li>
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
 
         <!-- <div class="row" > 
             <div class="col-10 textmenu" style="color:#ff6634;"> BRAKE SYSTEM </div>
@@ -508,12 +613,13 @@ color:#ff6634;
         </div> -->
 
 
-
+<!-- 
         <div class="row sizemenu"> 
             <div class="col-10 textmenu"> CARBON PARTS </div>
             <div class="col-1">  </div>
-        </div>
-        <div class="row sizemenu"> 
+        </div> -->
+
+        <!-- <div class="row sizemenu"> 
             <div class="col-10 textmenu"> ENGINE & CLUTCH </div>
             <div class="col-1"> + </div>
         </div>
@@ -526,24 +632,24 @@ color:#ff6634;
         <div class="row sizemenu"> 
             <div class="col-10 textmenu"> FLUID TANK</div>
             <div class="col-1">  </div>
-        </div>
-        <div class="row sizemenu"> 
+        </div> -->
+        <!-- <div class="row sizemenu"> 
             <div class="col-10 textmenu"> GRIPS & HANDLEBAR </div>
             <div class="col-1"> + </div>
         </div>
         <div class="row sizemenu"> 
             <div class="col-10 textmenu"> INDICATOR LIGHT </div>
             <div class="col-1">  </div>
-        </div>
-        <div class="row sizemenu"> 
+        </div> -->
+        <!-- <div class="row sizemenu"> 
             <div class="col-10 textmenu"> MAINTENANCE & CARE </div>
             <div class="col-1"> + </div>
         </div>
         <div class="row sizemenu"> 
             <div class="col-10 textmenu"> MIRROR</div>
             <div class="col-1">  </div>
-        </div>
-        <div class="row sizemenu"> 
+        </div> -->
+        <!-- <div class="row sizemenu"> 
             <div class="col-10 textmenu"> PARTS & ACCESSORIES </div>
             <div class="col-1"> + </div>
         </div>
@@ -560,7 +666,7 @@ color:#ff6634;
             <div class="col-1"> + </div>
         </div>
         <div class="row sizemenu"> 
-            <div class="col-10 textmenu"> TRAN IGNAL LIGHT </div>
+            <div class="col-10 textmenu"> TRAN SIGNAL LIGHT </div>
             <div class="col-1"> + </div>
         </div>
         <div class="row sizemenu"> 
@@ -570,7 +676,7 @@ color:#ff6634;
         <div class="row sizemenu"> 
             <div class="col-10 textmenu"> OTHER </div>
             <div class="col-1"> + </div>
-        </div>
+        </div> -->
     </div>
 
 
@@ -578,7 +684,7 @@ color:#ff6634;
     <div class="col-12 input">
 
     <input type="text" class="search_input" name="search" width="48">
-    <i class="fas fa-search search" style="margin-left:-20px; position: absolute; fone-size:20px; z-imdex:1;"></i>
+    <i class="fas fa-search search" style="margin-left:-20px; position: absolute; font-size:20px; z-index:1;"></i>
     </div>
 
 </div>
@@ -650,3 +756,5 @@ color:#ff6634;
 
 </div>
 </div><!-- row min-height -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
