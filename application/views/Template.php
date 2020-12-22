@@ -63,16 +63,9 @@ html, body {
 }
 </style>
  <body id="page-top">
- <div class="container">
-
-<?php $this->load->view('Menubar');?>
-</div>
-<?php if(isset($content)){ echo $content; } ?>
-
-
-<?php $this->load->view('Footer');?>
-
-
+        <?php  $this->load->view('Menu_index'); ?>
+        <?php if(isset($content)){ echo $content; } ?>
+        <?php $this->load->view('Footer');?>
 </body>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>

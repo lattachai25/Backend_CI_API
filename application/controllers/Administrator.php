@@ -566,11 +566,19 @@ function statusDis($value)
 		}
 
 
-
-
-
-
-
+		function color(){
+			$crud = new grocery_CRUD();
+			$crud->set_theme("bootstrap");
+			$crud->set_table("color")
+			->order_by('id','id')
+			->display_as('name_color','color');
+	
+			// $crud->field_type('status','dropdown',array('1' => 'Active', '0' => 'Inactive'));
+			// $crud->set_field_upload('img_logo','assets/uploads/gallery_logo');
+			
+			$output = $crud->render();
+			$this->_example_output($output);
+		}	
 
 
 

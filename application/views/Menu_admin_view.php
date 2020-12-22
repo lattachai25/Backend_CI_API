@@ -83,9 +83,9 @@ a:hover {
                         <li>
                             <a href="<?php echo base_url('administrator/homeplaylist');?>">  <i class="fa fa-plus-circle"></i>&nbsp; Home Playlist</a>
                         </li>
-						<li>
+						<!-- <li>
                             <a href="<?php echo base_url('administrator/homebike');?>">  <i class="fa fa-plus-circle"></i>&nbsp; Home Bike</a>
-                        </li>
+                        </li> -->
                     </ul>    
                 </li>
                 
@@ -103,10 +103,10 @@ a:hover {
                         <a href="#"><i class="glyphicon fa fa-plus-square"> </i>&nbsp; Category<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="<?php echo base_url('administrator/product1');?>">&nbsp; &nbsp;<i class="fa fa-wrench fa-fw"></i>&nbsp; Category 1</a>
+                                    <a href="<?php echo base_url('administrator/product1');?>">&nbsp; &nbsp;<i class="fa fa-wrench fa-fw"></i>&nbsp; Main Category</a>
                                 </li>  
                                 <li>
-                                    <a href="<?php echo base_url('administrator/product1');?>">&nbsp; &nbsp;<i class="fa fa-wrench fa-fw"></i>&nbsp; Category 1</a>
+                                    <a href="<?php echo base_url('administrator/product1');?>">&nbsp; &nbsp;<i class="fa fa-wrench fa-fw"></i>&nbsp; Sub Category 1</a>
                                 </li> 
                             </ul>   
                         </li>
@@ -149,18 +149,6 @@ a:hover {
                 </li> 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
                 <li>
                     <a href="#"><i class="glyphicon fa fa-fire fa-fw"> </i>&nbsp; Gallery<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
@@ -197,9 +185,9 @@ a:hover {
                     <a href="<?php echo base_url('administrator/contactus');?>"><i class="glyphicon glyphicon-map-marker"></i>&nbsp; &nbsp;Contact Us</a>
                 </li> 
 
-                <li>
+                <!-- <li>
                     <a href="<?php echo base_url('administrator/popup');?>"><i class="fa fa-camera-retro fa-fw"></i>&nbsp; &nbsp;Pop-Up Button</a>
-                </li>
+                </li> -->
 
                 <li>
                     <a href="<?php echo base_url('administrator/social');?>"><i class="fa fa-camera-retro fa-fw"></i>&nbsp; Social</a>
@@ -217,9 +205,9 @@ a:hover {
 						<li>
                             <a href="<?php echo base_url('administrator/color');?>"> <i class="fa fa-picture-o fa-fw"></i>&nbsp; Color</a>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a href="<?php echo base_url('administrator/color');?>"> <i class="fa fa-picture-o fa-fw"></i>&nbsp; Color</a>
-                        </li>
+                        </li> -->
 					</ul>    
                 </li> 
 			</ul>    	   

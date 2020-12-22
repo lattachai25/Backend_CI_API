@@ -51,7 +51,7 @@
     color:#666666;  
 }
 .text_bmw{
-    margin-left:50px;
+    margin-left:100px;
     margin-top:100px;
     font-size:18px;
     text-align:left;
@@ -200,6 +200,33 @@ span{
     border-bottom:1px solid #000;
     margin-bottom:10px;
 }
+
+
+
+
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+.dropdown-container {
+  display: none;
+  background-color: #fff;
+  padding-left: 8px;
+}
+
+
+
+
 </style>
 <?php
 $this->db->select("*");
@@ -221,14 +248,21 @@ $query = $this->db->get();
 $year = $query->result();
 ?>
 
-
+<?php
+$this->db->select("*");
+$this->db->from("main_category");
+$query = $this->db->get();
+$category = $query->result();
+?>
 
 <div class="bg" style="margin-top:120px;"></div>
 <div class="row">
-    <div class="col-12 bg_select">
+<div class="col-1"></div>
+    <div class="col-10 bg_select">
 
     <div class="row">
-    <div class="col-12" style="margin-top:160px;"></div>
+    <div class="col-1"></div>
+    <div class="col-10" style="margin-top:160px;"></div>
 </div>
 <div class="row">
     <div class="col-3"></div>
@@ -280,7 +314,8 @@ $year = $query->result();
 </div>
 
 <div class="row">
-    <div class="col-12">
+    <div class="col-1"></div>
+    <div class="col-10" style="padding-right: 0px !important; padding-left: 0px !important;">
         <div class="bar_item">
         <br><br>
                 <div class="col-12 textbrand"><center> BMW - S1000RR - 2020 </center></div>
@@ -296,7 +331,8 @@ $year = $query->result();
 <div class="row">
 <div class="col-12" style="background:#fff; min-height:800px;">
     <div class="row">
-        <div class="col-4 text_bmw">
+    
+        <div class="col-6 text_bmw">
         HOME / BMW / S1000RR / 2020 
         </div>
     </div>
@@ -306,22 +342,33 @@ $year = $query->result();
 <div class="col-1"></div>
 <div class="col-2">
 <div class="row">
-    <div class="col-12">
+    <div class="col-12" style="padding-right: 0px !important; padding-left: 0px !important;">
 
         <div class="row">
         <div class="col-12"><br></div> 
             <div class="unline">
                 <div class="row">  
                 <div class="col-6" style="color:#ff6634; font-weight:bold; font-size:18px; ">FILTERS</div>
-                <div class="col-6" style="color:#ff6634; font-weight:bold; font-size:12px; margin-bottom:-10px; text-align: right;">RESET FILTERS</div>
+                <div class="col-6" style="color:#ff6634; font-weight:bold; font-size:12px; margin-bottom:5px; text-align: right;">RESET FILTERS</div>
                 </div> 
             </div>
            
         </div>
-        <div class="row" style="background:#000; font-weight:bold;color:#fff; padding-top:6px; padding-bottom:5px;"> 
-            <div class="col-10 textmenu"> CATEGORY </div>
-            <div class="col-1"> - </div>
-        </div>
+
+<?php foreach($category as $categorys): ?>
+<button class="dropdown-btn">
+<div class="row">
+<div class="col-9"><?php echo $categorys->Name; ?></div>
+<div class="col-1"><i class="fa fa-plus fa-sm"></i></div>
+</div>
+</button>
+  <div class="dropdown-container">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+  <?php endforeach; ?>
+
 
 
 
@@ -354,7 +401,7 @@ $year = $query->result();
     <!-- ROW BOX -->
     <div class="row">
     <div class="col-1"></div>
-    <div class="col-10">
+    <div class="col-11">
     <div class="row">
                          <?php for ($i = 1; $i < 13; $i++) { ?>
                         <div class="col-4">
@@ -409,4 +456,20 @@ $year = $query->result();
 </div>
 </div><!-- row min-height -->
 
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
 
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+</script>

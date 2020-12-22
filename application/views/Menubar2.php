@@ -80,9 +80,6 @@ $main_category = $query->result();
             </ul>
             </li>
 
-
-
-
             <li  <?php if($this->uri->segment(1)=="Gallery"){echo 'class="active"';}?>><a href="<?php echo base_url('Gallery');?>">GALLERY</a></li>
             <li  <?php if($this->uri->segment(1)=="About"){echo 'class="active"';}?>><a href="<?php echo base_url('About');?>">ABOUT</a></li>
             <li style="width:100px;">

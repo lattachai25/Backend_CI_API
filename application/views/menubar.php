@@ -26,11 +26,11 @@ $main_category = $query->result();
             <li style="margin-left:50px;"></li>
             <li class="active" ><a href="<?php echo base_url('Home');?>" style="color:#000;">HOME</a></li>
 
-            <li <?php if($this->uri->segment(1)=="")
+            <li <?php if($this->uri->segment(1)=="select_your_bike")
             {echo 'class="active"';}
-            elseif ($this->uri->segment(1)=="")
+            elseif ($this->uri->segment(1)=="category")
             {echo 'class="active"';}
-            elseif ($this->uri->segment(1)=="")
+            elseif ($this->uri->segment(1)=="bike_for_sell")
             {echo 'class="active"';}
             ?> ><a href="">PRODUCT</a>
            
@@ -53,17 +53,15 @@ $main_category = $query->result();
             <li  <?php if($this->uri->segment(1)=="Service"){echo 'class="active"';}?>><a href="<?php echo base_url('Service');?>">SERVICE</a></li>
             <!-- <li  <?php if($this->uri->segment(1)=="News"){echo 'class="active"';}?>><a href="<?php echo base_url('News');?>">NEWS</a></li> -->
 
-            <li <?php if($this->uri->segment(1)=="")
+            <li <?php if($this->uri->segment(1)=="News")
             {echo 'class="active"';}
-            elseif ($this->uri->segment(1)=="")
-            {echo 'class="active"';}
-            elseif ($this->uri->segment(1)=="")
+            elseif ($this->uri->segment(1)=="News_idea")
             {echo 'class="active"';}
             ?> ><a href="">NEWS</a>
            
             <ul>
-                <li><a href="<?php echo base_url('News');?>">NEWS & Update</a></li>
-                <li><a href="<?php echo base_url('News_idea');?>">IDEA</a></li>
+                <li <?php if($this->uri->segment(1)=="News"){echo 'class="active"';}?> ><a href="<?php echo base_url('News');?>">NEWS & Update</a></li>
+                <li <?php if($this->uri->segment(1)=="News_idea"){echo 'class="active"';}?> ><a href="<?php echo base_url('News_idea');?>">IDEA</a></li>
             </ul>
             </li>
 
