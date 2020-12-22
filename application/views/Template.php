@@ -63,7 +63,7 @@ html, body {
 }
 </style>
  <body id="page-top">
-        <?php  $this->load->view('Menu_index'); ?>
+        <?php  $this->load->view('menubar'); ?>
         <?php if(isset($content)){ echo $content; } ?>
         <?php $this->load->view('Footer');?>
 </body>
