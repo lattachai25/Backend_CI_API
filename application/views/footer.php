@@ -78,9 +78,11 @@
 
 }
 
-
+.widtha{
+    padding: 0;
+}
 </style>
-<div class="col-12">
+<div class="col-12 widtha" >
 <div class="row bg-footer">
 <div class="col-1"></div>
 <div class="col-10">

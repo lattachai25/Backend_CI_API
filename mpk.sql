@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Dec 14, 2020 at 07:23 AM
+-- Generation Time: Dec 22, 2020 at 05:12 AM
 -- Server version: 5.7.24
 -- PHP Version: 7.2.19
 
@@ -20,6 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `mpk`
 --
+CREATE DATABASE IF NOT EXISTS `mpk` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `mpk`;
 
 -- --------------------------------------------------------
 
@@ -46,7 +48,7 @@ CREATE TABLE `about` (
 --
 
 INSERT INTO `about` (`id`, `img_top`, `content`, `img_people`, `people_name`, `people_detel`, `img_center_left`, `content_center_left`, `img_center_right`, `content_center_right`, `status`) VALUES
-(1, '4b61d-bg_03_1.png', '<div>\n	เราคือศุนย์นำเข้าและจำหน่ายอุปกรณ์แต่งรถมอเตอร์ไซต์</div>\n<div>\n	SUPERBIKE อย่างเป็นทางการ ทั้งปลีกและส่งจากหลากหลาย</div>\n<div>\n	แบรนด์ชั้นนำทั่วโลก สำหรับรถ DUCATI, BMW, TRIUMPH, &nbsp;</div>\n<div>\n	HONDA, KAWASAKI, SUZUKI และอื่นๆ รวมถึงการให้บริการ\n	<div>\n		ดูแลรถแบบ ONE STOP SERVICE</div>\n</div>\n', '508ce-img-man.png', 'คุณอาทิตย์ มนัสภากร', '<p>\n	หรือในวงการ SUPERBIKE เรียกกันว่า <span> &quot;พี่โจ๊ก MPK&quot; </span><br />\n	ผู้ก่อตั้งบริษัท MPKCONCEPT ตั้งแต่ปี 2005<br />\n	ด้วยความชื่นชอบและหลงใหลในเสน่ห์ ของรถ<br />\n	SUPERBIKE มาตั้งแต่เด็ก พร้อมคติที่ว่า<br />\n	&ldquo;MPK CONCEPT ไม่ใช่แค่ธุรกิจ แต่เป็นที่ที่ทำให้<br />\n	คนซึ่งหลงใหล ในสิ่งเดียวกันมาเจอกัน&rdquo;</p>\n', 'c5003-bg_03_1.png', '<div>\n	ด้วยความตั้งใจที่อยากให้ทุกคนได้ใช้สินค้า</div>\n<div>\n	ของแท้ที่มีคุณภาพ และได้รับข้อมูลเกี่ยวกับ</div>\n<div>\n	การแต่งรถที่ถูกต้อง เราจึงได้ทดลองสินค้า</div>\n<div>\n	ใหม่ๆ โดยการประกอบเข้ากับตัวรถและศึกษา</div>\n<div>\n	รายละเอียดข้อดีข้อเสียของสินค้าเพื่อที่จะ</div>\n<div>\n	สามารถแนะนำสินค้าให้ลูกค้าได้อย่างรู้จริงง</div>\n', '5711b-bg_03_1.png', '<div>\n	มากกว่านั้นคือเราจะไม่หยุดพัฒนา</div>\n<div>\n	เพื่อยกระดับคุณภาพการให้บริการให้ดียิ่งขึ้น</div>\n<div>\n	&quot;เพราะการสร้างประสบการณ์ที่ดี</div>\n<div>\n	สำหรับคุณ สำคัญสำหรับเรา&quot;</div>\n', '1');
+(1, '4b61d-bg_03_1.png', '<div>\n	เราคือศุนย์นำเข้าและจำหน่ายอุปกรณ์แต่งรถมอเตอร์ไซต์</div>\n<div>\n	SUPERBIKE อย่างเป็นทางการ ทั้งปลีกและส่งจากหลากหลาย</div>\n<div>\n	แบรนด์ชั้นนำทั่วโลก สำหรับรถ DUCATI, BMW, TRIUMPH, &nbsp;</div>\n<div>\n	HONDA, KAWASAKI, SUZUKI และอื่นๆ รวมถึงการให้บริการ\n	<div>\n		ดูแลรถแบบ ONE STOP SERVICE</div>\n</div>\n<p>\n	&nbsp;</p>\n', '508ce-img-man.png', 'คุณอาทิตย์ มนัสภากร', '<p>\n	หรือในวงการ SUPERBIKE เรียกกันว่า <span> &quot;พี่โจ๊ก MPK&quot; </span><br />\n	ผู้ก่อตั้งบริษัท MPKCONCEPT ตั้งแต่ปี 2005<br />\n	ด้วยความชื่นชอบและหลงใหลในเสน่ห์ ของรถ<br />\n	SUPERBIKE มาตั้งแต่เด็ก พร้อมคติที่ว่า<br />\n	&ldquo;MPK CONCEPT ไม่ใช่แค่ธุรกิจ แต่เป็นที่ที่ทำให้<br />\n	คนซึ่งหลงใหล ในสิ่งเดียวกันมาเจอกัน&rdquo;</p>\n', 'c5003-bg_03_1.png', '<div>\n	ด้วยความตั้งใจที่อยากให้ทุกคนได้ใช้สินค้า</div>\n<div>\n	ของแท้ที่มีคุณภาพ และได้รับข้อมูลเกี่ยวกับ</div>\n<div>\n	การแต่งรถที่ถูกต้อง เราจึงได้ทดลองสินค้า</div>\n<div>\n	ใหม่ๆ โดยการประกอบเข้ากับตัวรถและศึกษา</div>\n<div>\n	รายละเอียดข้อดีข้อเสียของสินค้าเพื่อที่จะ</div>\n<div>\n	สามารถแนะนำสินค้าให้ลูกค้าได้อย่างรู้จริงง</div>\n', '5711b-bg_03_1.png', '<div>\n	มากกว่านั้นคือเราจะไม่หยุดพัฒนา</div>\n<div>\n	เพื่อยกระดับคุณภาพการให้บริการให้ดียิ่งขึ้น</div>\n<div>\n	&quot;เพราะการสร้างประสบการณ์ที่ดี</div>\n<div>\n	สำหรับคุณ สำคัญสำหรับเรา&quot;</div>\n', '1');
 
 -- --------------------------------------------------------
 
@@ -77,7 +79,8 @@ INSERT INTO `bike_for_sell` (`id`, `brand`, `model`, `prict`, `discount`, `descr
 (1, '2', '7', '12,345', '2,345', '<div style=\"box-sizing: border-box; color: rgb(99, 107, 111); background-color: rgb(255, 255, 255); font-size: 18px; font-family: RSU; font-weight: bold;\">\n	Panigale V4S ปี 2018 V4S มือสองพร้อมท่อ Full Akrapovic<br style=\"box-sizing: border-box;\" />\n	สภาพสวยเนี๊ยบเหมือนเพิ่งออกจากศูนย์พร้อมของแต่ง<br style=\"box-sizing: border-box;\" />\n	วิ่งน้อยมากแค่ 2,542 km แถมประกันชั้น 1</div>\n<p>\n	&nbsp;</p>\n<div style=\"box-sizing: border-box; background-color: rgb(255, 255, 255); color: rgb(255, 102, 52); font-weight: bold; font-size: 20px; font-family: RSU;\">\n	SALE จาก 990,000฿ เหลือเพียง 899,999฿</div>\n<p>\n	&nbsp;</p>\n<div style=\"box-sizing: border-box; color: rgb(99, 107, 111); background-color: rgb(255, 255, 255); font-size: 18px; font-family: RSU; font-weight: bold;\">\n	คุ้มมากมีประกันชั้น 1 (หมด 30/7/2020 FPG)<br style=\"box-sizing: border-box;\" />\n	รถศูนย์ ไม่มีประวัติ ล้ม ชน แปะ มั่นใจตรวจสอบได้<br style=\"box-sizing: border-box;\" />\n	ราคาพิเศษมาพร้อมของแต่งติดรถแบรนด์แท้เท่านั้น<br style=\"box-sizing: border-box;\" />\n	<br style=\"box-sizing: border-box;\" />\n	&nbsp; &nbsp; &nbsp; - ท่อ Full Akrapovic ของแท้<br style=\"box-sizing: border-box;\" />\n	&nbsp; &nbsp; &nbsp; - ท้ายสั้นพร้อมไฟเลี้ยว Nrc racing<br style=\"box-sizing: border-box;\" />\n	&nbsp; &nbsp; &nbsp; - ปิดใต้ถัง Evotech<br style=\"box-sizing: border-box;\" />\n	&nbsp; &nbsp; &nbsp; - ชุดแต่งบังหม้อน้ำ Evotech<br style=\"box-sizing: border-box;\" />\n	&nbsp; &nbsp; &nbsp; - กันล้มหน้า Evotech</div>\n', '9907d-1.png', 'cf008-2.png', '4d411-3.png', '003ce-4.png', '5ffdf-5.png', '2020-12-12'),
 (2, '1', '1', '12,345', '23,457', '<div style=\"box-sizing: border-box; color: rgb(99, 107, 111); background-color: rgb(255, 255, 255); font-size: 18px; font-family: RSU; font-weight: bold;\">\n	Panigale V4S ปี 2018 V4S มือสองพร้อมท่อ Full Akrapovic<br style=\"box-sizing: border-box;\" />\n	สภาพสวยเนี๊ยบเหมือนเพิ่งออกจากศูนย์พร้อมของแต่ง<br style=\"box-sizing: border-box;\" />\n	วิ่งน้อยมากแค่ 2,542 km แถมประกันชั้น 1</div>\n<p>\n	&nbsp;</p>\n<div style=\"box-sizing: border-box; background-color: rgb(255, 255, 255); color: rgb(255, 102, 52); font-weight: bold; font-size: 20px; font-family: RSU;\">\n	SALE จาก 990,000฿ เหลือเพียง 899,999฿</div>\n<p>\n	&nbsp;</p>\n<div style=\"box-sizing: border-box; color: rgb(99, 107, 111); background-color: rgb(255, 255, 255); font-size: 18px; font-family: RSU; font-weight: bold;\">\n	คุ้มมากมีประกันชั้น 1 (หมด 30/7/2020 FPG)<br style=\"box-sizing: border-box;\" />\n	รถศูนย์ ไม่มีประวัติ ล้ม ชน แปะ มั่นใจตรวจสอบได้<br style=\"box-sizing: border-box;\" />\n	ราคาพิเศษมาพร้อมของแต่งติดรถแบรนด์แท้เท่านั้น<br style=\"box-sizing: border-box;\" />\n	<br style=\"box-sizing: border-box;\" />\n	&nbsp; &nbsp; &nbsp; - ท่อ Full Akrapovic ของแท้<br style=\"box-sizing: border-box;\" />\n	&nbsp; &nbsp; &nbsp; - ท้ายสั้นพร้อมไฟเลี้ยว Nrc racing<br style=\"box-sizing: border-box;\" />\n	&nbsp; &nbsp; &nbsp; - ปิดใต้ถัง Evotech<br style=\"box-sizing: border-box;\" />\n	&nbsp; &nbsp; &nbsp; - ชุดแต่งบังหม้อน้ำ Evotech<br style=\"box-sizing: border-box;\" />\n	&nbsp; &nbsp; &nbsp; - กันล้มหน้า Evotech</div>\n', '8bee3-bike_03.png', '27c0a-2.png', '6ea8f-3.png', '1cd23-4.png', '87ed8-5.png', '2020-12-13'),
 (3, '3', '3', '214,141', '43,534', '<div style=\"box-sizing: border-box; color: rgb(99, 107, 111); background-color: rgb(255, 255, 255); font-size: 18px; font-family: RSU; font-weight: bold;\">\n	Panigale V4S ปี 2018 V4S มือสองพร้อมท่อ Full Akrapovic<br style=\"box-sizing: border-box;\" />\n	สภาพสวยเนี๊ยบเหมือนเพิ่งออกจากศูนย์พร้อมของแต่ง<br style=\"box-sizing: border-box;\" />\n	วิ่งน้อยมากแค่ 2,542 km แถมประกันชั้น 1</div>\n<p style=\"box-sizing: border-box; margin-top: 0px; margin-bottom: 1rem; color: rgb(99, 107, 111); font-family: helvetica, sans-serif; font-size: 16px; background-color: rgb(255, 255, 255);\">\n	&nbsp;</p>\n<div style=\"box-sizing: border-box; background-color: rgb(255, 255, 255); color: rgb(255, 102, 52); font-weight: bold; font-size: 20px; font-family: RSU;\">\n	SALE จาก 990,000฿ เหลือเพียง 899,999฿</div>\n<p style=\"box-sizing: border-box; margin-top: 0px; margin-bottom: 1rem; color: rgb(99, 107, 111); font-family: helvetica, sans-serif; font-size: 16px; background-color: rgb(255, 255, 255);\">\n	&nbsp;</p>\n<div style=\"box-sizing: border-box; color: rgb(99, 107, 111); background-color: rgb(255, 255, 255); font-size: 18px; font-family: RSU; font-weight: bold;\">\n	คุ้มมากมีประกันชั้น 1 (หมด 30/7/2020 FPG)<br style=\"box-sizing: border-box;\" />\n	รถศูนย์ ไม่มีประวัติ ล้ม ชน แปะ มั่นใจตรวจสอบได้<br style=\"box-sizing: border-box;\" />\n	ราคาพิเศษมาพร้อมของแต่งติดรถแบรนด์แท้เท่านั้น<br style=\"box-sizing: border-box;\" />\n	<br style=\"box-sizing: border-box;\" />\n	&nbsp; &nbsp; &nbsp; - ท่อ Full Akrapovic ของแท้<br style=\"box-sizing: border-box;\" />\n	&nbsp; &nbsp; &nbsp; - ท้ายสั้นพร้อมไฟเลี้ยว Nrc racing<br style=\"box-sizing: border-box;\" />\n	&nbsp; &nbsp; &nbsp; - ปิดใต้ถัง Evotech<br style=\"box-sizing: border-box;\" />\n	&nbsp; &nbsp; &nbsp; - ชุดแต่งบังหม้อน้ำ Evotech<br style=\"box-sizing: border-box;\" />\n	&nbsp; &nbsp; &nbsp; - กันล้มหน้า Evotech</div>\n', 'bab30-bike_01.png', '7339d-bike_01.png', '15c51-bike_01.png', '9357d-bike_01.png', '49d00-bike_01.png', '2020-12-14'),
-(4, '17', '5', '5,765', '10,000', '<div style=\"box-sizing: border-box; color: rgb(99, 107, 111); background-color: rgb(255, 255, 255); font-size: 18px; font-family: RSU; font-weight: bold;\">\n	Panigale V4S ปี 2018 V4S มือสองพร้อมท่อ Full Akrapovic<br style=\"box-sizing: border-box;\" />\n	สภาพสวยเนี๊ยบเหมือนเพิ่งออกจากศูนย์พร้อมของแต่ง<br style=\"box-sizing: border-box;\" />\n	วิ่งน้อยมากแค่ 2,542 km แถมประกันชั้น 1</div>\n<p style=\"box-sizing: border-box; margin-top: 0px; margin-bottom: 1rem; color: rgb(99, 107, 111); font-family: helvetica, sans-serif; font-size: 16px; background-color: rgb(255, 255, 255);\">\n	&nbsp;</p>\n<div style=\"box-sizing: border-box; background-color: rgb(255, 255, 255); color: rgb(255, 102, 52); font-weight: bold; font-size: 20px; font-family: RSU;\">\n	SALE จาก 990,000฿ เหลือเพียง 899,999฿</div>\n<p style=\"box-sizing: border-box; margin-top: 0px; margin-bottom: 1rem; color: rgb(99, 107, 111); font-family: helvetica, sans-serif; font-size: 16px; background-color: rgb(255, 255, 255);\">\n	&nbsp;</p>\n<div style=\"box-sizing: border-box; color: rgb(99, 107, 111); background-color: rgb(255, 255, 255); font-size: 18px; font-family: RSU; font-weight: bold;\">\n	คุ้มมากมีประกันชั้น 1 (หมด 30/7/2020 FPG)<br style=\"box-sizing: border-box;\" />\n	รถศูนย์ ไม่มีประวัติ ล้ม ชน แปะ มั่นใจตรวจสอบได้<br style=\"box-sizing: border-box;\" />\n	ราคาพิเศษมาพร้อมของแต่งติดรถแบรนด์แท้เท่านั้น<br style=\"box-sizing: border-box;\" />\n	<br style=\"box-sizing: border-box;\" />\n	&nbsp; &nbsp; &nbsp; - ท่อ Full Akrapovic ของแท้<br style=\"box-sizing: border-box;\" />\n	&nbsp; &nbsp; &nbsp; - ท้ายสั้นพร้อมไฟเลี้ยว Nrc racing<br style=\"box-sizing: border-box;\" />\n	&nbsp; &nbsp; &nbsp; - ปิดใต้ถัง Evotech<br style=\"box-sizing: border-box;\" />\n	&nbsp; &nbsp; &nbsp; - ชุดแต่งบังหม้อน้ำ Evotech<br style=\"box-sizing: border-box;\" />\n	&nbsp; &nbsp; &nbsp; - กันล้มหน้า Evotech</div>\n', '09a80-bike_04.png', '5b0a9-bike_04.png', '306cf-bike_04.png', '28444-bike_04.png', '96bf5-bike_04.png', '2020-12-14');
+(4, '17', '5', '5,765', '10,000', '<div style=\"box-sizing: border-box; color: rgb(99, 107, 111); background-color: rgb(255, 255, 255); font-size: 18px; font-family: RSU; font-weight: bold;\">\n	Panigale V4S ปี 2018 V4S มือสองพร้อมท่อ Full Akrapovic<br style=\"box-sizing: border-box;\" />\n	สภาพสวยเนี๊ยบเหมือนเพิ่งออกจากศูนย์พร้อมของแต่ง<br style=\"box-sizing: border-box;\" />\n	วิ่งน้อยมากแค่ 2,542 km แถมประกันชั้น 1</div>\n<p style=\"box-sizing: border-box; margin-top: 0px; margin-bottom: 1rem; color: rgb(99, 107, 111); font-family: helvetica, sans-serif; font-size: 16px; background-color: rgb(255, 255, 255);\">\n	&nbsp;</p>\n<div style=\"box-sizing: border-box; background-color: rgb(255, 255, 255); color: rgb(255, 102, 52); font-weight: bold; font-size: 20px; font-family: RSU;\">\n	SALE จาก 990,000฿ เหลือเพียง 899,999฿</div>\n<p style=\"box-sizing: border-box; margin-top: 0px; margin-bottom: 1rem; color: rgb(99, 107, 111); font-family: helvetica, sans-serif; font-size: 16px; background-color: rgb(255, 255, 255);\">\n	&nbsp;</p>\n<div style=\"box-sizing: border-box; color: rgb(99, 107, 111); background-color: rgb(255, 255, 255); font-size: 18px; font-family: RSU; font-weight: bold;\">\n	คุ้มมากมีประกันชั้น 1 (หมด 30/7/2020 FPG)<br style=\"box-sizing: border-box;\" />\n	รถศูนย์ ไม่มีประวัติ ล้ม ชน แปะ มั่นใจตรวจสอบได้<br style=\"box-sizing: border-box;\" />\n	ราคาพิเศษมาพร้อมของแต่งติดรถแบรนด์แท้เท่านั้น<br style=\"box-sizing: border-box;\" />\n	<br style=\"box-sizing: border-box;\" />\n	&nbsp; &nbsp; &nbsp; - ท่อ Full Akrapovic ของแท้<br style=\"box-sizing: border-box;\" />\n	&nbsp; &nbsp; &nbsp; - ท้ายสั้นพร้อมไฟเลี้ยว Nrc racing<br style=\"box-sizing: border-box;\" />\n	&nbsp; &nbsp; &nbsp; - ปิดใต้ถัง Evotech<br style=\"box-sizing: border-box;\" />\n	&nbsp; &nbsp; &nbsp; - ชุดแต่งบังหม้อน้ำ Evotech<br style=\"box-sizing: border-box;\" />\n	&nbsp; &nbsp; &nbsp; - กันล้มหน้า Evotech</div>\n', '09a80-bike_04.png', '5b0a9-bike_04.png', '306cf-bike_04.png', '28444-bike_04.png', '96bf5-bike_04.png', '2020-12-14'),
+(5, '6', '1', '424214214', '1111', '<p>\n	2192194u21n4oun21o4821i4</p>\n', 'bf292-1.png', 'b2d53-1.png', '0511e-1.png', '0c371-1.png', '39ab2-1.png', '2020-12-15');
 
 -- --------------------------------------------------------
 
@@ -158,7 +161,10 @@ CREATE TABLE `color` (
 --
 
 INSERT INTO `color` (`id`, `name_color`) VALUES
-(1, 'READ');
+(1, 'Red'),
+(2, 'Black'),
+(3, 'Gold'),
+(4, 'Silver');
 
 -- --------------------------------------------------------
 
@@ -267,10 +273,17 @@ CREATE TABLE `homebike` (
 CREATE TABLE `homeplaylist` (
   `id` int(11) NOT NULL,
   `link_vdo` varchar(255) NOT NULL,
-  `img_bg` text NOT NULL,
-  `text` text NOT NULL,
+  `Model` varchar(250) NOT NULL,
+  `img_bg` varchar(250) NOT NULL,
   `status` enum('1','0') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `homeplaylist`
+--
+
+INSERT INTO `homeplaylist` (`id`, `link_vdo`, `Model`, `img_bg`, `status`) VALUES
+(1, 'https://www.youtube.com/embed/w5gL1zFSjkI', 'S1000RR 2020 ', '19b9e-bg_play.png', '1');
 
 -- --------------------------------------------------------
 
@@ -291,7 +304,8 @@ CREATE TABLE `homeslide` (
 
 INSERT INTO `homeslide` (`id`, `img_slide`, `content`, `status`) VALUES
 (1, '7a789-slidebanner.jpg', '<p>\n	The Ultimate Race</p>\n', '1'),
-(2, 'b5ece-slidebanner.jpg', '<p>\n	The Ultimate Race 2</p>\n', '1');
+(2, '11b49-slide_banner_n02.jpg', '<p>\n	The Ultimate By MPK</p>\n', '1'),
+(4, '', '', '');
 
 -- --------------------------------------------------------
 
@@ -635,7 +649,8 @@ CREATE TABLE `promotion_slide` (
 INSERT INTO `promotion_slide` (`id`, `img_slide`, `status`) VALUES
 (1, 'ecade-1_03.png', '1'),
 (2, 'd0743-1_03.png', '1'),
-(3, '04823-1_03.png', '1');
+(3, '04823-1_03.png', '1'),
+(4, '9cda4-slide_banner_n01.jpg', '1');
 
 -- --------------------------------------------------------
 
@@ -1172,7 +1187,7 @@ ALTER TABLE `about`
 -- AUTO_INCREMENT for table `bike_for_sell`
 --
 ALTER TABLE `bike_for_sell`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `brand`
@@ -1190,7 +1205,7 @@ ALTER TABLE `brand_category`
 -- AUTO_INCREMENT for table `color`
 --
 ALTER TABLE `color`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `contactus`
@@ -1232,13 +1247,13 @@ ALTER TABLE `homebike`
 -- AUTO_INCREMENT for table `homeplaylist`
 --
 ALTER TABLE `homeplaylist`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `homeslide`
 --
 ALTER TABLE `homeslide`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `main_category`
@@ -1298,7 +1313,7 @@ ALTER TABLE `promotion_product`
 -- AUTO_INCREMENT for table `promotion_slide`
 --
 ALTER TABLE `promotion_slide`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `select_your_bike`

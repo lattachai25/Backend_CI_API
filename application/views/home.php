@@ -548,15 +548,15 @@ span{
 <!-- New Arrivals -->
 
 <!-- bike for sell -->
-<div class="row">
-<div class="col-1"></div>
-<div class="col-8">
-    <div class="top" style="min-height:600px; background-color:#000;">
+<div class="row" style=" width:100%; height:auto; ">
+<!-- <div class="col-1"></div> -->
+<div class="col-12" style="padding:0;">
+    <div class="top" style="height:auto; width:100%;  background-color:#000;">
     <img src="<?php echo base_url();?>img/home/MPK_Design_001_OK_150820_1A_create_19.png" width="100%" alt=""/>
 
         <div class="row">
-            <div class="col-1"></div>
-            <div class="col-11">
+            <!-- <div class="col-1"></div> -->
+            <div class="col-12">
                 <div id="owl-demo" class="owl-carousel owl-theme">
                 <?php foreach($bike as $bikes): ?>
                 <a href="<?php base_url();?>bike_for_sell">
@@ -580,7 +580,7 @@ span{
 </div>
 <!-- bike for sell -->
 <div class="row">
-<img src="<?php echo base_url();?>img/home/MPK_Design_001_OK_150820_1A_create_21.png" width="98%" alt=""/>
+<img src="<?php echo base_url();?>img/home/MPK_Design_001_OK_150820_1A_create_21.png" width="100%" alt=""/>
 </div>
 
     <script>
