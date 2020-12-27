@@ -6,6 +6,12 @@ nav ul ul li {
     position: relative;
     background: #f7f7f7;
 }
+.active a,nav ul li ul li a {
+  color:black;
+}
+a:hover{
+  color:black;
+}
 </style>
 
 <?php
@@ -24,7 +30,7 @@ $main_category = $query->result();
             <li><img src="<?php echo base_url();?>img/icon_menu/MPK_logo-02.png" width="150" alt=""></li>
     
             <li style="margin-left:50px;"></li>
-            <li class="active" ><a href="<?php echo base_url('Home');?>" style="color:#000;">HOME</a></li>
+            <li class="active divMenu" ><a href="<?php echo base_url('Home');?>" style="color:#000;">HOME</a></li>
 
             <li <?php if($this->uri->segment(1)=="select_your_bike")
             {echo 'class="active"';}
@@ -32,11 +38,11 @@ $main_category = $query->result();
             {echo 'class="active"';}
             elseif ($this->uri->segment(1)=="bike_for_sell")
             {echo 'class="active"';}
-            ?> ><a href="">PRODUCT</a>
+            ?> ><a class='divMenu' href="">PRODUCT</a>
            
             <ul>
-                <li><a href="<?php echo base_url('select_your_bike');?>">SELECT YOUR BIKE</a></li>
-                <li><a href="<?php echo base_url('category');?>">CATEGORY</a>
+                <li><a  href="<?php echo base_url('select_your_bike');?>">SELECT YOUR BIKE</a></li>
+                <li><a  style="color:black;" href="<?php echo base_url('category');?>">CATEGORY</a>
       
               <ul>
                 <?php foreach($main_category as $main_categorys): ?>
@@ -49,15 +55,15 @@ $main_category = $query->result();
             </ul>
             </li>
  
-            <li <?php if($this->uri->segment(1)=="Promotion"){echo 'class="active"';}?>><a href="<?php echo base_url('Promotion');?>">PROMOTION</a></li>
-            <li  <?php if($this->uri->segment(1)=="Service"){echo 'class="active"';}?>><a href="<?php echo base_url('Service');?>">SERVICE</a></li>
+            <li <?php if($this->uri->segment(1)=="Promotion"){echo 'class="active"';}?>><a class='divMenu' href="<?php echo base_url('Promotion');?>">PROMOTION</a></li>
+            <li  <?php if($this->uri->segment(1)=="Service"){echo 'class="active"';}?>><a class='divMenu' href="<?php echo base_url('Service');?>">SERVICE</a></li>
             <!-- <li  <?php if($this->uri->segment(1)=="News"){echo 'class="active"';}?>><a href="<?php echo base_url('News');?>">NEWS</a></li> -->
 
             <li <?php if($this->uri->segment(1)=="News")
             {echo 'class="active"';}
             elseif ($this->uri->segment(1)=="News_idea")
             {echo 'class="active"';}
-            ?> ><a href="">NEWS</a>
+            ?> ><a class='divMenu' href="">NEWS</a>
            
             <ul>
                 <li <?php if($this->uri->segment(1)=="News"){echo 'class="active"';}?> ><a href="<?php echo base_url('News');?>">NEWS & Update</a></li>
@@ -68,13 +74,13 @@ $main_category = $query->result();
 
 
 
-            <li  <?php if($this->uri->segment(1)=="Gallery"){echo 'class="active"';}?>><a href="<?php echo base_url('Gallery');?>">GALLERY</a></li>
-            <li  <?php if($this->uri->segment(1)=="About"){echo 'class="active"';}?>><a href="<?php echo base_url('About');?>">ABOUT</a></li>
+            <li  <?php if($this->uri->segment(1)=="Gallery"){echo 'class="active"';}?>><a class='divMenu' href="<?php echo base_url('Gallery');?>">GALLERY</a></li>
+            <li  <?php if($this->uri->segment(1)=="About"){echo 'class="active"';}?>><a class='divMenu' href="<?php echo base_url('About');?>">ABOUT</a></li>
             <li style="width:100px;">
             <input type="text" class="search_input_top" name="search" style="width:100px;">
             <i class="fas fa-search search_top" style="margin-left:-20px; position: absolute; fone-size:20px; z-imdex:1;"></i>
             </li>
-            <li><a href="<?php echo base_url('Register');?>">Register</a></li>
+            <li><a class='divMenu' href="<?php echo base_url('Register');?>">Register</a></li>
             <li><a href="<?php echo base_url('Contact');?>"><i class="fas fa-map-marker-alt" onclick="
             this.style.Color = '#000'; 
             this.style.color = '#ff6634';
@@ -94,18 +100,25 @@ $main_category = $query->result();
 $(document).ready(function(){
   $(window).scroll(function(){
   	var scroll = $(window).scrollTop();
+    $(".divMenu").hover(function(e){
+          $(this).css("color",e.type === "mouseenter"?"#000":"#fff");
+        })
 	  if (scroll > 300) {
         $("#mainNav").css("background" , "#f7f7f7");  
         $("nav a").css("color","#000");
         $("nav ul li ul li a").css("color","#000");
         $(".active").css("color","#000");
+        $(".divMenu").hover(function(e){
+          $(this).css("color",e.type === "mouseenter"?"#000":"#000");
+        })
 	  }
 
 	  else{
         $("nav a").css("color","#FFF");
         $(".active a").css("color","#000");
         $("nav ul li ul li a").css("color","#000");
-        $("#mainNav").css("background" , "transparent");	
+        $("#mainNav").css("background" , "transparent");
+        
 	  }
   })
 })

@@ -5,6 +5,9 @@
 nav a{
   color:#000;
 }
+nav a:hover{
+  color:#000;
+}
 .active {
   color:#000;
 }
@@ -14,6 +17,10 @@ nav ul ul li {
     display: list-item;
     position: relative;
     background: #f7f7f7;
+}
+
+nav ul li ul li a {
+  color:red;
 }
 </style>
 
