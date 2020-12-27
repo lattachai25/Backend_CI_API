@@ -306,7 +306,7 @@ $pro_none = $query->result();
                                 <img src="<?php echo base_url();?>assets/uploads/img_promotion_product/<?php echo $pro_saves->img1;?>" class="image"  alt="" />
                                 </center>
                                 <div class="overlay">
-                                    <div class="text">READ MORD <i class="fas fa-arrow-right"></i></div>
+                                    <div class="text">READ MORE <i class="fas fa-arrow-right"></i></div>
                                 </div>
                             </div>
                             </a>

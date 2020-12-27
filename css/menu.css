@@ -33,7 +33,7 @@ nav ul li {
 nav a {
 	display: block;
 	padding: 0 10px;
-	color: #fff;
+	color: rgb(0, 0, 0);
 	font-size: 20px;
 	line-height: 60px;
 	text-decoration: none;
