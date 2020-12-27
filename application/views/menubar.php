@@ -12,6 +12,26 @@ nav ul ul li {
 a:hover{
   color:black;
 }
+.hamberger{
+  display:none;
+}
+@media only screen and (max-width: 1150px) {
+  .menu ul li {
+    display:none;
+  }
+  .menu ul li.hamberger,.menu ul li.logo{
+    width:auto;
+  display:block;
+}
+.menu{
+width:80%;
+}
+.menu ul{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+}
 </style>
 
 <?php
@@ -23,11 +43,11 @@ $main_category = $query->result();
 
 
 <div class="row"></div>
-<nav class="navbar fixed-top" id="mainNav">
-<div class="col-1"></div>
-<div class="col-11">
-        <ul>
-            <li><img src="<?php echo base_url();?>img/icon_menu/MPK_logo-02.png" width="150" alt=""></li>
+<nav class="navbar fixed-top" id="mainNav" >
+<!-- <div class="col-1"></div> -->
+<div class="menu" style="margin:0 auto;">
+        <ul >
+            <li class='logo'><img src="<?php echo base_url();?>img/icon_menu/MPK_logo-02.png" width="150" alt=""></li>
     
             <li style="margin-left:50px;"></li>
             <li class="active divMenu" ><a href="<?php echo base_url('Home');?>" style="color:#000;">HOME</a></li>
@@ -75,21 +95,21 @@ $main_category = $query->result();
 
 
             <li  <?php if($this->uri->segment(1)=="Gallery"){echo 'class="active"';}?>><a class='divMenu' href="<?php echo base_url('Gallery');?>">GALLERY</a></li>
-            <li  <?php if($this->uri->segment(1)=="About"){echo 'class="active"';}?>><a class='divMenu' href="<?php echo base_url('About');?>">ABOUT</a></li>
-            <li style="width:100px;">
-            <input type="text" class="search_input_top" name="search" style="width:100px;">
-            <i class="fas fa-search search_top" style="margin-left:-20px; position: absolute; fone-size:20px; z-imdex:1;"></i>
+            <li style="margin: 0 7px 0 0; "  <?php if($this->uri->segment(1)=="About"){echo 'class="active"';}?>><a class='divMenu' href="<?php echo base_url('About');?>">ABOUT</a></li>
+            <li style="width:100px; ">
+              <input type="text" class="search_input_top divMenu" name="search" style="width:100px; margin:0 0px -6px 0">
+              <i class="fas fa-search search_top divMenu" style="margin-left:-20px; position: absolute; fone-size:20px; z-index:1; "></i>
             </li>
-            <li><a class='divMenu' href="<?php echo base_url('Register');?>">Register</a></li>
-            <li><a href="<?php echo base_url('Contact');?>"><i class="fas fa-map-marker-alt" onclick="
+            <li style="margin: 0 0 0 7px; "><a  class='divMenu' href="<?php echo base_url('Register');?>">Register</a></li>
+            <li><a class='divMenu' href="<?php echo base_url('Contact');?>"><i class="fas fa-map-marker-alt" onclick="
             this.style.Color = '#000'; 
             this.style.color = '#ff6634';
             <?php if($this->uri->segment(1)=="About"){echo "this.style.color = '#ff6634';";}?>
             "></i></a></li>
-            <li><img src="<?php echo base_url();?>/img/icon_menu/menu1_14.png" width="70px" /></li>
+            <li class='hamberger' ><img src="<?php echo base_url();?>/img/icon_menu/menu1_14.png" width="70px" /></li>
         </ul>
 </div>  
-<div class="col-1"></div>
+<!-- <div class="col-1"></div> -->
     </nav>
 
 
@@ -108,16 +128,23 @@ $(document).ready(function(){
         $("nav a").css("color","#000");
         $("nav ul li ul li a").css("color","#000");
         $(".active").css("color","#000");
+        $(".search_input_top").css("border-color","#000");
+        $(".search_input_top ~ i").css("color","#000");
         $(".divMenu").hover(function(e){
           $(this).css("color",e.type === "mouseenter"?"#000":"#000");
         })
+        $(".search_input_top").css("color","#000");
 	  }
 
 	  else{
         $("nav a").css("color","#FFF");
         $(".active a").css("color","#000");
         $("nav ul li ul li a").css("color","#000");
+        $(".search_input_top").css("border-color","#fff");
+        $(".search_input_top").css("border-color","#fff");
+        $(".search_input_top ~ i").css("color","#fff");
         $("#mainNav").css("background" , "transparent");
+        $(".search_input_top").css("color","#fff");
         
 	  }
   })

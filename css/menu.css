@@ -40,7 +40,7 @@ nav a {
 }
 
 nav a:hover {
-	background-color: #000;
+	background-color: #fff;
 }
 
 nav ul ul {
@@ -86,15 +86,19 @@ li > a:only-child:after { content: ''; } */
 	width: 68%;
 	height: 24px;
 	border: none;
-	border-bottom: 3px solid #000;
+	border-bottom: 3px solid #fff;
 	float: left;
 	margin-left: 7px;
-	background-color: transparent;
+    background-color: transparent;
+}
+.search_input_top ~ i {
+	color: white;
 }
 .search_input_top:focus {
 	-webkit-box-shadow: none;
 	box-shadow: none;
-	outline: none;
+    outline: none;
+    color: white;
 }
 
 #mainNav {
