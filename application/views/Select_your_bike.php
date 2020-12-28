@@ -212,7 +212,6 @@ span{
 
 
 
-<<<<<<< HEAD
 .sidenav a, .dropdown-btn {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
@@ -233,62 +232,6 @@ span{
   padding-left: 8px;
 }
 
-=======
-
-.menuside{
-    color:#666666; 
-    font-weight:bold; 
-    margin-top:15px; 
-    padding-top:8px; 
-    padding-bottom:8px;
-}
-
-.active{
-    color:#ff6634;
-    font-weight:bold;
-    background-color:#fff;
-}
-
-
-
-
-
-
-
-.circle {
-  border-radius: 0%;
-  width: 100%;
-  height: auto;
-
-  margin-left: 0px;
-  /* width and height can be anything, as long as they're equal */
-  margin-top: 25px;
-  margin-bottom: 30px;
-  position: relative;
-}
-
-.navbar-default {
-    color:#ff6634; 
-    background-color:#e2e0e1;
-  
-}
-
-#page-wrapper {
-    padding: 0 15px;
-    min-height: 568px;
-    background-color: #d2d2d2;}
-
-a {
-    color: #090909  !important;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-a:hover {
-    color: #090909 !important;
-    text-decoration: underline;
-}
->>>>>>> d65fce6fa0210019d3e61b0e2a671492c3918b92
 
 
 
@@ -314,15 +257,12 @@ $query = $this->db->get();
 $year = $query->result();
 ?>
 
-<<<<<<< HEAD
 <?php
 $this->db->select("*");
 $this->db->from("main_category");
 $query = $this->db->get();
 $category = $query->result();
 ?>
-=======
->>>>>>> d65fce6fa0210019d3e61b0e2a671492c3918b92
 
 <div class="bg" style="margin-top:120px;"></div>
 <div class="row">

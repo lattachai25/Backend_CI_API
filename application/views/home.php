@@ -65,17 +65,21 @@ $pro = $query->result();
   -webkit-box-shadow: none;
   box-shadow: none;
   border: 0;
+  height: auto;
 }
 
-
+.bx-controls-direction{
+    width: 50%;
+}
 
 .bx-wrapper .bx-controls-direction a {
     position: absolute;
-    top: 90%;
+    top: 80%;
     margin-top: 0px;
     outline: 0;
     width: 146px;
     height: 55px;
+    background-color: red;
     text-indent: -9999px;
     z-index: 9999;
 }
@@ -83,11 +87,15 @@ $pro = $query->result();
 
 .bx-wrapper .bx-prev {
     left: 134px;
-    background: url(img/home/prev.png) no-repeat !important;
+    width: 50px;
+    height: 50px;
+    background: url(img/home/prev.png) no-repeat   !important;
+    /* background-size: 100% 100%; */
 }
 .bx-wrapper .bx-next {
     right: 113px;
-    background: url(img/home/next.png) no-repeat !important;
+    background: url(img/home/next.png) no-repeat  !important;
+    /* background-size: 100% 100%; */
 }
 
 .bx-wrapper {
@@ -267,11 +275,13 @@ span{
 .bg_slide{
     z-index:-9;
     position: relative;
+    width: 100%;
+    overflow:hidden;
 }
 .text_slide{
-    left:100px;
-    bottom: 260px;
-    font-size:55px;
+    left:9%;
+    top: 50%;
+    font-size:5vw;
     font-weight:bold;
     color:#fff;
     position: absolute;
@@ -280,9 +290,9 @@ span{
     border:1px solid #fff;
     padding-left:20px;
     padding-right:20px;
-    left:102px;
-    bottom: 215px;
-    font-size:25px;
+    left:9%;
+    top: 65%;
+    font-size:2vw;
     font-weight:bold;
     color:#ff5e0d;
     position: absolute;
@@ -548,15 +558,15 @@ span{
 <!-- New Arrivals -->
 
 <!-- bike for sell -->
-<div class="row">
-<div class="col-1"></div>
-<div class="col-8">
-    <div class="top" style="min-height:600px; background-color:#000;">
+<div class="row" style=" width:100%; height:auto; ">
+<!-- <div class="col-1"></div> -->
+<div class="col-12" style="padding:0;">
+    <div class="top" style="height:auto; width:100%;  background-color:#000;">
     <img src="<?php echo base_url();?>img/home/MPK_Design_001_OK_150820_1A_create_19.png" width="100%" alt=""/>
 
         <div class="row">
-            <div class="col-1"></div>
-            <div class="col-11">
+            <!-- <div class="col-1"></div> -->
+            <div class="col-12">
                 <div id="owl-demo" class="owl-carousel owl-theme">
                 <?php foreach($bike as $bikes): ?>
                 <a href="<?php base_url();?>bike_for_sell">
@@ -580,7 +590,7 @@ span{
 </div>
 <!-- bike for sell -->
 <div class="row">
-<img src="<?php echo base_url();?>img/home/MPK_Design_001_OK_150820_1A_create_21.png" width="98%" alt=""/>
+<img src="<?php echo base_url();?>img/home/MPK_Design_001_OK_150820_1A_create_21.png" width="100%" alt=""/>
 </div>
 
     <script>
