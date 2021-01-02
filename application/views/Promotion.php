@@ -184,6 +184,18 @@ span{
     margin-top:0px;
 }
 
+.salecontainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.salecontainer .saleitem{
+    width: 268px;
+    margin: 12px;
+
+}
 </style>
 <?php
 $this->db->select("*");
@@ -263,12 +275,13 @@ $pro_none = $query->result();
             <div class="row justify-content-center">
                 <div class="col-12" style="min-height:500px;">
 
+                
                     <div class="row">
-             
-                 <div class="col-12" style="margin-top:30px; text-align: right; color:#999999; font-weight:700;"> <span>1</span> / 3 < | > </div>                   
+                    <div class="salecontainer">
+                 <!-- <div class="col-12" style="margin-top:30px; text-align: right; color:#999999; font-weight:700;"> <span>1</span> / 3 < | > </div>                    -->
                 
                     <?php foreach($pro as $pros): ?>
-                        <div class="col-3">
+                        <div class="saleitem">
                         <a href="<?php base_url();?>Promotion/view/<?php echo $pros->id;?>">
                         <br>
                             <div class="container">
@@ -296,7 +309,7 @@ $pro_none = $query->result();
                         <?php endforeach; ?>
 
                         <?php foreach($pro_save as $pro_saves): ?>
-                        <div class="col-3">
+                        <div class="saleitem">
                         <a href="<?php base_url();?>Promotion/view/<?php echo $pro_saves->id;?>">
                         <br>
                             <div class="container">
@@ -325,7 +338,7 @@ $pro_none = $query->result();
                         <?php endforeach; ?>
 
                         <?php foreach($pro_new as $pro_news): ?>
-                        <div class="col-3">
+                        <div class="saleitem">
                         <a href="<?php base_url();?>Promotion/view/<?php echo $pro_news->id;?>">
                   
                         <!-- <a href="{{ url('Promotion_show') }}"> -->
@@ -356,7 +369,7 @@ $pro_none = $query->result();
                         <?php endforeach; ?>
 
                     <?php foreach($pro_none as $pro_nones): ?>
-                        <div class="col-3">
+                        <div class="saleitem">
                         <a href="<?php base_url();?>Promotion/view/<?php echo $pro_nones->id;?>">
 
                         <!-- <a href="{{ url('Promotion_show') }}"> -->
@@ -385,6 +398,7 @@ $pro_none = $query->result();
                         <?php endforeach; ?>
 
 
+                    </div>
                     </div>
                 </div>
             </div>
