@@ -25,7 +25,7 @@ margin:10px;
     font-size:20px;
 }
 .text:hover{
-    color:#ff6634;
+    color:red;
     font-family:'helvetica';
     text-align: right;
     font-weight:bold;
@@ -54,7 +54,7 @@ margin:10px;
         display: inline;
     }
     .card:hover .text{
-    color:#ff6634;
+    color:#fc9d44;
     font-family:'helvetica';
     text-align: right;
     font-weight:bold;
@@ -73,6 +73,8 @@ margin:10px;
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
+    box-shadow: 5px 5px 10px  rgba(0,0,0,0.2);
+    
     border: 0px solid rgba(0,0,0,.125) !important;
     border-radius: 0rem !important;
 }
@@ -124,7 +126,26 @@ margin:10px;
     .card:hover .img-top5 {
         display: inline;
     }
+    .service{
 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    }
+
+    .service .serviceItem{
+            width: 200px;
+    height: 200px;
+    margin:12px 24px;
+    }
+
+    .service .serviceItem .card img{
+       
+        filter: none;
+    }
+    .serviceItem:hover .card img{
+        filter:invert(72%) sepia(13%) saturate(3211%) hue-rotate(331deg) brightness(98%) contrast(112%);
+    }
 
 </style>
 
@@ -148,18 +169,18 @@ $service = $query->result();
 <div class="row"></div>
 
     <div class="col-12">
-    <div class="row">
-    <div class="col-2"></div>
+    <div class="row" style="display:flex; justify-content:center;">
     <div class="col-10">
-        <div class="row">
+        <div class=" service">
 
 
-        <div class="col-md-3 bom_m">
+        <div class="serviceItem ">
         <a href="#service1" style="text-decoration:none">
             <div class="card">
             <center>
                  <img src="<?php echo base_url(); ?>img/service/icon/installation.png" class="icon_m"/> 
-                 <img src="<?php echo base_url(); ?>img/service/icon_orange/installation.png" class="icon_m img-top"/> 
+                 <!-- <img src="<?php echo base_url(); ?>img/service/icon_orange/installation.png" class="icon_m img-top"/>  -->
+                 <!-- <img src="<?php echo base_url(); ?>img/service/icon_orange/installation.png" class="icon_m img-top"/>  -->
                  <div class="text">INSTALLATION<br> SERVICE</div>
             </center>                
             </div> 
@@ -167,60 +188,60 @@ $service = $query->result();
         </div>
 
 
-        <div class="col-md-3 bom_m">
+        <div class="serviceItem">
         <a href="#service2" style="text-decoration:none">
         <div class="card">
             <center> 
                  <img src="<?php echo base_url(); ?>img/service/icon/maintenance.png" class="icon_m"/> 
-                 <img src="<?php echo base_url(); ?>img/service/icon_orange/maintenance.png" class="icon_m img-top"/> 
+                 <!-- <img src="<?php echo base_url(); ?>img/service/icon_orange/maintenance.png" class="icon_m img-top"/>  -->
             </center>
                  <div class="text">MAINTENANCE</div>
         </div>
         </a>
         </div>
 
-        <div class="col-md-3 bom_m">
+        <div class="serviceItem">
         <a href="#service3" style="text-decoration:none">
         <div class="card">
             <center> 
                  <img src="<?php echo base_url(); ?>img/service/icon/insurance.png" class="icon_m"/> 
-                 <img src="<?php echo base_url(); ?>img/service/icon_orange/insurance.png" class="icon_m img-top2"/> 
+                 <!-- <img src="<?php echo base_url(); ?>img/service/icon_orange/insurance.png" class="icon_m img-top2"/>  -->
             </center>
                  <div class="text">INSURANCE</div>
         </div>
         </a>         
         </div>
 
-        <div class="col-md-3 bom_m">
+        <div class="serviceItem">
         <a href="#service4" style="text-decoration:none">
         <div class="card">
             <center> 
                  <img src="<?php echo base_url(); ?>img/service/icon/bike_hotel.png" class="icon_m"/> 
-                 <img src="<?php echo base_url(); ?>img/service/icon_orange/bike_hotel.png" class="icon_m img-top3"/> 
+                 <!-- <img src="<?php echo base_url(); ?>img/service/icon_orange/bike_hotel.png" class="icon_m img-top3"/>  -->
             </center>
                  <div class="text">BIKE HOTEL</div>
         </div>
         </a>         
         </div>
 
-        <div class="col-md-3 bom_m">
+        <div class="serviceItem">
         <a href="#service5" style="text-decoration:none">
         <div class="card">
             <center> 
                  <img src="<?php echo base_url(); ?>img/service/icon/designconsult.png" class="icon_m"/> 
-                 <img src="<?php echo base_url(); ?>img/service/icon_orange/designconsult.png" class="icon_m img-top4"/> 
+                 <!-- <img src="<?php echo base_url(); ?>img/service/icon_orange/designconsult.png" class="icon_m img-top4"/>  -->
             </center>
                  <div class="text">DESIGN CONSULT</div>
         </div>
         </a>         
         </div>
 
-        <div class="col-md-3 bom_m">
+        <div class="serviceItem">
         <a href="#service6" style="text-decoration:none">
         <div class="card">
             <center> 
                  <img src="<?php echo base_url(); ?>img/service/icon/delivery.png" class="icon_m"/> 
-                 <img src="<?php echo base_url(); ?>img/service/icon_orange/delivery.png" class="icon_m img-top5"/> 
+                 <!-- <img src="<?php echo base_url(); ?>img/service/icon_orange/delivery.png" class="icon_m img-top5"/>  -->
             </center>
                  <div class="text">DELIVERY SERVICE</div>
         </div>

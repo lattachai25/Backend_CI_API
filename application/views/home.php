@@ -460,7 +460,7 @@ span{
  <div class="row">
  <div class="col-1"></div>
 <div class="col-10" style="position:relative; margin-top:-150px;">
- <img src="<?php echo base_url();?>img/home/carbar.png" width="101%"/>
+ <img src="<?php echo base_url();?>img/home/carbar.png" width="100%"/>
     <div class="row bgcar">
             <!-- ROW BOX -->
 

@@ -126,7 +126,7 @@ $(document).ready(function(){
     $(".divMenu").hover(function(e){
           $(this).css("color",e.type === "mouseenter"?"#000":"#000");
         })
-	  if (scroll > 300) {
+	  if (scroll > 100) {
         $("#mainNav").css("background" , "#f7f7f7");  
         $("nav a").css("color","#000");
         $("nav ul li ul li a").css("color","#000");
