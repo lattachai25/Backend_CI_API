@@ -120,10 +120,12 @@ $pro = $query->result();
 
 
 .bg_select{
-    height:500px;
+    width: 100%;
+    min-height:500px;
     background-image:url('<?php echo base_url();?>img/product/BG_Selectyourvehicle.png');
     background-repeat: no-repeat;
     background-size:cover;
+    background-position: center;
 }
 .text_select{
     color:#ffff;
@@ -136,7 +138,7 @@ $pro = $query->result();
     text-align:center;
     font-weight:bold;
     color:#ff6634;
-    padding-left: 60px;
+    /* padding-left: 60px; */
 }
 .bottom_searce{
     text-align:center;
@@ -154,8 +156,9 @@ $pro = $query->result();
     height:700px;
     background-image:url('<?php echo base_url();?>assets/uploads/img_bg/<?php echo $homeplaylist->img_bg; ?>');
     background-repeat: no-repeat;
-    background-size:cover;
-    background-size:100% 100%;
+    background-size:contain;
+    background-position: center;
+    /* background-size:100% 100%; */
     
 }
 .text_vdo{
@@ -334,32 +337,30 @@ span{
             <div class="col-10">
       <img src="<?php echo base_url();?>img/home/MPK_Design_001_OK_150820_1A_create_10.png" width="100%" alt=""/>
                <br>
-               <br>
-               <br>
-               <br>               
-                <div class="row">
-                    <div class="col-3">
-                        <div class="row">
-                            <div class="col-5"><img src="<?php echo base_url();?>img/home/back_icon/BestQuality.png" width="50px" alt=""></div>
-                            <div class="col-7 text4">BEST <br> QUALITY</div>
+               <br>             
+                <div class="row" style="font-size: 2vw;">
+                    <div class="col-3" >
+                        <div class="row" >
+                            <div class=""><img src="<?php echo base_url();?>img/home/back_icon/BestQuality.png" width="50px"  alt=""></div>
+                            <div class=" text4" style="font-size: calc(0.75em + 0.75vmin)">BEST <br> QUALITY</div>
                         </div>
                     </div>
                     <div class="col-3">
                         <div class="row">
-                            <div class="col-5"><img src="<?php echo base_url();?>img/home/back_icon/Service.png" width="50px" alt=""></div>
-                            <div class="col-7 text4">EXPERTISE <br> SERVICE</div>
+                            <div class=""><img src="<?php echo base_url();?>img/home/back_icon/Service.png" width="50px" alt=""></div>
+                            <div class=" text4" style="font-size: calc(0.75em + 0.75vmin)">EXPERTISE <br> SERVICE</div>
                         </div>
                     </div>
                     <div class="col-3">
                         <div class="row">
-                            <div class="col-5"><img src="<?php echo base_url();?>img/home/back_icon/Guarantee.png" width="50px" alt=""></div>
-                            <div class="col-7 text4">AUTHENTIC <br> GUARANTEE</div>
+                            <div class=""><img src="<?php echo base_url();?>img/home/back_icon/Guarantee.png" width="50px" alt=""></div>
+                            <div class=" text4" style="font-size: calc(0.75em + 0.75vmin)">AUTHENTIC <br> GUARANTEE</div>
                         </div>
                     </div>
                     <div class="col-3">
                         <div class="row">
-                            <div class="col-5"><img src="<?php echo base_url();?>img/home/back_icon/SH_01.png" width="50px" alt=""></div>
-                            <div class="col-7 text4">SHIPPING <br> WORLDWIDE</div>
+                            <div class=""><img src="<?php echo base_url();?>img/home/back_icon/SH_01.png" width="50px" alt=""></div>
+                            <div class=" text4" style="font-size: calc(0.75em + 0.75vmin)">SHIPPING <br> WORLDWIDE</div>
                         </div>
                     </div>
                 </div>
@@ -386,7 +387,7 @@ span{
                 <div class="col-2"></div>
                 <div class="col-8">
                     <div class="form-row">
-                        <div class="form-group col-md-3">
+                        <div class="form-group col-md-4">
                             <select id="inputState" class="form-control">
                                 <option selected> BRAND <i class="far fa-caret-circle-down"></i> </option>
                                 <?php foreach($brand as $brands): ?>
@@ -470,16 +471,16 @@ span{
 
 
         <?php foreach($pro as $pros): ?>
-                        <div class="col-4">
-                        <div class="col-11" style="border:1px solid #000;">
+                        <div class="col-4 height: 100%">
+                        <div class="col-11" style="border:1px solid #000; height: 100%">
                         <a href="<?php base_url();?>Promotion/view/<?php echo $pros->id;?>">
                         <br>
                             <div class="container">
                                 <center>
-                                <img src="<?php echo base_url();?>assets/uploads/img_promotion_product/<?php echo $pros->img1;?>" width="90%" height="230px" alt="" />
+                                <img class="img-break" src="<?php echo base_url();?>assets/uploads/img_promotion_product/<?php echo $pros->img1;?>" width="100%" height="auto" alt="" />
                                 </center>
-                                <div class="overlay">
-                                    <div class="text">READ MORD <i class="fas fa-arrow-right"></i></div>
+                                <div class="overlay" style="height: 100%">
+                                    <div class="text" style="width: 50%; height: auto; font-size: 10px;">READ MORD <i class="fas fa-arrow-right"></i></div>
                                 </div>
                             </div>
                         </a> 
@@ -533,10 +534,10 @@ span{
                         <img src="<?php echo base_url();?>img/home/2/<?php echo $i ?>.png" width="100%" />
                     <div class="row" style="margin-top:10px;">
                     <div class="col-9 text_price3">
-                    &nbsp; &nbsp; Brembo GP4 MS <br><br>
-                    <span>&nbsp; &nbsp; Monoblock 100mm ปั้นเบรมโบ้</span>
+                     Brembo GP4 MS <br><br>
+                    <span> Monoblock 100mm ปั้นเบรมโบ้</span>
                     </div>
-                    <div class="col-2 text_price3">
+                    <div class="text_price3">
                         9,999฿
                     </div>
                     </div>    

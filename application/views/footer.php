@@ -56,14 +56,25 @@
 }
 
 .input_email_main{
-    border:1px solid #f46738;
+    /* border:1px solid #f46738; */
     background-color:#000;
+    position: relative;
+}
+
+.input_email_main img{
+    width: auto;
+    height: 100%;
+    position: absolute;
+    top: 00px;
+    right: 0px;
+    background-color:#f46738;
 }
 
 .input_email {
+    border:1px solid #f46738;
     background-color:#000;
     margin-left: -13px;
-    width: 155px;
+    width: 200px;
     color:#ffffff;
 }
 .title_col{
@@ -136,8 +147,8 @@
                 <div class="col-12 title_col"><div style="margin-left:-15px;"> Subscribe  </div>  </div>
 
                 <div class="row col-12">
-                <div class="input_email_main col-8"><input class="input_email" type="email" placeholder="Your Email" /> </div>
-                <div class="icon col-3"> <center><img src="<?php echo base_url();?>img/icon_footer/footer_send_white.png" width="20px" alt=""/> </center> </div>
+                <div class="input_email_main "><input class="input_email" type="email" placeholder="Your Email" /><img src="<?php echo base_url();?>img/icon_footer/footer_send_white.png" width="20px" alt=""/> </div>
+                <!-- <div class="icon col-3"> <center><img src="<?php echo base_url();?>img/icon_footer/footer_send_white.png" width="20px" alt=""/> </center> </div> -->
                 </div>
 
                 <div class="col-12 copyright">

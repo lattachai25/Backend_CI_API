@@ -19,6 +19,7 @@
 
 #page-wrapper {
     padding: 0 15px;
+    height: auto;
     min-height: 568px;
     background-color: #d2d2d2;}
 
@@ -149,11 +150,6 @@ a:hover {
                 </li> 
 
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> d65fce6fa0210019d3e61b0e2a671492c3918b92
                 <li>
                     <a href="#"><i class="glyphicon fa fa-fire fa-fw"> </i>&nbsp; Gallery<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
