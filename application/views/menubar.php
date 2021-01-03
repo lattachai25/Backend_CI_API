@@ -15,14 +15,58 @@ a:hover{
 .hamberger{
   display:none;
 }
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    display:none;
+    /* border-top: 1px solid #9c9a9a; */
+    background-color: #d3d3d3;
+    overflow-x: hidden;
+    /* margin-top: 96px; */
+    transition: 0.4s;
+    padding-top: 15px;
+}
+
+.sidebar a {
+    /* margin-top: 15px; */
+    text-decoration: none;
+    font-size: 20px;
+    color: whitesmoke;
+    display: flex;
+    padding: 12px 0;
+}
+
+.sidetoggle {
+    width:260px;
+}
+
 @media only screen and (max-width: 1150px) {
   .menu ul li {
     display:none;
   }
+
+  .sidebar {
+    display:block;
+  
+}
+.sidebar a{
+    color: black;
+    padding-left: 24px;
+}
   .menu ul li.hamberger,.menu ul li.logo{
     width:auto;
   display:block;
 }
+
+.sidebar a:hover, .sidebar a.active{
+  background-color: #afafaf;
+}
+
 .menu{
 width:80%;
 }
@@ -106,14 +150,33 @@ $main_category = $query->result();
             this.style.color = '#ff6634';
             <?php if($this->uri->segment(1)=="About"){echo "this.style.color = '#ff6634';";}?>
             "></i></a></li>
-            <li class='hamberger' ><img src="<?php echo base_url();?>/img/icon_menu/menu1_14.png" width="70px" /></li>
+            <li class='hamberger' onclick="openNav()"><img src="<?php echo base_url();?>/img/icon_menu/menu1_14.png" width="70px" /></li>
         </ul>
 </div>  
 <!-- <div class="col-1"></div> -->
     </nav>
 
+    <div class="containersidebar">
+    
+        <div id="mySidenav" class="sidebar">       
+          <a  href="<?php echo base_url('Home');?>">HOME</a>
+          <a  href="">PRODUCT</a>
+          <a  href="<?php echo base_url('Promotion');?>">PROMOTION</a>
+          <a  href="<?php echo base_url('Service');?>">SERVICE</a>
+          <a  href="">NEWS</a>
+          <a  href="<?php echo base_url('Gallery');?>">GALLERY</a>
+          <a  href="<?php echo base_url('About');?>">ABOUT</a>
+        </div>
+    </div>
 
 </div>
+
+<script>
+    function openNav() {
+        var element = document.getElementById("mySidenav").classList.toggle("sidetoggle");   
+    }
+    
+</script>
 
 <script>
 
