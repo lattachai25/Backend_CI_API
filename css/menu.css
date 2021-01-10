@@ -86,13 +86,13 @@ li > a:only-child:after { content: ''; } */
 	width: 68%;
 	height: 24px;
 	border: none;
-	border-bottom: 3px solid #fff;
+	border-bottom: 3px solid rgb(0, 0, 0);
 	float: left;
 	margin-left: 7px;
 	background-color: transparent;
 }
 .search_input_top ~ i {
-	color: white;
+	color: rgb(0, 0, 0);
 }
 .search_input_top:focus {
 	-webkit-box-shadow: none;

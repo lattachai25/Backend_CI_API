@@ -177,6 +177,7 @@ $main_category = $query->result();
 <script>
 
 $(document).ready(function(){
+
   $(window).scroll(function(){
   	var scroll = $(window).scrollTop();
     // $(".divMenu").hover(function(e){
@@ -199,11 +200,10 @@ $(document).ready(function(){
         $("nav a").css("color","#000");
         $(".active a").css("color","#000");
         $("nav ul li ul li a").css("color","#000");
-        $(".search_input_top").css("border-color","#fff");
-        $(".search_input_top").css("border-color","#fff");
-        $(".search_input_top ~ i").css("color","#fff");
+        $(".search_input_top").css("border-color","#000");
+        $(".search_input_top ~ i").css("color","#000");
         $("#mainNav").css("background" , "transparent");
-        $(".search_input_top").css("color","#fff");
+        $(".search_input_top").css("color","#000");
         
 	  }
   })
