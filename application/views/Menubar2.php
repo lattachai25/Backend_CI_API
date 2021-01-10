@@ -90,7 +90,7 @@ $main_category = $query->result();
             <li class='logo'><img src="<?php echo base_url();?>img/icon_menu/MPK_logo-02.png" width="150" alt=""></li>
     
             <li style="margin-left:50px;"></li>
-            <li class="active divMenu" ><a href="<?php echo base_url('Home');?>" style="color:#000;">HOME</a></li>
+            <li class=" divMenu" ><a href="<?php echo base_url('Home');?>" style="color:#000;">HOME</a></li>
 
             <li <?php if($this->uri->segment(1)=="select_your_bike")
             {echo 'class="active"';}
@@ -179,9 +179,9 @@ $main_category = $query->result();
 $(document).ready(function(){
   $(window).scroll(function(){
   	var scroll = $(window).scrollTop();
-    $(".divMenu").hover(function(e){
-          $(this).css("color",e.type === "mouseenter"?"#000":"#fff");
-        })
+    // $(".divMenu").hover(function(e){
+    //       $(this).css("color",e.type === "mouseenter"?"#000":"#fff");
+    //     })
 	  if (scroll > 100) {
         $("#mainNav").css("background" , "#f7f7f7");  
         $("nav a").css("color","#000");
@@ -196,7 +196,7 @@ $(document).ready(function(){
 	  }
 
 	  else{
-        $("nav a").css("color","#FFF");
+        $("nav a").css("color","#000");
         $(".active a").css("color","#000");
         $("nav ul li ul li a").css("color","#000");
         $(".search_input_top").css("border-color","#fff");

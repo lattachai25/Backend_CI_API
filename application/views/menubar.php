@@ -6,14 +6,15 @@ nav ul ul li {
     position: relative;
     background: #f7f7f7;
 }
-.active a,nav ul li ul li a {
-  color:black;
-}
+/* .active a,nav ul li ul li a {
+  color: #fff;
+} */
 a:hover{
   color:black;
 }
 .hamberger{
   display:none;
+  cursor: pointer;
 }
 
 .sidebar {
@@ -42,7 +43,7 @@ a:hover{
 }
 
 .sidetoggle {
-    width:260px;
+    width:240px;
 }
 
 @media only screen and (max-width: 1150px) {
@@ -89,7 +90,7 @@ $main_category = $query->result();
 <div class="row"></div>
 <nav class="navbar fixed-top" id="mainNav" >
 <!-- <div class="col-1"></div> -->
-<div class="menu" style="margin:0 auto;">
+<div class="menu" style="margin:0 auto; ">
         <ul >
             <li class='logo'><img src="<?php echo base_url();?>img/icon_menu/MPK_logo-02.png" width="150" alt=""></li>
     
@@ -181,6 +182,17 @@ $main_category = $query->result();
 <script>
 
 $(document).ready(function(){
+  $("nav a").css("color","#FFF");
+        $(".active a").css("color","#000");
+        $("nav ul li ul li a").css("color","#000");
+        $(".search_input_top").css("border-color","#fff");
+        $(".search_input_top").css("border-color","#fff");
+        $(".search_input_top ~ i").css("color","#fff");
+        $("#mainNav").css("background" , "transparent");
+        $(".search_input_top").css("color","#fff");
+        $(".divMenu").hover(function(e){
+          $(this).css("color",e.type === "mouseenter"?"#000":"#fff");
+        })
   $(window).scroll(function(){
   	var scroll = $(window).scrollTop();
     $(".divMenu").hover(function(e){

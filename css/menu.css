@@ -7,7 +7,7 @@ nav a {
 	text-decoration: none;
 }
 a:hover {
-	color: #040100;
+	color: #000000;
 	text-decoration-color: #ff6634;
 	-moz-text-decoration-color: #ff6634;
 }
@@ -89,7 +89,7 @@ li > a:only-child:after { content: ''; } */
 	border-bottom: 3px solid #fff;
 	float: left;
 	margin-left: 7px;
-    background-color: transparent;
+	background-color: transparent;
 }
 .search_input_top ~ i {
 	color: white;
@@ -97,8 +97,8 @@ li > a:only-child:after { content: ''; } */
 .search_input_top:focus {
 	-webkit-box-shadow: none;
 	box-shadow: none;
-    outline: none;
-    color: white;
+	outline: none;
+	color: white;
 }
 
 #mainNav {
